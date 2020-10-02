@@ -1,0 +1,70 @@
+body {
+  font-family: "verdana", georgia;
+}
+h1 {
+  font-size: 40px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "palatino Linotype", verdana, tahoma;
+}
+nav li {
+  display: inline-block;
+  padding: 20px;
+}
+nav ul {
+  padding: 0px;
+}
+nav a {
+  color: #909090;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #000;
+}
+.active {
+  color: #000;
+}
+.cta {
+  font-size: 20px;
+  background-color: #f2b705;
+  color: #000;
+  text-decoration: none;
+}
+.cta:hover {
+  background-color: #f5c432;
+}
+.link {
+  color: #004349;
+  text-decoration: none;
+  font-weight: italic;
+}
+.account {
+  background: #f2b705;
+}
+.moviebackground {
+  background-color: #707070;
+}
+.moviepagetext {
+  color: #fff;
+}
+.moviepageline {
+  color: #fff;
+}
+ul {
+  padding: 0px;
+  text-decoration: none;
+  color: #909090;
+}
+ul a:hover {
+  color: #000;
+}
+
+footer::before,
+footer::after {
+  content: "/";
+  font-size: 20px;
+  font-weight: bold;
+}
