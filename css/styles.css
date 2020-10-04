@@ -1,14 +1,21 @@
+@font-face {
+  font-family: "Palatino Linotype";
+  src: url(https://fonts.adobe.com/fonts/latino-urw) format(URW);
+}
 body {
-  font-family: "verdana", georgia;
+  font-family: verdana, tahoma, sans-serif;
+}
+.logo {
+  background-color: #707070;
 }
 h1 {
-  font-size: 40px;
+  font-size: 2.5em;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: "palatino Linotype", verdana, tahoma;
+  font-family: "Palatino Linotype", georgia, serif;
 }
 nav li {
   display: inline-block;
@@ -27,11 +34,18 @@ nav a:hover {
 .active {
   color: #000;
 }
+.moviepagenav a {
+  color: #000;
+}
+.moviepagenav a:hover {
+  color: #fff;
+}
 .cta {
-  font-size: 20px;
+  font-size: 1.2em;
   background-color: #f2b705;
   color: #000;
   text-decoration: none;
+  padding: 5px;
 }
 .cta:hover {
   background-color: #f5c432;
@@ -56,7 +70,10 @@ nav a:hover {
 ul {
   padding: 0px;
   text-decoration: none;
-  color: #909090;
+}
+ul a {
+  text-decoration: none;
+  color: #959595;
 }
 ul a:hover {
   color: #000;
