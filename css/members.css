@@ -1,0 +1,9 @@
+section.illustration {
+  width: 600px;
+  height: 600px;
+}
+.illustration {
+  background-image: url(../images/Monitor.jpg);
+  background-image: contain;
+  background-repeat: no-repeat;
+}

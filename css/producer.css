@@ -1,0 +1,27 @@
+section.upload-illustration {
+  width: 200px;
+  height: 200px;
+}
+.upload-illustration {
+  background-image: url(../images/upload.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section.screen-illustration {
+  width: 200px;
+  height: 200px;
+}
+.screen-illustration {
+  background-image: url(../images/streaming.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section.devices-illustration {
+  width: 200px;
+  height: 200px;
+}
+.devices-illustration {
+  background-image: url(../images/Illustration\ -\ upload.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -78,12 +78,6 @@ ul a {
 ul a:hover {
   color: #000;
 }
-.log-in-page {
-  background-image: url(../images/Repeat\ Grid\ 15.png);
-  background-repeat: no-repeat;
-}
-  
-}
 
 footer::before,
 footer::after {
