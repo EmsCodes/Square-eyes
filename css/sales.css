@@ -1,0 +1,14 @@
+.accountimage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+section.illustration {
+  height: 250px;
+  width: 250px;
+}
+.illustration {
+  background-image: url("../images/chart.png");
+  background-image: contain;
+  background-repeat: no-repeat;
+}

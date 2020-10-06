@@ -20,6 +20,7 @@ h4 {
 nav li {
   display: inline-block;
   padding: 20px;
+  text-transform: uppercase;
 }
 nav ul {
   padding: 0px;
@@ -73,10 +74,20 @@ ul {
 }
 ul a {
   text-decoration: none;
-  color: #959595;
+  color: #404040;
 }
 ul a:hover {
   color: #000;
+}
+.account-icon {
+  max-width: 35px;
+}
+.account-login {
+  color: #000;
+  text-decoration: none;
+}
+.account-list {
+  font-size: 16pt;
 }
 
 footer::before,

@@ -1,6 +1,6 @@
 section.upload-illustration {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 .upload-illustration {
   background-image: url(../images/upload.svg);
@@ -22,6 +22,32 @@ section.devices-illustration {
 }
 .devices-illustration {
   background-image: url(../images/Illustration\ -\ upload.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-size: 30pt;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 25pt;
+  text-transform: capitalize;
+}
+h3 {
+  font-size: 15pt;
+  text-transform: capitalize;
+}
+.text {
+  font-size: 20pt;
+  text-transform: uppercase;
+  opacity: 50%;
+}
+section.arrow {
+  width: 30px;
+  height: 30px;
+}
+.arrow {
+  background-image: url(../images/yellow-arrow.png);
   background-size: contain;
   background-repeat: no-repeat;
 }

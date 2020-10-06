@@ -4,7 +4,7 @@
     <title>SquareEyes | Producer</title>
     <meta name="description" content="Member page for producers" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mainstyle.css" rel="stylesheet" />
     <link href="css/producer.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
@@ -14,7 +14,14 @@
   <body>
     <header>
       <img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      <a href="login.html">Log out</a>
+      <a href="login.html">
+        <img
+          class="account-icon"
+          src="images/account-icon.png"
+          alt="account icon"
+        />
+      </a>
+      <a href="login.html" class="account-login"> Log out </a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -29,7 +36,7 @@
       <section class="account">
         <h3>Producer</h3>
         <h1>Account</h1>
-        <ul>
+        <ul class="account-list">
           <li><a href="manageaccount.html">Manage Account</a></li>
           <li><a href="managemovies.html">Manage Movies</a></li>
           <li><a href="sales.views.html">Sales/Views</a></li>
@@ -40,11 +47,14 @@
         <h2>Make money easier!</h2>
       </section class="illustrations">
         <section class="upload-illustration"></section>
-        <p>Upload your movies</p>
+        <section class="arrow"></section>
+        <p class="text">Upload your movies</p>
         <section class="screen-illustration"></section>
-        <p>Make them available</p>
+        <section class="arrow"></section>
+        <p class="text">Make them available</p>
         <section class="devices-illustration"></section>
-        <p>Now people can stream your movies anywhere, anytime</p>
+        <section class="arrow"></section>
+        <p class="text">Now people can stream your movies anywhere, anytime</p>
       </section>
     </main>
 

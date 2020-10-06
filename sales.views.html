@@ -4,13 +4,21 @@
     <title>SquareEyes | Sales/views</title>
     <meta name="description" content="Sales and views page for producers" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/sales.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      <a href="login.html">Log out</a>
+      <a href="login.html">
+        <img
+          class="account-icon"
+          src="images/account-icon.png"
+          alt="account icon"
+        />
+      </a>
+      <a href="login.html" class="account-login"> Log out </a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -25,16 +33,24 @@
         <section class="account">
             <h3>Producer</h3>
             <h1>Account</h1>
-            <ul>
+            <ul class="account-list">
               <li><a href="manageaccount.html">Manage Account</a></li>
               <li><a href="managemovies.html">Manage Movies</a></li>
               <li><a href="sales.views.html">Sales/Views</a></li>
             </ul>
             <a href="login.html">Log Out</a>
           </section>
-        </br>
         <section>
-            <img src="images/producerimage.png">
+          <section>
+            <image class="accountimage" src="images/profilepicture.png" alt="profile picture">
+            <p>
+              Name Name
+            </p>
+            <aside>
+              <section class="illustration"></section>
+            </aside>
+          </section>
+
             <h2>Sales</h2>
             <p>Sales:1000</p>
             <p>Viewing income:10 000</p>

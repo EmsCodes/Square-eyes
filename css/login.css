@@ -7,3 +7,16 @@ section.login {
   background-size: contain;
   background-repeat: no-repeat;
 }
+h1 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.text {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  opacity: 50%;
+}

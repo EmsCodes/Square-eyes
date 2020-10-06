@@ -4,13 +4,21 @@
     <title>SquareEyes | Manage Movies</title>
     <meta name="description" content="manage movies page for producers" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/managemovies.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      <a href="login.html">Log out</a>
+      <a href="login.html">
+        <img
+          class="account-icon"
+          src="images/account-icon.png"
+          alt="account icon"
+        />
+      </a>
+      <a href="login.html" class="account-login"> Log out </a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -25,14 +33,18 @@
         <section class="account">
         <h3>Producer</h3>
         <h1>Account</h1>
-        <ul>
-          <li><a href="favourites.html">Favourites</a></li>
-          <li><a href="purchases.html">Purchases</a></li>
-          <li><a href="accountdetails.html">Account Details</a></li>
+        <ul class="account-list">
+          <li><a href="manageaccount.html">Manage Account</a></li>
+          <li><a href="managemovies.html">Manage Movies</a></li>
+          <li><a href="sales.views.html">Sales/Views</a></li>
         </ul>
         <a href="login.html">Log Out</a>
         </section>
-        <section>        
+        <section>
+          <image class="accountimage" src="images/profilepicture.png" alt="profile picture">
+            <p>
+              Name Name
+            </p>        
             <h2>
             Your movies
             </h2>
@@ -41,29 +53,30 @@
             Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
             Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
             </p>
-            <p>
-            Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-            Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-            </p>
         <form action="managemovies.html" method="post">
-            <p>Add movies</p>
-            <input type="file" name="video"/> </br>
+            <a class="cta">Add movies</a>
+            <input type="file" name="video"/>
             <input type="submit" value="upload"/>
         </form>
         <a class="cta">Edit movies</a>
         </section>
-    </br>
     <hr>
         <section>
-            <video controls width="265" height="150" src="images/Movie.mp4"></video>
+          <a href="selectedmovie.html">
+            <img src="images/ticket.jpg" width="265" height="150"/>
+          </a>
             <h4>Movie Title</h4>
             <p>Added:10.09.2020</p>
             <img src="Images/rating.png" /></p>
-            <video controls width="265" height="150" src="images/Movie.mp4"></video>
+            <a href="selectedmovie.html">
+              <img src="images/ticket.jpg" width="265" height="150"/>
+            </a>
             <h4>Movie Title</h4>
             <p>Added:10.09.2020</p>
             <img src="Images/rating.png" /></p>
-            <video controls width="265" height="150" src="images/Movie.mp4"></video>
+            <a href="selectedmovie.html">
+              <img src="images/ticket.jpg" width="265" height="150"/>
+            </a>
             <h4>Movie Title</h4>
             <p>Added:10.09.2020</p>
             <img src="Images/rating.png" /></p>

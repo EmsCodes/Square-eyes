@@ -7,3 +7,20 @@ section.illustration {
   background-image: contain;
   background-repeat: no-repeat;
 }
+h1 {
+  font-size: 30pt;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 25pt;
+  text-transform: capitalize;
+}
+h3 {
+  font-size: 15pt;
+  text-transform: capitalize;
+}
+.text {
+  font-size: 20pt;
+  text-transform: uppercase;
+  opacity: 50%;
+}

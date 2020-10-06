@@ -4,7 +4,7 @@
     <title>SquareEyes | Purchases</title>
     <meta name="description" content="Purchased movie page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mainstyle.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
       crossorigin="anonymous"
@@ -13,7 +13,14 @@
   <body>
     <header>
       <img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      <a href="login.html">Log out</a>
+      <a href="login.html">
+        <img
+          class="account-icon"
+          src="images/account-icon.png"
+          alt="account icon"
+        />
+      </a>
+      <a href="login.html" class="account-login"> Log out </a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -28,7 +35,7 @@
       <section class="account">
         <h3>Member</h3>
         <h1>Account</h1>
-        <ul>
+        <ul class="account-list">
           <li><a href="favourites.html">Favourites</a></li>
           <li><a href="purchases.html" class="active">Purchases</a></li>
           <li><a href="accountdetails.html">Account Details</a></li>

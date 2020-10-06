@@ -4,13 +4,21 @@
     <title>SquareEyes | Manage account producers</title>
     <meta name="description" content="manage account page for producers" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/manageaccount.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      <a href="login.html">Log out</a>
+      <a href="login.html">
+        <img
+          class="account-icon"
+          src="images/account-icon.png"
+          alt="account icon"
+        />
+      </a>
+      <a href="login.html" class="account-login"> Log out </a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -25,13 +33,31 @@
       <section class="account">
         <h3>Producer</h3>
         <h1>Account</h1>
-        <ul>
-          <li><a href="manageaccount.html">Manage Account</a></li>
+        <ul class="account-list">
+          <li class="active"><a href="manageaccount.html" >Manage Account</a></li>
           <li><a href="managemovies.html">Manage Movies</a></li>
           <li><a href="sales.views.html">Sales/Views</a></li>
         </ul>
         <a href="login.html">Log Out</a>
-      </section> </br>
+      </section>
+      <section>
+        <image class="accountimage" src="images/profilepicture.png" alt="profile picture">
+          <p>
+            Name Name
+          </p>
+        <h2>Manage your account</h2>
+        <p>
+          Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+          Nonumy Eirmod Tempor.
+        </p>
+        <p>Name:Name Name</p>
+        <p>Email:name@name.com</p>
+        <p>Membership:Producer</p>
+        <p>Password:123456</p>
+        <a href="login.html" class="link">Terms and Conditions</a>
+    </br>
+        <a href="login.html" class="link">Edit subscription</a>
+      </section>
     </main>
 
     <footer>Copyright &copy;</footer>
