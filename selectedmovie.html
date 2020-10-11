@@ -5,6 +5,7 @@
     <meta name="description" content="this is a page for the selected movie" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/selected.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
       crossorigin="anonymous"
@@ -18,6 +19,7 @@
         width="330"
         height="130"
       />
+      <img src="images/socialicons.png" />
       <a href="login.html">
         <img
           class="account-icon"
@@ -41,9 +43,11 @@
         <video controls width="750" height="500" src="images/Movie.mp4"></video>
       </section>
       <section class="moviepagetext">
-        <h1>Movie Title<img src="images/hearticon.png" /></h1>
-        <img src="Images/rating.png" />
-        <p>
+        <h1>
+          Movie Title<img src="images/hearticon.png" class="heart-icon" />
+        </h1>
+        <img src="Images/rating.png" class="rating" />
+        <p class="movie-text">
           Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
           Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem Ipsum
           Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit
@@ -53,10 +57,10 @@
           consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit amet,
           consetetut sadipscing elitr, Sed.
         </p>
-        <p>Producer Name</p>
-        <p>Time:1h 45min</p>
-        <p>Year:2016</p>
-        <p>Genre:Action</p>
+        <p class="movie-info">Producer Name</p>
+        <p class="movie-info">Time:1h 45min</p>
+        <p class="movie-info">Year:2016</p>
+        <p class="movie-info">Genre:Action</p>
       </section>
       <hr class="moviepageline" />
       <section class="moviepagetext">
@@ -64,22 +68,22 @@
         <a href="selectedmovie.html">
           <img src="images/ticket.jpg" width="250" height="145" />
         </a>
-        <h4>Movie Title <img src="Images/rating.png" /></h4>
+        <h3>Movie Title <img src="Images/rating.png" /></h3>
         <a href="selectedmovie.html">
           <img src="images/ticket.jpg" width="250" height="145" />
         </a>
-        <h4>Movie Title <img src="Images/rating.png" /></h4>
+        <h3>Movie Title <img src="Images/rating.png" /></h3>
         <a href="selectedmovie.html">
           <img src="images/ticket.jpg" width="250" height="145" />
         </a>
-        <h4>Movie Title <img src="Images/rating.png" /></h4>
+        <h3>Movie Title <img src="Images/rating.png" /></h3>
         <a href="selectedmovie.html">
           <img src="images/ticket.jpg" width="250" height="145" />
         </a>
-        <h4>Movie Title <img src="Images/rating.png" /></h4>
+        <h3>Movie Title <img src="Images/rating.png" /></h3>
       </section>
     </main>
 
-    <footer class="moviepagetext">Copyright &copy;</footer>
+    <footer>Copyright &copy;</footer>
   </body>
 </html>

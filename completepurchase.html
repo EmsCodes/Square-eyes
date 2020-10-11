@@ -8,7 +8,11 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/mainstyle.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
+    <link href="css/complete-purchase.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/39e20b04f8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -31,25 +35,50 @@
         </ul>
       </nav>
     </header>
-    <main>  <fieldset>
+    <main>
+      <fieldset>
         <legend><h1>Complete Purchase</h1></legend>
-        <form action="completepurchase.html" method="post">
-            <label>Name:<br/>
-            <input type="text" name="name"/> </label><br/>
-            <label>Card number:<br/>
-            <input type="text" name="Cardnumber"/> </label><br/>
-            <label>MM/DD/YYYY:<br/>
-            <input type="text" name="expiration date"/> </label><br/>
-            <label>Secutrity Code:<br/>
-            <input type="text" name="security code"/> </label></br>
+        <form action="form-success.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" class="form-input" />
+          <label for="cardnumber">Card number:</label>
+          <input
+            type="number"
+            name="Cardnumber"
+            id="cardnumber"
+            class="form-input"
+          />
+          <label for="date">MM/DD/YYYY:</label>
+          <input
+            type="date"
+            name="expiration date"
+            id="date"
+            class="form-input"
+          />
+          <label for="security-code">Secutrity Code:</label>
+          <input
+            type="number"
+            name="security code"
+            id="security-code"
+            class="form-input"
+          />
         </form>
-        </br>
-        <input type="checkbox" name="producer" value=Producer checked="checked"/> Remember Info?
-        </br>
-            <a href="selectedmovie.html" type="button" class="cta">Complete</a>
-    </br>
-            <a href="login.html">Terms and Conditions</a>
-    </fieldset></main>
+
+        <input
+          type="checkbox"
+          name="remember-info"
+          value="remember"
+          checked="checked"
+        />
+        Remember Info?
+        <section>
+          <a href="selectedmovie.html" type="button" class="cta">Complete</a>
+        </section>
+        <section>
+          <a href="login.html" class="link">Terms and Conditions</a>
+        </section>
+      </fieldset>
+    </main>
 
     <footer>Copyright &copy;</footer>
   </body>

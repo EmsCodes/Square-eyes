@@ -1,0 +1,31 @@
+h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 1, 5rem;
+}
+h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 1.25rem;
+}
+.categories {
+  font-size: 1.1rem;
+}
+.time-year {
+  font-size: 0.8rem;
+}
+.movie-info {
+  font-size: 1rem;
+}
+.heart-icon {
+  height: 12px;
+  width: 12px;
+}
+.shoppingcart {
+  height: 15px;
+  width: 15px;
+}

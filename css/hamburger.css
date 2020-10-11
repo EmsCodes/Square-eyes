@@ -1,0 +1,59 @@
+header {
+  background: #f2b705;
+  min-height: 100px;
+}
+.logo {
+  max-width: 150px;
+  max-height: 100px;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+nav ul {
+  padding: 0px;
+}
+nav li {
+  display: block;
+}
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: #000;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.current {
+  font-weight: bold;
+}
+.hamburger-label {
+  float: right;
+  font-size: 1.5em;
+  padding: 10px;
+  display: block;
+}
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    float: left;
+  }
+  nav {
+    display: inline-block;
+  }
+  .hamburger-label {
+    display: none;
+  }
+  ul {
+    display: flex;
+  }
+
+  li {
+    display: inline-block;
+  }
+}

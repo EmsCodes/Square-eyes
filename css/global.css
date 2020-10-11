@@ -5,25 +5,28 @@
 body {
   font-family: verdana, tahoma, sans-serif;
 }
+
+/* header */
+
+header {
+  display: inline;
+}
+
 .logo {
-  background-color: #707070;
-}
-h1 {
-  font-size: 2.5em;
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Palatino Linotype", georgia, serif;
+  height: 100px;
+  width: 150px;
+  float: left;
+  padding: 20px;
 }
 nav li {
   display: inline-block;
-  padding: 20px;
+  padding: 40px;
   text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 20px, 20px, 0px, 20px;
 }
 nav ul {
-  padding: 0px;
+  padding: 30px;
 }
 nav a {
   color: #909090;
@@ -35,18 +38,43 @@ nav a:hover {
 .active {
   color: #000;
 }
+h1 {
+  font-size: 2.5em;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Palatino Linotype", georgia, serif;
+}
+
+nav,
+.logo,
+.icons {
+  display: inline-block;
+}
+.icons {
+  float: right;
+  padding: 20px;
+  margin-top: 40px;
+}
+/* Movie nav */
+
 .moviepagenav a {
   color: #000;
 }
 .moviepagenav a:hover {
   color: #fff;
 }
+
+/* CTA */
 .cta {
-  font-size: 1.2em;
+  font-size: 1em;
   background-color: #f2b705;
   color: #000;
   text-decoration: none;
-  padding: 5px;
+  padding: 15px;
+  border-radius: 25px;
 }
 .cta:hover {
   background-color: #f5c432;
@@ -54,10 +82,12 @@ nav a:hover {
 .link {
   color: #004349;
   text-decoration: none;
-  font-weight: italic;
+  font-style: italic;
 }
 .account {
   background: #f2b705;
+  padding: 20px;
+  border-radius: 2%;
 }
 .moviebackground {
   background-color: #707070;
@@ -74,7 +104,7 @@ ul {
 }
 ul a {
   text-decoration: none;
-  color: #404040;
+  color: #858585;
 }
 ul a:hover {
   color: #000;
@@ -87,12 +117,13 @@ ul a:hover {
   text-decoration: none;
 }
 .account-list {
-  font-size: 16pt;
+  font-size: 1rem;
+  list-style-type: none;
 }
 
 footer::before,
 footer::after {
   content: "/";
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
 }

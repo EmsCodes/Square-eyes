@@ -1,3 +1,16 @@
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  opacity: 60%;
+}
+h3 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
 .accountimage {
   border-radius: 50%;
   width: 150px;

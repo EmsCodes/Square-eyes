@@ -3,17 +3,11 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-transform: capitalize;
   opacity: 60%;
 }
 h3 {
   font-size: 1.2rem;
   text-transform: capitalize;
-}
-.accountimage {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: top;
 }

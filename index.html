@@ -7,7 +7,7 @@
       content="this is a independent-movie streaming page"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
@@ -17,17 +17,11 @@
   <body>
     <header>
       <a href="index.html"
-        ><img src="images/SquareEyes_Logo.png" width="330" height="130"
+        ><img
+          src="images/SquareEyes_Logo.png"
+          class="logo"
+          alt="Square Eyes logo."
       /></a>
-      <img src="images/socialicons.png" />
-      <a href="login.html">
-        <img
-          class="account-icon"
-          src="images/account-icon.png"
-          alt="account icon"
-        />
-      </a>
-      <a href="login.html" class="account-login"> Log in </a>
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -37,26 +31,40 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="icons">
+        <img src="images/socialicons.png" />
+        <a href="login.html">
+          <img
+            class="account-icon"
+            src="images/account-icon.png"
+            alt="account icon"
+          />
+        </a>
+        <a href="login.html" class="account-login"> Log in </a>
+      </div>
     </header>
     <main>
       <section class="main">
-        <h1>Connecting Film-Lovers</h1>
-        <h2>Independent Movies Made for Film-Lovers By Film-Lovers</h2>
-        <a href="createaccount.html" class="cta" type="button"
-          >Create Account</a
-        >
-        <a href="payperview.html" class="cta" type="button">Pay Per View</a>
-        <p>
-          <a href="login.html" class="link"
-            >Already have an account? Sign in here</a
+        <div class="content">
+          <h1>Connecting Film-Lovers</h1>
+          <h2>Independent Movies</h2>
+          <h2>Made for Film-Lovers</h2>
+          <h2>By Film-Lovers</h2>
+          <a href="createaccount.html" class="cta" type="button"
+            >Create Account</a
           >
-        </p>
-        <img src="images/socialicons.png" />
+          <a href="payperview.html" class="cta" type="button">Pay Per View</a>
+          <p>
+            <a href="login.html" class="link"
+              >Already have an account? Sign in here</a
+            >
+          </p>
+          <img src="images/socialicons.png" />
+        </div>
       </section>
       <aside>
-        <section class="film-watchers"></section>
-        <hr />
         <section class="film-makers"></section>
+        <section class="film-watchers"></section>
       </aside>
     </main>
 

@@ -5,7 +5,11 @@
     <meta name="description" content="Contact us page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/mainstyle.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
+    <link href="css/contact.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/39e20b04f8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -30,19 +34,25 @@
       </nav>
     </header>
     <main>
-        <fieldset>
-            <legend><h1>Contact us</h1></legend>
-            <form action="contact.html" method="post">
-                <label>Name:<br/>
-                <input type="text" name="name"/> </label><br/>
-                <label>Email:<br/>
-                <input type="text" name="email"/> </label><br/>
-                </br>
-                <textarea placeholder="Write your message here..."></textarea>
-            </form>
-        </br>
-                <a href="contact.html" type="button" method="post" class="cta">Send message</a>
-        </fieldset>
+      <fieldset>
+        <legend><h1>Contact us</h1></legend>
+        <p class="text">Lorem ipsum lorem ipsum</p>
+        <form action="form-success.php" method="GET">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" class="form-input" />
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" class="form-input" />
+          <label for="textarea">Message:</label>
+          <textarea
+            placeholder="Write your message here..."
+            id="textarea"
+            class="form-input"
+          ></textarea>
+        </form>
+        <a href="contact.html" type="button" method="post" class="cta"
+          >Send message</a
+        >
+      </fieldset>
     </main>
 
     <footer>Copyright &copy;</footer>

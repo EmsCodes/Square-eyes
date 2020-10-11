@@ -22,3 +22,32 @@ h2 {
   text-transform: uppercase;
   opacity: 50%;
 }
+.form-input {
+  display: block;
+}
+fieldset {
+  padding: 30px;
+  box-shadow: 5px 5px 2px 1px #dfdfdf;
+  border-radius: 5px;
+  float: left;
+  border: 2px solid black;
+}
+.section {
+  padding: 30px;
+  float: right;
+  border: 2px solid black;
+  text-align: center;
+}
+fieldset,
+.section {
+  display: inline-block;
+  width: 750px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+label {
+}

@@ -1,0 +1,18 @@
+h1 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-style: bold;
+}
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-style: bold;
+}
+.text {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 50%;
+}
+.form-input {
+  display: block;
+}

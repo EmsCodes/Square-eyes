@@ -1,0 +1,22 @@
+h1 {
+  font-size: 2.1rem;
+}
+.heart-icon {
+  height: 15px;
+  width: 15px;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1rem;
+}
+.movie-text {
+  font-size: 0.9rem;
+}
+.movie-info {
+  font-size: 0.7rem;
+}
+.rating {
+  size: 30px;
+}

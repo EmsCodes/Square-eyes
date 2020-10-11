@@ -4,13 +4,13 @@
     <title>SquareEyes | Create account</title>
     <meta name="description" content="Create account page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
     <link href="css/createaccount.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <img src="images/SquareEyes_Logo.png" width="330" height="130" />
+      <img src="images/SquareEyes_Logo.png" class="logo"/>
       <img src="images/socialicons.png" />
       <a href="login.html">
         <img
@@ -19,7 +19,7 @@
           alt="account icon"
         />
       </a>
-      <a href="login.html" class="account-login"> Log out </a>
+      <a href="login.html" class="account-login">Log in</a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -32,38 +32,40 @@
     </header>
     <main>
         <fieldset>
+          <div class="create-account"></div>
             <legend><h1>Create Account</h1></legend>
-            <form action="createaccount.html" method="post">
-                <label>Name:<br/>
-                <input type="text" name="name"/> </label><br/>
-                <label>Email<br/>
-                <input type="email" name="email"/> </label><br/>
-                <label>Password<br/>
-                <input type="password" name="password"/> </label><br/>
-                <label>Repeat password:<br/>
-                <input type="password" name="password"/> </label></br>
+            <form action="form-success.php" method="post">
+                <label>Name:
+                <input type="text" name="name" class="form-input"/> </label>
+                <label>Email</label>
+                <input type="email" name="email" class="form-input"/> </label>
+                <label>Password</label>
+                <input type="password" name="password" class="form-input"/> </label>
+                <label>Repeat password:</label>
+                <input type="password" name="password" class="form-input"/> </label>
             </form>
-            </br>
             <input type="checkbox" name="producer" value=Producer checked="checked"/> Producer
-            </br>
-                <a href="members.html" type="submit" value="submit" class="cta">Create Account</a>
+                <a href="members.html" type="submit" value="submit" class="cta" class="form-input">Create Account</a>
                 <p>
                     <a href="login.html" class="link"
-                      >Already have an account? Sign in here<i class="fas fa-arrow-right"></i></a
-                    >
-                  </p>
+                      >Already have an account? Sign in here<i class="fas fa-arrow-right"></i></a>
+                </p>
             <p>
                 <a href="login.html" class="link">Terms and Conditions</a>
             </p>
         </fieldset>
+      </div>
+      <div class="section">
         <section>
             <h2>Join Today</h2>
             <p class="text">Get access to independent movies</p>
             <p class="text">Stream anywhere, at any time.</p>
+          
         </section>
         <aside>
             <section class="illustration"></section>
         </aside>
+      </div>
         
     
         

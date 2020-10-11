@@ -26,19 +26,19 @@ section.devices-illustration {
   background-repeat: no-repeat;
 }
 h1 {
-  font-size: 30pt;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 h2 {
-  font-size: 25pt;
+  font-size: 1.8rem;
   text-transform: capitalize;
 }
 h3 {
-  font-size: 15pt;
+  font-size: 1.2rem;
   text-transform: capitalize;
 }
 .text {
-  font-size: 20pt;
+  font-size: 1.25rem;
   text-transform: uppercase;
   opacity: 50%;
 }
