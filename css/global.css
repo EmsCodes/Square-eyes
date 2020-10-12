@@ -15,19 +15,17 @@ header {
 .logo {
   height: 100px;
   width: 150px;
-  float: left;
-  padding: 20px;
+  margin-top: 35px;
+  margin-left: 35px;
 }
 nav li {
   display: inline-block;
-  padding: 40px;
+  padding: 20px;
   text-transform: uppercase;
   font-size: 0.9rem;
-  margin-top: 20px, 20px, 0px, 20px;
+  margin-left: 100px;
 }
-nav ul {
-  padding: 30px;
-}
+
 nav a {
   color: #909090;
   text-decoration: none;
@@ -49,14 +47,13 @@ h4 {
 }
 
 nav,
-.logo,
-.icons {
+header,
+.icons,
+.login-icon {
   display: inline-block;
 }
-.icons {
-  float: right;
-  padding: 20px;
-  margin-top: 40px;
+.account-login {
+  margin-left: 42px;
 }
 /* Movie nav */
 
@@ -74,7 +71,9 @@ nav,
   color: #000;
   text-decoration: none;
   padding: 15px;
-  border-radius: 25px;
+  border-radius: 30px;
+  text-align: center;
+  margin-right: 50px;
 }
 .cta:hover {
   background-color: #f5c432;
@@ -101,6 +100,7 @@ nav,
 ul {
   padding: 0px;
   text-decoration: none;
+  list-style-type: none;
 }
 ul a {
   text-decoration: none;
@@ -111,6 +111,7 @@ ul a:hover {
 }
 .account-icon {
   max-width: 35px;
+  margin-left: 50px;
 }
 .account-login {
   color: #000;

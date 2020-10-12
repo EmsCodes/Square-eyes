@@ -4,7 +4,7 @@
     <title>SquareEyes | Contact</title>
     <meta name="description" content="Contact us page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
     <link href="css/contact.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
@@ -13,41 +13,58 @@
   </head>
   <body>
     <header>
-      <img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      <img src="images/socialicons.png" />
-      <a href="login.html">
-        <img
-          class="account-icon"
-          src="images/account-icon.png"
-          alt="account icon"
-        />
-      </a>
-      <a href="login.html" class="account-login"> Log out </a>
+      <a href="index.html"
+        ><img
+          src="images/SquareEyes_Logo.png"
+          class="logo"
+          alt="Square Eyes logo."
+      /></a>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="movies.html">Movies</a></li>
           <li><a href="search.html">Search For Movies</a></li>
           <li><a href="payperview.html">Pay Per View</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="icons">
+        <img src="images/socialicons.png" />
+        <a href="login.html">
+        </div>
+        <div class="login-icon">
+          <img
+            class="account-icon"
+            src="images/account-icon.png"
+            alt="account icon"
+          />
+        </a>
+        <p>
+          <a href="login.html" class="account-login"> Log in </a>
+        </p>
+      </div>
     </header>
     <main>
       <fieldset>
         <legend><h1>Contact us</h1></legend>
         <p class="text">Lorem ipsum lorem ipsum</p>
         <form action="form-success.php" method="GET">
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" class="form-input" />
-          <label for="email">Email:</label>
-          <input type="text" name="email" id="email" class="form-input" />
-          <label for="textarea">Message:</label>
-          <textarea
+          <div class="label-1">
+            <label for="name">Name:</label>
+           <input type="text" name="name" id="name" class="form-input" />
+          </div>
+          <div class="label-2">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" class="form-input" />
+          </div>
+          <div class="label-3">
+            <label for="textarea">Message:</label>
+            <textarea
             placeholder="Write your message here..."
             id="textarea"
-            class="form-input"
-          ></textarea>
+            class="form-input">
+          </textarea>
+        </div>
         </form>
         <a href="contact.html" type="button" method="post" class="cta"
           >Send message</a

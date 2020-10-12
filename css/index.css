@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  margin-right: 100px;
 }
 
 .film-watchers {
@@ -17,10 +18,9 @@ section.film-watchers {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  float: right;
-  display: inline;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 75px;
+  float: right;
 }
 h2 {
   font-size: 1.9rem;
@@ -33,13 +33,19 @@ h1 {
   text-transform: uppercase;
 }
 .icons {
-  display: inline-block;
+  margin-left: 75px;
 }
-.content {
-  display: inline-block;
-  max-width: 600px;
-  height: 450px;
-  float: left;
-  margin-top: 100px;
+.link-2 {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.button {
+  margin-top: 50px;
+}
+.main-section {
   margin-left: 150px;
+  margin-top: 100px;
+  max-width: 650px;
+  margin-bottom: 150px;
 }

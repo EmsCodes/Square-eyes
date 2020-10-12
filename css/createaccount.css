@@ -6,6 +6,7 @@
 section.illustration {
   width: 400px;
   height: 400px;
+  margin-top: 50px;
 }
 h1 {
   font-size: 1.9rem;
@@ -25,29 +26,21 @@ h2 {
 .form-input {
   display: block;
 }
-fieldset {
-  padding: 30px;
-  box-shadow: 5px 5px 2px 1px #dfdfdf;
-  border-radius: 5px;
-  float: left;
-  border: 2px solid black;
+
+.checkbox,
+.cta {
+  display: block;
+}
+.checkbox {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cta {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  width: 150px;
 }
 .section {
-  padding: 30px;
-  float: right;
-  border: 2px solid black;
-  text-align: center;
-}
-fieldset,
-.section {
-  display: inline-block;
-  width: 750px;
-  margin: 0 auto;
-}
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-label {
+  padding: 20px;
 }
