@@ -4,7 +4,7 @@
     <title>SquareEyes | Log in</title>
     <meta name="description" content="log in page for SquareEyes" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
     <link href="css/login.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
@@ -12,19 +12,13 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="sticky-position">
       <a href="index.html"
-        ><img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      </a>
-      <img src="images/socialicons.png" />
-      <a href="login.html">
-        <img
-          class="account-icon"
-          src="images/account-icon.png"
-          alt="account icon"
-        />
-      </a>
-      <a href="login.html" class="account-login"> Log in </a>
+        ><img
+          src="images/SquareEyes_Logo.png"
+          class="logo"
+          alt="Square Eyes logo."
+      /></a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -34,35 +28,50 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="icons">
+        <img class="facebook" src="images/facebook.png" />
+        <img class="instagram" src="images/instagram.png" />
+        <img class="message" src="images/message.png" />
+        <a href="login.html" class="account-login">
+          <img
+            class="account-icon"
+            src="images/account.png"
+            alt="account icon"
+          />
+        </a>
+      </div>
     </header>
     <main>
-      <fieldset>
-        <legend><h1>Log in</h1></legend>
-        <form action="createaccount.html" method="post">
-          <label
-            >Email<br />
-            <input type="text" name="email" /> </label
-          ><br />
-          <label
-            >Password<br />
-            <input type="password" name="password" /> </label
-          ><br />
-        </form>
-        <input
-          type="checkbox"
-          name="producer"
-          value="Producer"
-          checked="checked"
-        />Producer
-        <a href="members.html" type="button" class="cta">Log in</a>
-      </fieldset>
+      <section class="container">
+        <fieldset>
+          <legend><h1>Log in</h1></legend>
+          <form action="createaccount.html" method="post">
+            <label
+              >Email<br />
+              <input type="text" name="email" class="email" /> </label
+            ><br />
+            <label
+              >Password<br />
+              <input type="password" name="password" class="password" /> </label
+            ><br />
+          </form>
+          <input
+            type="checkbox"
+            name="producer"
+            value="Producer"
+            checked="checked"
+            class="form-input"
+          />Producer
+          <p><a href="members.html" type="button" class="cta">Log in</a></p>
+        </fieldset>
+      </section>
       <section>
         <h2>Log in</h2>
-        <p class="text">And start streaming</p>
+        <p class="text">And start streaming!</p>
+        <aside>
+          <section class="login"></section>
+        </aside>
       </section>
-      <aside>
-        <section class="login"></section>
-      </aside>
     </main>
 
     <footer>Copyright &copy;</footer>

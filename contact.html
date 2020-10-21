@@ -12,7 +12,7 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="sticky-position">
       <a href="index.html"
         ><img
           src="images/SquareEyes_Logo.png"
@@ -21,7 +21,7 @@
       /></a>
       <nav>
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="movies.html">Movies</a></li>
           <li><a href="search.html">Search For Movies</a></li>
           <li><a href="payperview.html">Pay Per View</a></li>
@@ -29,47 +29,47 @@
         </ul>
       </nav>
       <div class="icons">
-        <img src="images/socialicons.png" />
-        <a href="login.html">
-        </div>
-        <div class="login-icon">
+        <img class="facebook" src="images/facebook.png" />
+        <img class="instagram" src="images/instagram.png" />
+        <img class="message" src="images/message.png" />
+        <a href="login.html" class="account-login">
           <img
             class="account-icon"
-            src="images/account-icon.png"
+            src="images/account.png"
             alt="account icon"
           />
         </a>
-        <p>
-          <a href="login.html" class="account-login"> Log in </a>
-        </p>
       </div>
     </header>
     <main>
-      <fieldset>
-        <legend><h1>Contact us</h1></legend>
-        <p class="text">Lorem ipsum lorem ipsum</p>
-        <form action="form-success.php" method="GET">
-          <div class="label-1">
-            <label for="name">Name:</label>
-           <input type="text" name="name" id="name" class="form-input" />
-          </div>
-          <div class="label-2">
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" class="form-input" />
-          </div>
-          <div class="label-3">
-            <label for="textarea">Message:</label>
-            <textarea
-            placeholder="Write your message here..."
-            id="textarea"
-            class="form-input">
-          </textarea>
-        </div>
-        </form>
-        <a href="contact.html" type="button" method="post" class="cta"
-          >Send message</a
-        >
-      </fieldset>
+      <section class="container">
+        <fieldset>
+          <legend><h1>Contact us</h1></legend>
+          <p class="text">Lorem ipsum lorem ipsum</p>
+          <form action="form-success.php" method="GET">
+            <div class="label-1">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" class="form-input" />
+            </div>
+            <div class="label-2">
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" class="form-input" />
+            </div>
+            <div class="label-3">
+              <label for="textarea">Message:</label>
+              <textarea
+                placeholder="Write your message here..."
+                id="textarea"
+                class="form-input"
+              >
+              </textarea>
+            </div>
+          </form>
+          <a href="contact.html" type="button" method="post" class="cta"
+            >Send message</a
+          >
+        </fieldset>
+      </section>
     </main>
 
     <footer>Copyright &copy;</footer>

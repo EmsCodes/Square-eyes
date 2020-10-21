@@ -4,35 +4,42 @@
     <title>SquareEyes | Search</title>
     <meta name="description" content="This is a movie search page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/mainstyle.css" rel="stylesheet" />
-    <link href="css/search-contact.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/search.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <a href="index.html">
-        <img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      </a>
-      <a href="login.html">
-        <img
-          class="account-icon"
-          src="images/account-icon.png"
-          alt="account icon"
-        />
-      </a>
-      <a href="login.html" class="account-login"> Log out </a>
+    <header class="sticky-position">
+      <a href="index.html"
+        ><img
+          src="images/SquareEyes_Logo.png"
+          class="logo"
+          alt="Square Eyes logo."
+      /></a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="movies.html">Movies</a></li>
-          <li><a href="search.html" class="active">Search For Movies</a></li>
+          <li><a href="search.html">Search For Movies</a></li>
           <li><a href="payperview.html">Pay Per View</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="icons">
+        <img class="facebook" src="images/facebook.png" />
+        <img class="instagram" src="images/instagram.png" />
+        <img class="message" src="images/message.png" />
+        <a href="login.html" class="account-login">
+          <img
+            class="account-icon"
+            src="images/account.png"
+            alt="account icon"
+          />
+        </a>
+      </div>
     </header>
     <main>
       <form action="search.html">
@@ -43,7 +50,7 @@
           placeholder="Enter keyword"
           class="search-input"
         />
-        <input type="submit" value="search" class="search-input" />
+        <input type="submit" value="search" class="cta" />
       </form>
     </main>
 

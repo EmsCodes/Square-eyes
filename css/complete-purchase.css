@@ -15,4 +15,25 @@ h2 {
 }
 .form-input {
   display: block;
+  font-size: 2rem;
+}
+fieldset {
+  max-height: 850px;
+  border: 1px;
+  border-width: 1px;
+  border-color: white;
+  border-style: outset;
+  box-shadow: 0px 3px 6px 0px #999999;
+  border-radius: 25px;
+  padding: 50px;
+}
+.checkbox {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

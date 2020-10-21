@@ -13,10 +13,22 @@ h3 {
 }
 .movie-text {
   font-size: 0.9rem;
+  width: 700px;
 }
 .movie-info {
   font-size: 0.7rem;
 }
 .rating {
   size: 30px;
+}
+
+/* layout */
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.flex-container-2 {
+  display: flex;
+  justify-content: center;
 }

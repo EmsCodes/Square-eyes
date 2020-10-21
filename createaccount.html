@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <header class="sticky-position">
       <a href="index.html"
         ><img
           src="images/SquareEyes_Logo.png"
@@ -18,7 +18,7 @@
       /></a>
       <nav>
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="movies.html">Movies</a></li>
           <li><a href="search.html">Search For Movies</a></li>
           <li><a href="payperview.html">Pay Per View</a></li>
@@ -26,19 +26,16 @@
         </ul>
       </nav>
       <div class="icons">
-        <img src="images/socialicons.png" />
-        <a href="login.html">
-        </div>
-        <div class="login-icon">
+        <img class="facebook" src="images/facebook.png" />
+        <img class="instagram" src="images/instagram.png" />
+        <img class="message" src="images/message.png" />
+        <a href="login.html" class="account-login">
           <img
             class="account-icon"
-            src="images/account-icon.png"
+            src="images/account.png"
             alt="account icon"
           />
         </a>
-        <p>
-          <a href="login.html" class="account-login"> Log in </a>
-        </p>
       </div>
     </header>
     <main class="clearfix">
@@ -46,19 +43,20 @@
           <div class="create-account"></div>
             <legend><h1>Create Account</h1></legend>
             <form action="form-success.php" method="post">
-                <label>Name:
+                <label >Name:
                 <input type="text" name="name" class="form-input"/> </label>
-                <label>Email</label>
+                <label >Email</label>
                 <input type="email" name="email" class="form-input"/> </label>
-                <label>Password</label>
+                <label >Password</label>
                 <input type="password" name="password" class="form-input"/> </label>
-                <label>Repeat password:</label>
+                <label >Repeat password:</label>
                 <input type="password" name="password" class="form-input"/> </label>
             </form>
             <div class="checkbox">
             <input type="checkbox" name="producer" value=Producer checked="checked"> Producer
             </div>
                 <a href="members.html" type="submit" value="submit" class="cta" class="form-input">Create Account</a>
+                <div class="link">
                 <p>
                     <a href="login.html" class="link"
                       >Already have an account? Sign in here<i class="fas fa-arrow-right"></i></a>
@@ -66,6 +64,7 @@
             <p>
                 <a href="login.html" class="link">Terms and Conditions</a>
             </p>
+            </div>
         </fieldset>
       </div>
       <div class="section">

@@ -4,7 +4,7 @@
     <title>SquareEyes | Selected movie</title>
     <meta name="description" content="this is a page for the selected movie" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
     <link href="css/selected.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
@@ -12,76 +12,89 @@
     ></script>
   </head>
   <body class="moviebackground">
-    <header>
-      <img
-        src="images/SquareEyes_Logo.png"
-        class="logo"
-        width="330"
-        height="130"
-      />
-      <img src="images/socialicons.png" />
-      <a href="login.html">
-        <img
-          class="account-icon"
-          src="images/account-icon.png"
-          alt="account icon"
-        />
-      </a>
-      <a href="login.html" class="account-login"> Log out </a>
-      <nav class="moviepagenav">
+    <header class="sticky-position">
+      <a href="index.html"
+        ><img
+          src="images/SquareEyes_Logo.png"
+          class="logo"
+          alt="Square Eyes logo."
+      /></a>
+      <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="movies.html">Movies</a></li>
           <li><a href="search.html">Search For Movies</a></li>
           <li><a href="payperview.html">Pay Per View</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="icons">
+        <img src="images/facebook.png" />
+        <img src="images/instagram.png" />
+        <img src="images/message.png" />
+        <a href="login.html">
+        </div>
+        <div class="login-icon">
+          <img
+            class="account-icon"
+            src="images/account-icon.png"
+            alt="account icon"
+          />
+        </a>
+        <p>
+          <a href="login.html" class="account-login"> Log in </a>
+        </p>
+      </div>
     </header>
     <main>
-      <section>
-        <video controls width="750" height="500" src="images/Movie.mp4"></video>
-      </section>
-      <section class="moviepagetext">
-        <h1>
-          Movie Title<img src="images/hearticon.png" class="heart-icon" />
-        </h1>
-        <img src="Images/rating.png" class="rating" />
-        <p class="movie-text">
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem Ipsum
-          Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit
-          amet, consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit amet,
-          consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit amet,
-          consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit amet,
-          consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit amet,
-          consetetut sadipscing elitr, Sed.
-        </p>
-        <p class="movie-info">Producer Name</p>
-        <p class="movie-info">Time:1h 45min</p>
-        <p class="movie-info">Year:2016</p>
-        <p class="movie-info">Genre:Action</p>
-      </section>
+      <div class="flex-container">
+        <section>
+          <video controls width="750" height="500" src="images/Movie.mp4"></video>
+        </section>
+        <section class="moviepagetext">
+          <h1>
+            Movie Title<img src="images/hearticon.png" class="heart-icon" />
+          </h1>
+          <img src="Images/rating.png" class="rating" />
+          <p class="movie-text">
+            Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+            Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem Ipsum
+            Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit
+            amet, consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit amet,
+            consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit amet,
+            consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit amet,
+            consetetut sadipscing elitr, Sed.Lorem Ipsum Dolor sit amet,
+            consetetut sadipscing elitr, Sed.
+          </p>
+          <p class="movie-info">Producer Name</p>
+          <p class="movie-info">Time:1h 45min</p>
+          <p class="movie-info">Year:2016</p>
+          <p class="movie-info">Genre:Action</p>
+        </section>
+      </div>
       <hr class="moviepageline" />
-      <section class="moviepagetext">
-        <h2>Other movies in the same genre</h2>
-        <a href="selectedmovie.html">
-          <img src="images/ticket.jpg" width="250" height="145" />
-        </a>
-        <h3>Movie Title <img src="Images/rating.png" /></h3>
-        <a href="selectedmovie.html">
-          <img src="images/ticket.jpg" width="250" height="145" />
-        </a>
-        <h3>Movie Title <img src="Images/rating.png" /></h3>
-        <a href="selectedmovie.html">
-          <img src="images/ticket.jpg" width="250" height="145" />
-        </a>
-        <h3>Movie Title <img src="Images/rating.png" /></h3>
-        <a href="selectedmovie.html">
-          <img src="images/ticket.jpg" width="250" height="145" />
-        </a>
-        <h3>Movie Title <img src="Images/rating.png" /></h3>
-      </section>
+        <section class="moviepagetext">
+            <h2>Other movies in the same genre</h2>
+            <div class="flex-container-2">
+              <a href="selectedmovie.html">
+                <img src="images/ticket.jpg" width="250" height="145" />
+              </a>
+              <h3>Movie Title <img src="Images/rating.png" /></h3>
+              <a href="selectedmovie.html">
+                <img src="images/ticket.jpg" width="250" height="145" />
+              </a>
+              <h3>Movie Title <img src="Images/rating.png" /></h3>
+              <a href="selectedmovie.html">
+                <img src="images/ticket.jpg" width="250" height="145" />
+              </a>
+              <h3>Movie Title <img src="Images/rating.png" /></h3>
+              <a href="selectedmovie.html">
+                <img src="images/ticket.jpg" width="250" height="145" />
+              </a>
+              <h3>Movie Title <img src="Images/rating.png" /></h3>
+          </div>
+        </section>
+      
     </main>
 
     <footer>Copyright &copy;</footer>

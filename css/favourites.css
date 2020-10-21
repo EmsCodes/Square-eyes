@@ -1,13 +1,49 @@
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 h2 {
-  font-size: 1.7rem;
+  font-size: 3.7rem;
   text-transform: capitalize;
   opacity: 60%;
 }
 h3 {
-  font-size: 1.2rem;
+  font-size: 3rem;
   text-transform: capitalize;
+}
+
+/*flex*/
+.movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.info {
+  margin-left: 420px;
+}
+main {
+  display: grid;
+  margin: 150px;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "account text"
+    "account movies"
+    "footer footer";
+}
+.account {
+}
+
+.movies {
+  grid-area: movies;
+}
+.account {
+  grid-area: account;
+}
+.text {
+  grid-area: info;
+}
+footer {
+  grid-area: footer;
 }

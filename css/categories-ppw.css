@@ -4,27 +4,87 @@ h1 {
 }
 h2 {
   font-size: 1, 5rem;
+  margin-top: 35px;
 }
 h3 {
   font-size: 1.25rem;
   text-transform: uppercase;
 }
 h4 {
-  font-size: 1.25rem;
+  font-size: 1em;
+  margin-left: 5px;
 }
 .categories {
   font-size: 1.1rem;
 }
 .time-year {
-  font-size: 0.8rem;
+  font-size: 0.5em;
 }
 .movie-info {
-  font-size: 1rem;
+  font-size: 0.6em;
+  max-width: 175px;
 }
 .heart-icon {
   height: 12px;
   width: 12px;
+  margin-left: 10px;
 }
+.producer-name {
+  font-size: 0.5em;
+}
+.text {
+  margin-top: 75px;
+  margin-left: 30px;
+}
+/* persistant nav sticky-position */
+
+.sticky-position {
+  position: sticky;
+  top: 10px;
+}
+.sticky-position-categories {
+  position: sticky;
+  top: 200px;
+}
+/* categories */
+
+.action {
+  padding: 10px;
+}
+.comedy {
+  padding: 10px;
+}
+.thriller {
+  padding: 10px;
+}
+.horror {
+  padding: 10px;
+}
+.drama {
+  padding: 10px;
+}
+.romantic {
+  padding: 10px;
+}
+.popular {
+  padding: 10px;
+}
+
+/* movies */
+
+#container {
+  max-width: 225px;
+  height: 300px;
+  border-width: 1px;
+  border-color: white;
+  border-style: outset;
+  box-shadow: 0px 3px 6px 0px #999999;
+  contain: content;
+}
+section {
+  margin-left: 75px;
+}
+
 .shoppingcart {
   height: 15px;
   width: 15px;

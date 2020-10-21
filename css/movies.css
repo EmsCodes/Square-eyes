@@ -11,33 +11,44 @@ h3 {
   text-transform: uppercase;
 }
 h4 {
-  font-size: 1em;
+  font-size: 1.2em;
+  margin-left: 5px;
 }
+
 .categories {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 .time-year {
   font-size: 0.5em;
 }
 .movie-info {
-  font-size: 0.7em;
-  max-width: 250px;
+  font-size: 1em;
 }
 .heart-icon {
-  height: 12px;
-  width: 12px;
-  margin-left: 10px;
+  height: 15px;
+  width: 15px;
+  float: right;
+  margin-right: 20px;
 }
 .producer-name {
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 .text {
-  margin-top: 75px;
-  margin-left: 30px;
+  margin-top: 100px;
+  margin-left: 75px;
 }
-.rating {
+.time-year {
+  font-size: 0.7em;
 }
+/* persistant nav sticky-position */
 
+.sticky-position {
+  position: sticky;
+  top: 10px;
+}
+.sticky-position-categories {
+  position: fixed;
+}
 /* categories */
 
 .action {
@@ -62,11 +73,33 @@ h4 {
   padding: 10px;
 }
 
-/* movies */
+/*movies*/
 
-#container {
-  padding: 5px;
-  max-width: 230px;
+.container {
+  max-width: 300px;
+  height: auto;
   border-width: 1px;
+  border-color: white;
   border-style: outset;
+  box-shadow: 0px 3px 6px 0px #999999;
+  contain: content;
 }
+.container-info {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+/* flexbox movies */
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 450px;
+  margin-top: 200px;
+}
+.container {
+  margin-top: 125px;
+  margin-right: 50px;
+}
+/*grid/layout*/

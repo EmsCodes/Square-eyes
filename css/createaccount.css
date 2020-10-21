@@ -4,43 +4,59 @@
   background-repeat: no-repeat;
 }
 section.illustration {
-  width: 400px;
-  height: 400px;
-  margin-top: 50px;
+  max-width: 1000px;
+  height: 1000px;
+  margin-top: 100px;
 }
 h1 {
-  font-size: 1.9rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-style: bold;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-style: bold;
 }
 .text {
-  font-size: 1.25rem;
+  font-size: 2em;
   text-transform: uppercase;
   opacity: 50%;
 }
 .form-input {
   display: block;
+  font-size: 2rem;
 }
-
-.checkbox,
-.cta {
-  display: block;
+fieldset {
+  max-height: 850px;
+  border: 1px;
+  border-width: 1px;
+  border-color: white;
+  border-style: outset;
+  box-shadow: 0px 3px 6px 0px #999999;
+  border-radius: 25px;
+  padding: 50px;
 }
 .checkbox {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 75px;
 }
-.cta {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 0px;
-  width: 150px;
-}
+
 .section {
   padding: 20px;
+  text-align: center;
+}
+
+.fas {
+  padding: 10px;
+}
+.link {
+  margin-top: 50px;
+}
+/* flex */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 150px;
 }

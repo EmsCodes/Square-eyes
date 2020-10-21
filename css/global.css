@@ -7,23 +7,30 @@ body {
 }
 
 /* header */
-
 header {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  background-color: #fff;
+  color: #fff;
+  z-index: 1;
 }
-
+nav {
+}
 .logo {
-  height: 100px;
-  width: 150px;
-  margin-top: 35px;
-  margin-left: 35px;
+  height: 150px;
+  width: 200px;
+  margin-top: 50px;
+  margin-left: px;
 }
 nav li {
   display: inline-block;
-  padding: 20px;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 1.6rem;
   margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
 }
 
 nav a {
@@ -47,13 +54,11 @@ h4 {
 }
 
 nav,
-header,
+.logo,
 .icons,
 .login-icon {
-  display: inline-block;
-}
-.account-login {
-  margin-left: 42px;
+  background-color: #fff;
+  z-index: 1;
 }
 /* Movie nav */
 
@@ -64,14 +69,31 @@ header,
   color: #fff;
 }
 
+/*icons*/
+.icons {
+  margin-top: 100px;
+}
+.facebook {
+  padding: 10px;
+}
+.instagram {
+  padding: 10px;
+}
+.message {
+  padding: 10px;
+}
+.account-icon {
+  width: 75px;
+  height: 55px;
+}
 /* CTA */
 .cta {
-  font-size: 1em;
+  font-size: 2em;
   background-color: #f2b705;
   color: #000;
   text-decoration: none;
-  padding: 15px;
-  border-radius: 30px;
+  padding: 25px;
+  border-radius: 45px;
   text-align: center;
   margin-right: 50px;
 }
@@ -84,9 +106,11 @@ header,
   font-style: italic;
 }
 .account {
+  max-width: 850px;
+  height: auto;
   background: #f2b705;
-  padding: 20px;
-  border-radius: 2%;
+  padding: 75px;
+  border-radius: 30px;
 }
 .moviebackground {
   background-color: #707070;
@@ -97,6 +121,9 @@ header,
 .moviepageline {
   color: #fff;
 }
+
+/*account list/box */
+
 ul {
   padding: 0px;
   text-decoration: none;
@@ -110,7 +137,7 @@ ul a:hover {
   color: #000;
 }
 .account-icon {
-  max-width: 35px;
+  max-width: 50px;
   margin-left: 50px;
 }
 .account-login {
@@ -118,8 +145,24 @@ ul a:hover {
   text-decoration: none;
 }
 .account-list {
-  font-size: 1rem;
+  font-size: 2.5rem;
   list-style-type: none;
+}
+
+.number-one {
+  margin-top: 45px;
+}
+.number-two {
+  margin-top: 45px;
+}
+.number-three {
+  margin-top: 45px;
+  margin-bottom: 100px;
+}
+.log-out {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #000;
 }
 
 footer::before,
