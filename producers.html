@@ -4,7 +4,7 @@
     <title>SquareEyes | Producer</title>
     <meta name="description" content="Member page for producers" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
     <link href="css/producer.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
@@ -12,19 +12,17 @@
     ></script>
   </head>
   <body>
-    <header>
-      <img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      <img src="images/facebook.png" />
-      <img src="images/instagram.png" />
-      <img src="images/message.png" />
-      <a href="login.html">
-        <img
-          class="account-icon"
-          src="images/account-icon.png"
-          alt="account icon"
-        />
-      </a>
-      <a href="login.html" class="account-login"> Log out </a>
+    <header class="sticky-position">
+      <a href="index.html"
+        ><img
+          src="images/SquareEyes_Logo.png"
+          class="logo"
+          alt="Square Eyes logo."
+      /></a>
+      <label class="hamburger-label" for="hamburger-menu">
+        <i class="fas fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -34,30 +32,46 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="icons">
+        <img class="facebook" src="images/facebook.png" />
+        <img class="instagram" src="images/instagram.png" />
+        <img class="message" src="images/message.png" />
+        <a href="login.html">
+          <img
+            class="account-icon"
+            src="images/account.png"
+            alt="account icon"
+          />
+        </a>
+      </div>
     </header>
     <main>
+      <div class=content> 
       <section class="account">
         <h3>Producer</h3>
         <h1>Account</h1>
         <ul class="account-list">
-          <li><a href="manageaccount.html">Manage Account</a></li>
-          <li><a href="managemovies.html">Manage Movies</a></li>
-          <li><a href="sales.views.html">Sales/Views</a></li>
+          <li class="number-one" ><a href="manageaccount.html">Manage Account</a></li>
+          <li class="number-two"><a href="managemovies.html">Manage Movies</a></li>
+          <li class="number-three"><a href="sales.views.html">Sales Views</a></li>
         </ul>
-        <a href="login.html">Log Out</a>
+        <a class="log-out" href="login.html">Log Out</a>
       </section>
+      </div>
+      <div class="vertical-line"></div>
+      <section class="content-2">
       <section>
         <h2>Make money easier!</h2>
-      </section class="illustrations">
-        <section class="upload-illustration"></section>
-        <section class="arrow"></section>
         <p class="text">Upload your movies</p>
-        <section class="screen-illustration"></section>
         <section class="arrow"></section>
+       </section class="illustrations">
+        <section class="upload-illustration"></section>
         <p class="text">Make them available</p>
-        <section class="devices-illustration"></section>
         <section class="arrow"></section>
+        <section class="screen-illustration"></section>
         <p class="text">Now people can stream your movies anywhere, anytime</p>
+        <section class="arrow"></section>
+        <section class="devices-illustration"></section>
       </section>
     </main>
 

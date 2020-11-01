@@ -1,33 +1,11 @@
-.film-makers {
-  background-image: url(../images/Producer.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-.film-watchers {
-  background-image: url(../images/member.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section.film-makers,
-section.film-watchers {
-  min-width: 500px;
-  min-height: 500px;
-  border-radius: 50%;
-  margin-top: 100px;
-  margin-right: 250px;
-  float: right;
-}
 h2 {
-  font-size: 3em;
+  font-size: var(--size-h2);
   opacity: 50%;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 h1 {
-  font-size: 4em;
+  font-size: var(--size-h1);
   font-style: bold;
   text-transform: uppercase;
 }
@@ -44,6 +22,157 @@ h1 {
   margin-bottom: 25px;
 }
 .main-section {
-  margin-top: 250px;
-  margin-left: 15%;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cta {
+  margin-right: 50px;
+}
+.vertical-line {
+  border: var(--vertical-line);
+  max-height: 550px;
+  margin-top: 75px;
+}
+
+/*images watchers/producers*/
+.film-makers {
+  background-image: url(../images/Producer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-left: 35px;
+  box-shadow: 2px 10px 10px 5px #999999;
+}
+
+.film-watchers {
+  background-image: url(../images/member.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 35px;
+  box-shadow: 5px 10px 10px 5px #999999;
+}
+
+section.film-makers,
+section.film-watchers {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 175px;
+}
+
+/*Media queries*/
+
+@media (max-width: 1575px) {
+  section.film-makers,
+  section.film-watchers {
+    max-width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 150px;
+  }
+  aside {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 1150px) {
+  section.film-makers,
+  section.film-watchers {
+    max-width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-right: 0px;
+  }
+  .film-makers {
+    background-image: url(../images/Producer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    box-shadow: 2px 10px 10px 5px #999999;
+    margin-left: 0px;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  .film-watchers {
+    margin-right: 20px;
+  }
+  .vertical-line {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+  h3 {
+    font-size: 0.9em;
+  }
+  .text {
+    font-size: 0.9em;
+  }
+  section.film-makers,
+  section.film-watchers {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 0.9em;
+  }
+  h3 {
+    font-size: 0.8em;
+  }
+  .text {
+    font-size: 0.7em;
+  }
+  .main-section {
+    margin-top: 75px;
+    margin-left: 25px;
+  }
+  .cta {
+    margin-right: 10px;
+  }
 }

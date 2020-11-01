@@ -1,42 +1,47 @@
 h1 {
-  font-size: 4rem;
+  font-size: var(--size-h1);
   text-transform: uppercase;
 }
 h2 {
-  font-size: 3.7rem;
+  font-size: var(--size-h2);
   text-transform: capitalize;
   opacity: 60%;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 1.2em;
   text-transform: capitalize;
 }
-
+h4 {
+  margin-top: 5px;
+  margin-left: 8px;
+}
+.item {
+  max-width: ;
+}
+.vertical-line {
+  border: var(--vertical-line);
+}
 /*flex*/
 .movies {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
-}
-.info {
-  margin-left: 420px;
-}
-main {
-  display: grid;
-  margin: 150px;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "account text"
-    "account movies"
-    "footer footer";
-}
-.account {
+  row-gap: 25px;
+  margin-top: 50px;
 }
 
-.movies {
-  grid-area: movies;
+/* Grid */
+main {
+  display: grid;
+  grid-gap: 50px;
+  justify-content: space-evenly;
+  margin: 50px 100px 100px;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "account vertical-line info"
+    "account vertical-line movies"
+    "footer footer footer";
 }
 .account {
   grid-area: account;
@@ -46,4 +51,9 @@ main {
 }
 footer {
   grid-area: footer;
+}
+.vertical-line {
+  grid-area: vertical-line;
+  margin-left: 50px;
+  margin-right: 50px;
 }

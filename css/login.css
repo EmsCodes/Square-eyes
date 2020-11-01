@@ -1,13 +1,13 @@
 section.login {
-  min-height: 1000px;
-  min-width: 1000px;
+  max-width: 650px;
   margin-right: 50px;
-  margin-top: 50px;
 }
 section.login {
   background-image: url(../images/repeat.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
 }
 h1 {
   font-size: 3rem;
@@ -40,8 +40,7 @@ h2,
   border-style: outset;
   box-shadow: 0px 3px 6px 0px #999999;
   border-radius: 25px;
-  padding: 100px;
-  margin-top: 100px;
+  padding: 50px 50px;
 }
 fieldset {
   border: none;
@@ -52,5 +51,7 @@ form {
   margin-top: 30px;
   margin-bottom: 45px;
 }
-.cta {
+.producers {
+  text-decoration: none;
+  color: #000;
 }

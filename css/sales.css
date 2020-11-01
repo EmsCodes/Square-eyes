@@ -24,4 +24,50 @@ section.illustration {
   background-image: url("../images/chart.png");
   background-image: contain;
   background-repeat: no-repeat;
+  float: right;
+  margin-right: 15%;
+}
+.image {
+  display: block;
+  text-align: center;
+  float: right;
+  margin-right: 25%;
+}
+/*grid*/
+main {
+  display: grid;
+  grid-gap: 50px;
+  justify-content: space-evenly;
+  margin: 100px 250px 50px;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "account vertical-line content-2"
+    " . vertical-line text2"
+    " . . text-2"
+    "footer footer footer";
+}
+.account {
+  grid-area: account;
+}
+.content-2 {
+  grid-area: content-2;
+  display: ;
+}
+.text2 {
+  grid-area: text-2;
+  display: flex;
+  flex-direction: row;
+}
+.image {
+  grid-area: images;
+}
+footer {
+  grid-area: footer;
+}
+.vertical-line {
+  border: var(--vertical-line);
+  grid-area: vertical-line;
+  margin-left: 50px;
+  margin-right: 50px;
 }

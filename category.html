@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Square Eyes | Category</title>
-    <meta name="description" content="Movie category page" />
+    <title>SquareEyes | Movies</title>
+    <meta name="description" content="SquareEyes movie page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/global.css" rel="stylesheet" />
+    <link href="css/movies-category.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="sticky-position">
-      <img src="images/SquareEyes_Logo.png" width="330" height="130" class="logo" />
-      <a href="login.html">
-        <img
-          class="account-icon"
-          src="images/account-icon.png"
-          alt="account icon"
-        />
-      </a>
-      <a href="login.html" class="account-login"> Log out </a>
+      <a href="index.html"
+        ><img
+          src="images/SquareEyes_Logo.png"
+          class="logo"
+          alt="Square Eyes logo."
+      /></a>
+      <label class="hamburger-label" for="hamburger-menu"
+      ><i class="fas fa-bars"></i
+    ></label>
+    <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -27,94 +29,450 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="icons">
+        <img class="facebook" src="images/facebook.png" />
+        <img class="instagram" src="images/instagram.png" />
+        <img class="message" src="images/message.png" />
+        <a href="login.html" class="account-login">
+          <img
+            class="account-icon"
+            src="images/account.png"
+            alt="account icon"
+          />
+        </a>
+      </div>
     </header>
     <main>
-      <h1>Movies</h1>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <h2>Categories</h2>
-      <ul>
-        <li><a href="category.html">Action</li></a>
-        <li><a href="category.html">Comedy</li></a>
-        <li><a href="category.html">Thriller</li></a>
-        <li><a href="category.html">Horror</li></a>
-        <li><a href="category.html">Drama</li></a>
-        <li><a href="category.html">Romantic</li></a>
-        <li><a href="category.html">Popular</li></a>
-      </ul>
       <section>
-        <h3>Category</h3>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150"/>
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150"/>
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150"/>
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150"/>
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150"/>
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150"/>
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150"/>
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
+      <div class="sticky-position-categories">
+          <h1>Category</h1>
+          <p class="text-2">Lorem ipsum dolor sit amet.</p>
+          <p class="text-2">Lorem ipsum dolor sit amet.</p>
+          <h2>Categories</h2>
+          <div role="navigation" aria-label="Category navigation">
+            <ul class="categories">
+              <li><a href="category.html">Action</li></a>
+              <li><a href="category.html">Comedy</li></a>
+              <li><a href="category.html">Thriller</li></a>
+              <li><a href="category.html">Horror</li></a>
+              <li><a href="category.html">Drama</li></a>
+              <li><a href="category.html">Romantic</li></a>
+              <li><a href="category.html">Popular</li></a>
+          </ul>
+        </div>
       </section>
+      <section id="content">
+      <section class="container">
+         <div class="flex-item"> 
+             <a href="selectedmovie.html">
+              <img src="images/movie.jpg" max-width="250" height="150"/>
+              </a>
+              <div class="container-info">  
+              <div class="title-time-year">
+                <img src="images/hearticon.png" class="heart-icon" />
+                <h4>Movie Title</h4>
+                <p class="time-year">(1h 45min)</p>
+                <img class="rating" src="Images/rating.png" />
+              </div>
+            <p class="movie-info">
+              Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+            </p>
+            </div>
+        </section>
+        <section class="container">
+          <div class="flex-item"> 
+              <a href="selectedmovie.html">
+               <img src="images/movie.jpg" max-width="250" height="150"/>
+               </a>
+               <div class="container-info">  
+               <div class="title-time-year">
+                 <img src="images/hearticon.png" class="heart-icon" />
+                 <h4>Movie Title</h4>
+                 <p class="time-year">(1h 45min)</p>
+                 <img class="rating" src="Images/rating.png" />
+               </div>
+             <p class="movie-info">
+               Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+             </p>
+             </div>
+         </section>
+          <section class="container">
+            <div class="flex-item"> 
+              <a href="selectedmovie.html">
+                <img src="images/movie.jpg" max-width="250" height="150"/>
+              </a>
+            <div class="container-info">  
+            <div class="title-time-year">
+              <img src="images/hearticon.png" class="heart-icon" />
+              <h4>Movie Title</h4>
+              <p class="time-year">(1h 45min)</p>
+              <img class="rating" src="Images/rating.png" />
+            </div>
+          <p class="movie-info">
+            Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+          </p>
+          </div>
+        </section>
+        <section class="container">
+          <div class="flex-item"> 
+              <a href="selectedmovie.html">
+               <img src="images/movie.jpg" max-width="250" height="150"/>
+               </a>
+               <div class="container-info">  
+               <div class="title-time-year">
+                 <img src="images/hearticon.png" class="heart-icon" />
+                 <h4>Movie Title</h4>
+                 <p class="time-year">(1h 45min)</p>
+                 <img class="rating" src="Images/rating.png" />
+               </div>
+             <p class="movie-info">
+               Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+             </p>
+             </div>
+         </section>
+         <section class="container">
+           <div class="flex-item"> 
+               <a href="selectedmovie.html">
+                <img src="images/movie.jpg" max-width="250" height="150"/>
+                </a>
+                <div class="container-info">  
+                <div class="title-time-year">
+                  <img src="images/hearticon.png" class="heart-icon" />
+                  <h4>Movie Title</h4>
+                  <p class="time-year">(1h 45min)</p>
+                  <img class="rating" src="Images/rating.png" />
+                </div>
+              <p class="movie-info">
+                Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+              </p>
+              </div>
+          </section>
+           <section class="container">
+             <div class="flex-item"> 
+               <a href="selectedmovie.html">
+                 <img src="images/movie.jpg" max-width="250" height="150"/>
+               </a>
+             <div class="container-info">  
+             <div class="title-time-year">
+               <img src="images/hearticon.png" class="heart-icon" />
+               <h4>Movie Title</h4>
+               <p class="time-year">(1h 45min)</p>
+               <img class="rating" src="Images/rating.png" />
+             </div>
+           <p class="movie-info">
+             Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+           </p>
+           </div>
+           </section>
+           <section class="container">
+            <div class="flex-item"> 
+                <a href="selectedmovie.html">
+                 <img src="images/movie.jpg" max-width="250" height="150"/>
+                 </a>
+                 <div class="container-info">  
+                 <div class="title-time-year">
+                   <img src="images/hearticon.png" class="heart-icon" />
+                   <h4>Movie Title</h4>
+                   <p class="time-year">(1h 45min)</p>
+                   <img class="rating" src="Images/rating.png" />
+                 </div>
+               <p class="movie-info">
+                 Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+               </p>
+               </div>
+           </section>
+           <section class="container">
+             <div class="flex-item"> 
+                 <a href="selectedmovie.html">
+                  <img src="images/movie.jpg" max-width="250" height="150"/>
+                  </a>
+                  <div class="container-info">  
+                  <div class="title-time-year">
+                    <img src="images/hearticon.png" class="heart-icon" />
+                    <h4>Movie Title</h4>
+                    <p class="time-year">(1h 45min)</p>
+                    <img class="rating" src="Images/rating.png" />
+                  </div>
+                <p class="movie-info">
+                  Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                </p>
+                </div>
+            </section>
+             <section class="container">
+               <div class="flex-item"> 
+                 <a href="selectedmovie.html">
+                   <img src="images/movie.jpg" max-width="250" height="150"/>
+                 </a>
+               <div class="container-info">  
+               <div class="title-time-year">
+                 <img src="images/hearticon.png" class="heart-icon" />
+                 <h4>Movie Title</h4>
+                 <p class="time-year">(1h 45min)</p>
+                 <img class="rating" src="Images/rating.png" />
+               </div>
+             <p class="movie-info">
+               Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+             </p>
+             </div>
+             </section>
+             <section class="container">
+              <div class="flex-item"> 
+                  <a href="selectedmovie.html">
+                   <img src="images/movie.jpg" max-width="250" height="150"/>
+                   </a>
+                   <div class="container-info">  
+                   <div class="title-time-year">
+                     <img src="images/hearticon.png" class="heart-icon" />
+                     <h4>Movie Title</h4>
+                     <p class="time-year">(1h 45min)</p>
+                     <img class="rating" src="Images/rating.png" />
+                   </div>
+                 <p class="movie-info">
+                   Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                 </p>
+                 </div>
+             </section>
+             <section class="container">
+               <div class="flex-item"> 
+                   <a href="selectedmovie.html">
+                    <img src="images/movie.jpg" max-width="250" height="150"/>
+                    </a>
+                    <div class="container-info">  
+                    <div class="title-time-year">
+                      <img src="images/hearticon.png" class="heart-icon" />
+                      <h4>Movie Title</h4>
+                      <p class="time-year">(1h 45min)</p>
+                      <img class="rating" src="Images/rating.png" />
+                    </div>
+                  <p class="movie-info">
+                    Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                  </p>
+                  </div>
+              </section>
+               <section class="container">
+                 <div class="flex-item"> 
+                   <a href="selectedmovie.html">
+                     <img src="images/movie.jpg" max-width="250" height="150"/>
+                   </a>
+                 <div class="container-info">  
+                 <div class="title-time-year">
+                   <img src="images/hearticon.png" class="heart-icon" />
+                   <h4>Movie Title</h4>
+                   <p class="time-year">(1h 45min)</p>
+                   <img class="rating" src="Images/rating.png" />
+                 </div>
+               <p class="movie-info">
+                 Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+               </p>
+               </div>
+               </section>
+               <section class="container">
+                <div class="flex-item"> 
+                    <a href="selectedmovie.html">
+                     <img src="images/movie.jpg" max-width="250" height="150"/>
+                     </a>
+                     <div class="container-info">  
+                     <div class="title-time-year">
+                       <img src="images/hearticon.png" class="heart-icon" />
+                       <h4>Movie Title</h4>
+                       <p class="time-year">(1h 45min)</p>
+                       <img class="rating" src="Images/rating.png" />
+                     </div>
+                   <p class="movie-info">
+                     Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                   </p>
+                   </div>
+               </section>
+               <section class="container">
+                 <div class="flex-item"> 
+                     <a href="selectedmovie.html">
+                      <img src="images/movie.jpg" max-width="250" height="150"/>
+                      </a>
+                      <div class="container-info">  
+                      <div class="title-time-year">
+                        <img src="images/hearticon.png" class="heart-icon" />
+                        <h4>Movie Title</h4>
+                        <p class="time-year">(1h 45min)</p>
+                        <img class="rating" src="Images/rating.png" />
+                      </div>
+                    <p class="movie-info">
+                      Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                    </p>
+                    </div>
+                </section>
+                 <section class="container">
+                   <div class="flex-item"> 
+                     <a href="selectedmovie.html">
+                       <img src="images/movie.jpg" max-width="250" height="150"/>
+                     </a>
+                   <div class="container-info">  
+                   <div class="title-time-year">
+                     <img src="images/hearticon.png" class="heart-icon" />
+                     <h4>Movie Title</h4>
+                     <p class="time-year">(1h 45min)</p>
+                     <img class="rating" src="Images/rating.png" />
+                   </div>
+                 <p class="movie-info">
+                   Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                 </p>
+                 </div>
+                 </section>
+                 <section class="container">
+                  <div class="flex-item"> 
+                      <a href="selectedmovie.html">
+                       <img src="images/movie.jpg" max-width="250" height="150"/>
+                       </a>
+                       <div class="container-info">  
+                       <div class="title-time-year">
+                         <img src="images/hearticon.png" class="heart-icon" />
+                         <h4>Movie Title</h4>
+                         <p class="time-year">(1h 45min)</p>
+                         <img class="rating" src="Images/rating.png" />
+                       </div>
+                     <p class="movie-info">
+                       Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                     </p>
+                     </div>
+                 </section>
+                 <section class="container">
+                   <div class="flex-item"> 
+                       <a href="selectedmovie.html">
+                        <img src="images/movie.jpg" max-width="250" height="150"/>
+                        </a>
+                        <div class="container-info">  
+                        <div class="title-time-year">
+                          <img src="images/hearticon.png" class="heart-icon" />
+                          <h4>Movie Title</h4>
+                          <p class="time-year">(1h 45min)</p>
+                          <img class="rating" src="Images/rating.png" />
+                        </div>
+                      <p class="movie-info">
+                        Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                      </p>
+                      </div>
+                  </section>
+                   <section class="container">
+                     <div class="flex-item"> 
+                       <a href="selectedmovie.html">
+                         <img src="images/movie.jpg" max-width="250" height="150"/>
+                       </a>
+                     <div class="container-info">  
+                     <div class="title-time-year">
+                       <img src="images/hearticon.png" class="heart-icon" />
+                       <h4>Movie Title</h4>
+                       <p class="time-year">(1h 45min)</p>
+                       <img class="rating" src="Images/rating.png" />
+                     </div>
+                   <p class="movie-info">
+                     Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                   </p>
+                   </div>
+                   </section>
+                   <section class="container">
+                    <div class="flex-item"> 
+                        <a href="selectedmovie.html">
+                         <img src="images/movie.jpg" max-width="250" height="150"/>
+                         </a>
+                         <div class="container-info">  
+                         <div class="title-time-year">
+                           <img src="images/hearticon.png" class="heart-icon" />
+                           <h4>Movie Title</h4>
+                           <p class="time-year">(1h 45min)</p>
+                           <img class="rating" src="Images/rating.png" />
+                         </div>
+                       <p class="movie-info">
+                         Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                       </p>
+                       </div>
+                   </section>
+                   <section class="container">
+                     <div class="flex-item"> 
+                         <a href="selectedmovie.html">
+                          <img src="images/movie.jpg" max-width="250" height="150"/>
+                          </a>
+                          <div class="container-info">  
+                          <div class="title-time-year">
+                            <img src="images/hearticon.png" class="heart-icon" />
+                            <h4>Movie Title</h4>
+                            <p class="time-year">(1h 45min)</p>
+                            <img class="rating" src="Images/rating.png" />
+                          </div>
+                        <p class="movie-info">
+                          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                        </p>
+                        </div>
+                    </section>
+                     <section class="container">
+                       <div class="flex-item"> 
+                         <a href="selectedmovie.html">
+                           <img src="images/movie.jpg" max-width="250" height="150"/>
+                         </a>
+                       <div class="container-info">  
+                       <div class="title-time-year">
+                         <img src="images/hearticon.png" class="heart-icon" />
+                         <h4>Movie Title</h4>
+                         <p class="time-year">(1h 45min)</p>
+                         <img class="rating" src="Images/rating.png" />
+                       </div>
+                     <p class="movie-info">
+                       Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                     </p>
+                     </div>
+                     </section>
+                     <section class="container">
+                      <div class="flex-item"> 
+                          <a href="selectedmovie.html">
+                           <img src="images/movie.jpg" max-width="250" height="150"/>
+                           </a>
+                           <div class="container-info">  
+                           <div class="title-time-year">
+                             <img src="images/hearticon.png" class="heart-icon" />
+                             <h4>Movie Title</h4>
+                             <p class="time-year">(1h 45min)</p>
+                             <img class="rating" src="Images/rating.png" />
+                           </div>
+                         <p class="movie-info">
+                           Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                         </p>
+                         </div>
+                     </section>
+                     <section class="container">
+                       <div class="flex-item"> 
+                           <a href="selectedmovie.html">
+                            <img src="images/movie.jpg" max-width="250" height="150"/>
+                            </a>
+                            <div class="container-info">  
+                            <div class="title-time-year">
+                              <img src="images/hearticon.png" class="heart-icon" />
+                              <h4>Movie Title</h4>
+                              <p class="time-year">(1h 45min)</p>
+                              <img class="rating" src="Images/rating.png" />
+                            </div>
+                          <p class="movie-info">
+                            Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                          </p>
+                          </div>
+                      </section>
+                       <section class="container">
+                         <div class="flex-item"> 
+                           <a href="selectedmovie.html">
+                             <img src="images/movie.jpg" max-width="250" height="150"/>
+                           </a>
+                         <div class="container-info">  
+                         <div class="title-time-year">
+                           <img src="images/hearticon.png" class="heart-icon" />
+                           <h4>Movie Title</h4>
+                           <p class="time-year">(1h 45min)</p>
+                           <img class="rating" src="Images/rating.png" />
+                         </div>
+                       <p class="movie-info">
+                         Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
+                       </p>
+                       </div>
+                       </section>
+        
+          </div>
+        </section>
     </main>
 
     <footer>Copyright &copy;</footer>

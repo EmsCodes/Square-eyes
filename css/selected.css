@@ -1,34 +1,69 @@
 h1 {
-  font-size: 2.1rem;
+  font-size: var(--size-h1);
 }
-.heart-icon {
-  height: 15px;
-  width: 15px;
+.fas {
+  margin-left: 20px;
+  font-size: 0.7em;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: var(--size-h2);
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
 }
 h3 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 .movie-text {
-  font-size: 0.9rem;
-  width: 700px;
+  font-size: 1em;
+  max-width: 33vw;
 }
 .movie-info {
-  font-size: 0.7rem;
+  font-size: 0.9em;
 }
 .rating {
   size: 30px;
 }
-
+header {
+  background-color: ;
+}
+#nav {
+  color: #fff;
+}
+.moviebackground {
+  background: linear-gradient(#707070, #505050, #383838);
+}
+.movie-text-area {
+  color: #fff;
+}
+.moviepageline {
+  color: #fff;
+  margin: 75px 150px 75px 150px;
+}
+.movie-player {
+}
 /* layout */
-
 .flex-container {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-evenly;
+  margin-top: 100px;
 }
 .flex-container-2 {
   display: flex;
   justify-content: center;
+}
+.other-movies {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 75px 100px 75px 100px;
+}
+/* Movie nav */
+
+.moviepagenav a {
+  color: #000;
+}
+.moviepagenav a:hover {
+  color: #fff;
 }

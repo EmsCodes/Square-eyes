@@ -4,7 +4,7 @@
     <title>SquareEyes | Home</title>
     <meta
       name="description"
-      content="this is a independent-movie streaming page"
+      content="this is a movie streaming page, with movies made by independent movie makers"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/global.css" rel="stylesheet" />
@@ -16,12 +16,17 @@
   </head>
   <body>
     <header class="sticky-position">
-      <a href="index.html"
-        ><img
+      <a href="index.html">
+        <img
           src="images/SquareEyes_Logo.png"
           class="logo"
           alt="Square Eyes logo."
-      /></a>
+        />
+      </a>
+      <label class="hamburger-label" for="hamburger-menu"
+        ><i class="fas fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -31,11 +36,15 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="icons">
-        <img class="facebook" src="images/facebook.png" />
-        <img class="instagram" src="images/instagram.png" />
-        <img class="message" src="images/message.png" />
-        <a href="login.html" class="account-login">
+      <div class="icons" alt="social and message icons">
+        <img class="facebook" src="images/facebook.png" alt="facebook icon" />
+        <img
+          class="instagram"
+          src="images/instagram.png"
+          alt="instagram icon"
+        />
+        <img class="message" src="images/message.png" alt="message icon" />
+        <a href="login.html">
           <img
             class="account-icon"
             src="images/account.png"
@@ -45,10 +54,6 @@
       </div>
     </header>
     <main>
-      <aside>
-        <section class="film-makers"></section>
-        <section class="film-watchers"></section>
-      </aside>
       <section class="main-section">
         <h1>Connecting Film-Lovers</h1>
         <h2>Independent Movies</h2>
@@ -63,12 +68,19 @@
         <div class="link-2">
           <p>
             <a href="login.html" class="link"
-              >Already have an account? Sign in here</a
-            >
+              >Already have an account? Sign in here<i
+                class="fas fa-arrow-right"
+              ></i>
+            </a>
           </p>
         </div>
         <img src="images/socialicons.png" />
       </section>
+      <aside>
+        <section class="film-watchers"></section>
+        <div class="vertical-line"></div>
+        <section class="film-makers"></section>
+      </aside>
     </main>
 
     <footer>Copyright &copy;</footer>

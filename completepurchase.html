@@ -22,9 +22,13 @@
           class="logo"
           alt="Square Eyes logo."
       /></a>
+      <label class="hamburger-label" for="hamburger-menu"
+      ><i class="fas fa-bars"></i
+    ></label>
+    <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="movies.html">Movies</a></li>
           <li><a href="search.html">Search For Movies</a></li>
           <li><a href="payperview.html">Pay Per View</a></li>
@@ -45,48 +49,58 @@
       </div>
     </header>
     <main>
-      <fieldset>
-        <legend><h1>Complete Purchase</h1></legend>
-        <form action="form-success.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" class="form-input" />
-          <label for="cardnumber">Card number:</label>
+      <section class="container">
+        <fieldset>
+          <form action="form-success.php" method="post">
+            <legend><h1>Complete Purchase</h1></legend>
+            <div class="label-1">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" class="form-input" />
+            </div>
+            <div class="label-2">
+            <label for="cardnumber">Card number:</label>
+            <input
+              type="number"
+              name="Cardnumber"
+              id="cardnumber"
+              class="form-input"
+            />
+            </div>
+            <div class="label-3">
+            <label for="date">MM/DD/YYYY:</label>
+            <input
+              type="date"
+              name="expiration date"
+              id="date"
+              class="form-input"
+            />
+            <div class="label-4">
+            <label for="security-code">Secutrity Code:</label>
+            <input
+              type="number"
+              name="security code"
+              id="security-code"
+              class="form-input"
+            />
+            </div>
+          </form>
+          <div class="label-5">
           <input
-            type="number"
-            name="Cardnumber"
-            id="cardnumber"
-            class="form-input"
+            type="checkbox"
+            name="remember-info"
+            value="remember"
+            checked="checked"
           />
-          <label for="date">MM/DD/YYYY:</label>
-          <input
-            type="date"
-            name="expiration date"
-            id="date"
-            class="form-input"
-          />
-          <label for="security-code">Secutrity Code:</label>
-          <input
-            type="number"
-            name="security code"
-            id="security-code"
-            class="form-input"
-          />
-        </form>
-
-        <input
-          type="checkbox"
-          name="remember-info"
-          value="remember"
-          checked="checked"
-        />
-        Remember Info?
-        <section>
-          <a href="selectedmovie.html" type="button" class="cta">Complete</a>
-        </section>
-        <section>
-          <a href="login.html" class="link">Terms and Conditions</a>
-        </section>
-      </fieldset>
+          Remember Info?
+          </div>
+          <section>
+            <a href="selectedmovie.html" type="button" class="cta">Complete</a>
+          </section>
+          <section>
+            <a href="login.html" class="link">Terms and Conditions</a>
+          </section>
+        </fieldset>
+      </section>
     </main>
 
     <footer>Copyright &copy;</footer>

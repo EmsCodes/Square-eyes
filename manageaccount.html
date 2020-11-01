@@ -4,60 +4,80 @@
     <title>SquareEyes | Manage account producers</title>
     <meta name="description" content="manage account page for producers" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
     <link href="css/manageaccount.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      <img src="images/socialicons.png" />
-      <a href="login.html">
-        <img
-          class="account-icon"
-          src="images/account-icon.png"
-          alt="account icon"
-        />
-      </a>
-      <a href="login.html" class="account-login"> Log out </a>
+    <header class="sticky-position">
+      <a href="index.html"
+        ><img
+          src="images/SquareEyes_Logo.png"
+          class="logo"
+          alt="Square Eyes logo."
+      /></a>
+      <label class="hamburger-label" for="hamburger-menu">
+        <i class="fas fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="movies.html">Movies</a></li>
           <li><a href="search.html">Search For Movies</a></li>
           <li><a href="payperview.html">Pay Per View</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="icons">
+        <img class="facebook" src="images/facebook.png" />
+        <img class="instagram" src="images/instagram.png" />
+        <img class="message" src="images/message.png" />
+        <a href="login.html">
+          <img
+            class="account-icon"
+            src="images/account.png"
+            alt="account icon"
+          />
+        </a>
+      </div>
     </header>
     <main>
       <section class="account">
         <h3>Producer</h3>
         <h1>Account</h1>
         <ul class="account-list">
-          <li class="active"><a href="manageaccount.html" class="active">Manage Account</a></li>
-          <li><a href="managemovies.html">Manage Movies</a></li>
-          <li><a href="sales.views.html">Sales/Views</a></li>
+          <li class="number-one"><a href="manageaccount.html" class="active">Manage Account</a></li>
+          <li class="number-two"><a href="managemovies.html">Manage Movies</a></li>
+          <li class="number-three"><a href="sales.views.html">Sales/Views</a></li>
         </ul>
-        <a href="login.html">Log Out</a>
+        <a href="login.html" class="log-out">Log Out</a>
       </section>
-      <section>
-        <image class="accountimage" src="images/profilepicture.png" alt="profile picture">
-          <p>
-            Name Name
-          </p>
+      <div class="vertical-line"></div>
+      <section class="content-2">
+        <div class="image">
+          <image class="accountimage" src="images/profilepicture.png" alt="profile picture">
+            <p class="bold-text">
+              Name
+            </p>
+        </div>
         <h2>Manage your account</h2>
         <p class="text">
-          Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+          Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr</p> 
+        <p class="text">
+          Sed Diam
           Nonumy Eirmod Tempor.
         </p>
-        <p class="text">Name:Name Name</p>
-        <p class="text">Email:name@name.com</p>
-        <p class="text">Membership:Producer</p>
-        <p class="text">Password:123456</p>
-        <a href="login.html" class="link">Terms and Conditions</a>
-    </br>
-        <a href="login.html" class="link">Edit subscription</a>
+        <p class="text"><span class="bold-text">Name:</span>Name Name</p>
+        <p class="text"><span class="bold-text">Email:</span>name@name.com</p>
+        <p class="text"><span class="bold-text">Membership:</span>Producer</p>
+        <p class="text"><span class="bold-text">Password:</span>123456</p>
+        <a href="login.html" class="link">
+          <p>Terms and Conditions <i class="fas fa-arrow-right"></i></p>
+        </a>
+        <a href="login.html" class="link">
+          <p>Edit account <i class="fas fa-arrow-right"></i></p>
+        </a>
       </section>
     </main>
 

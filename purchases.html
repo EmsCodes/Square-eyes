@@ -4,7 +4,7 @@
     <title>SquareEyes | Purchases</title>
     <meta name="description" content="Purchased movie page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
     <link href="css/purchases.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
@@ -12,81 +12,119 @@
     ></script>
   </head>
   <body>
-    <header>
-      <img src="images/SquareEyes_Logo.png" width="330" height="130" />
-      <img src="images/facebook.png" />
-      <img src="images/instagram.png" />
-      <img src="images/message.png" />
-      <a href="login.html">
-        <img
-          class="account-icon"
-          src="images/account-icon.png"
-          alt="account icon"
-        />
-      </a>
-      <a href="login.html" class="account-login"> Log out </a>
+    <header class="sticky-position">
+      <a href="index.html"
+        ><img
+          src="images/SquareEyes_Logo.png"
+          class="logo"
+          alt="Square Eyes logo."
+      /></a>
+      <label class="hamburger-label" for="hamburger-menu"
+      ><i class="fas fa-bars"></i
+    ></label>
+    <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="movies.html">Movies</a></li>
           <li><a href="search.html">Search For Movies</a></li>
           <li><a href="payperview.html">Pay Per View</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="icons">
+        <img class="facebook" src="images/facebook.png" />
+        <img class="instagram" src="images/instagram.png" />
+        <img class="message" src="images/message.png" />
+        <a href="login.html" class="account-login">
+          <img
+            class="account-icon"
+            src="images/account.png"
+            alt="account icon"
+          />
+        </a>
+      </div>
     </header>
-    <main>
-      <section class="account">
-        <h3>Member</h3>
-        <h1>Account</h1>
-        <ul class="account-list">
-          <li><a href="favourites.html">Favourites</a></li>
-          <li><a href="purchases.html" class="active">Purchases</a></li>
-          <li><a href="accountdetails.html">Account Details</a></li>
-        </ul>
-        <a href="login.html">Log Out</a>
-      </section>
-      <section>
+      <main>
+      <main class="flex-container">
+        <div class="content">
+          <section class="account">
+            <h3>Member</h3>
+            <h1>Account</h1>
+            <ul class="account-list">
+              <li class="number-one" ><a href="favourites.html" >Favourites</a></li>
+              <li class="number-two"><a href="purchases.html" class="active">Purchases</a></li>
+              <li class="number-three"><a href="accountdetails.html">Account Details</a></li>
+            </ul>
+            <a class="log-out" href="login.html">Log Out</a>
+          </div>
+          <div class="vertical-line"></div>
+      <section class="info">
         <h2>Previously purchased movies</h2>
-        <p>
+        <p class="text">
           Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
           Nonumy Eirmod Tempor.
         </p>
+      <section class="movies">
+        <div class="item">
+          <a href="selectedmovie.html">
+            <img src="images/movie.png" max-width="225" height="130" />
+          </a>
+          <h4>Movie Title</h4>
+          <img src="Images/rating.png" />
+        </div>
+        <div class="item">
+          <a href="selectedmovie.html">
+            <img src="images/movie.png" max-width="225" height="130" />
+          </a>
+          <h4>Movie Title</h4>
+          <img src="Images/rating.png" />
+        </div>
+        <div class="item">
+          <a href="selectedmovie.html">
+            <img src="images/movie.png" max-width="225" height="130" />
+          </a>
+          <h4>Movie Title</h4>
+          <img src="Images/rating.png" />
+        </div>
+        <div class="item">
+          <a href="selectedmovie.html">
+            <img src="images/movie.png" max-width="225" height="130" />
+          </a>
+          <h4>Movie Title</h4>
+          <img src="Images/rating.png" />
+        </div>
+        <div class="item">
+          <a href="selectedmovie.html">
+            <img src="images/movie.png" max-width="225" height="130" />
+          </a>
+          <h4>Movie Title</h4>
+          <img src="Images/rating.png" />
+        </div>
+        <div class="item">
+          <a href="selectedmovie.html">
+            <img src="images/movie.png" max-width="225" height="130" />
+          </a>
+          <h4>Movie Title</h4>
+          <img src="Images/rating.png" />
+        </div>
+        <div class="item">
+          <a href="selectedmovie.html">
+            <img src="images/movie.png" max-width="225" height="130" />
+          </a>
+          <h4>Movie Title</h4>
+          <img src="Images/rating.png" />
+        </div>
+        <div class="item">
+          <a href="selectedmovie.html">
+            <img src="images/movie.png" max-width="225" height="130" />
+          </a>
+          <h4>Movie Title</h4>
+          <img src="Images/rating.png" />
+        </div>
       </section>
-      <section>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150" />
-        </a>
-        <h4>Movie Title <img src="images/hearticon.png" /></h4>
-        <p><img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150" />
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p><img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150" />
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p><img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150" />
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p><img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150" />
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p><img src="Images/rating.png" /></p>
-        <a href="selectedmovie.html">
-          <img src="images/movie.png" width="265" height="150" />
-        </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p><img src="Images/rating.png" /></p>
-      </section>
+    </section>
     </main>
-
     <footer>Copyright &copy;</footer>
   </body>
 </html>

@@ -1,0 +1,158 @@
+h1 {
+  font-size: var(--size-h1);
+  text-transform: capitalize;
+  margin-left: 35px;
+}
+h2 {
+  font-size: var(--size-h2);
+  margin-top: 35px;
+  margin-left: 35px;
+}
+h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 1.1em;
+  margin-left: 5px;
+}
+
+.categories {
+  font-size: 1.2em;
+}
+.time-year {
+  font-size: 0.4em;
+}
+.movie-info {
+  font-size: 0.7em;
+}
+.heart-icon {
+  height: 15px;
+  width: 15px;
+  float: right;
+  margin-right: 20px;
+}
+.producer-name {
+  font-size: 0.7em;
+}
+.text {
+  margin-top: 100px;
+}
+.time-year {
+  font-size: 0.7em;
+}
+.text-2 {
+  margin-left: 35px;
+}
+/* persistant nav sticky-position */
+
+.sticky-position {
+  position: sticky;
+  top: 50px;
+}
+.sticky-position-categories {
+  position: fixed;
+}
+/* categories */
+
+.categories > li {
+  padding-top: 25px;
+  list-style: none;
+}
+/*movies*/
+
+.container {
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: white;
+  border-style: outset;
+  box-shadow: 0px 3px 6px 0px #999999;
+  contain: content;
+  transition: 0.5s ease-in-out;
+}
+.container:hover {
+}
+.container-info {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+/* flexbox movies */
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 450px;
+  margin-top: 75px;
+}
+.container {
+  margin-top: 125px;
+  margin-right: 50px;
+}
+
+@media (max-width: 800px) {
+  main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-area: "categories" "movies" "footer";
+  }
+  .sticky-position-categories {
+    grid-area: categories;
+  }
+  #content {
+    grid-area: movies;
+  }
+  footer {
+    grid-area: footer;
+  }
+  h1 {
+    font-size: var(--size-h1);
+    text-transform: capitalize;
+    margin-left: 35px;
+  }
+  h2 {
+    font-size: var(--size-h2);
+    margin-top: 35px;
+    margin-left: 35px;
+  }
+  h3 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: 1.1em;
+    margin-left: 5px;
+  }
+
+  .categories {
+    font-size: 1.2em;
+  }
+  .time-year {
+    font-size: 0.4em;
+  }
+  .movie-info {
+    font-size: 0.7em;
+  }
+  .heart-icon {
+    height: 15px;
+    width: 15px;
+    float: right;
+    margin-right: 20px;
+  }
+  .producer-name {
+    font-size: 0.7em;
+  }
+  .text {
+    margin-top: 100px;
+  }
+  .time-year {
+    font-size: 0.7em;
+  }
+  .text-2 {
+    margin-left: 35px;
+  }
+}

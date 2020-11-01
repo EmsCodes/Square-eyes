@@ -12,26 +12,17 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="sticky-position">
       <a href="index.html"
         ><img
           src="images/SquareEyes_Logo.png"
-          width="330"
-          height="130"
           class="logo"
-        />
-      </a>
-      <img src="images/facebook.png" />
-      <img src="images/instagram.png" />
-      <img src="images/message.png" />
-      <a href="login.html">
-        <img
-          class="account-icon"
-          src="images/account-icon.png"
-          alt="account icon"
-        />
-      </a>
-      <a href="login.html" class="account-login"> Log in </a>
+          alt="Square Eyes logo."
+      /></a>
+      <label class="hamburger-label" for="hamburger-menu"
+      ><i class="fas fa-bars"></i
+    ></label>
+    <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -41,35 +32,53 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="icons">
+        <img class="facebook" src="images/facebook.png" />
+        <img class="instagram" src="images/instagram.png" />
+        <img class="message" src="images/message.png" />
+        <a href="login.html" class="account-login">
+          <img
+            class="account-icon"
+            src="images/account.png"
+            alt="account icon"
+          />
+        </a>
+      </div>
     </header>
     <main>
-      <section class="account">
-        <h3>Member</h3>
-        <h1>Account</h1>
-        <ul class="account-list">
-          <li><a href="favourites.html">Favourites</a></li>
-          <li><a href="purchases.html">Purchases</a></li>
-          <li>
-            <a href="accountdetails.html" class="active">Account Details</a>
-          </li>
-        </ul>
-        <a href="login.html">Log Out</a>
+      <main class="flex-container">
+        <div class="content">
+          <section class="account">
+            <h3>Member</h3>
+            <h1>Account</h1>
+            <ul class="account-list">
+              <li class="number-one" ><a href="favourites.html">Favourites</a></li>
+              <li class="number-two"><a href="purchases.html">Purchases</a></li>
+              <li class="number-three"><a href="accountdetails.html"class="active">Account Details</a></li>
+            </ul>
+            <a class="log-out" href="login.html">Log Out</a>
+          </div>
+          <div class="vertical-line"></div>
       </section>
-      <section>
+      <section class="content-2">
         <h2>Manage your account</h2>
         <p>
           Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
           Nonumy Eirmod Tempor.
         </p>
-        <p>Name:Name Name</p>
-        <p>Email:name@name.com</p>
-        <p>Membership:Monthly subscription</p>
-        <p>Password:000000</p>
-        <a href="login.html" class="link">Terms and Conditions</a>
-        <a href="login.html" class="link">Edit subscription</a>
+        <p><span class="bold-text">Name:</span>Name Name</p>
+        <p><span class="bold-text">Email:</span>name@name.com</p>
+        <p><span class="bold-text">Membership:</span>Monthly subscription</p>
+        <p><span class="bold-text">Password:</span>000000</p>
+        <a href="login.html" class="link">
+          <p>Terms and Conditions</p>
+        </a>
+        <a href="login.html" class="link">
+          <p>Edit subscription</p>
+        </a>
+        <aside class="illustration"></aside>
       </section>
     </main>
-
     <footer>Copyright &copy;</footer>
   </body>
 </html>
