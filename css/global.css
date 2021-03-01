@@ -109,10 +109,11 @@ h4 {
   text-align: center;
   margin-right: 30px;
   transition-duration: 0.5s;
-  box-shadow: 2px 5px 5px 2px #999999;
+  /* box-shadow: 2px 5px 5px 2px #999999; */
 }
 .cta:hover {
   background-color: #ffd454;
+
 }
 .link {
   color: #004349;
@@ -341,4 +342,5 @@ header {
   .account-icon{
     margin-right:10px;
   }
+}
 }  
