@@ -25,14 +25,17 @@ h3 {
   size: 30px;
 }
 header {
-  background-color: ;
+  background-color: linear-gradient(#707070, #505050, #383838);
 }
 #nav {
   color: #fff;
 }
-.moviebackground {
+body{
   background: linear-gradient(#707070, #505050, #383838);
 }
+/* .moviebackground {
+  background: linear-gradient(#707070, #505050, #383838);
+} */
 .movie-text-area {
   color: #fff;
 }

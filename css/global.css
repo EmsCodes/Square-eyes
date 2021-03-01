@@ -6,7 +6,10 @@
 body {
   font-family: verdana, tahoma, sans-serif;
 }
-
+main{
+  max-width:1400px;
+  margin:auto;
+}
 /*Custom properties*/
 :root {
   --size-h1: 2.2em;
@@ -21,10 +24,12 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: #fff;
   position: sticky;
   z-index: 1;
+  max-width:90%;
+  margin:auto;
   margin-top: 50px;
 }
 .logo {
@@ -74,7 +79,6 @@ h4 {
 .hamburger-label {
   display:none;
 }
-
 
 /*icons*/
 .icons {
@@ -126,7 +130,7 @@ h4 {
   border-radius: 30px;
   border-width: 1px;
   border-color: var(--main-yellow);
-  box-shadow: 0px 10px 10px 6px #999999;
+  box-shadow: 0px 5px 5px 3px #999999;
 }
 
 .account-list {
@@ -222,10 +226,18 @@ footer {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1100px) {
 nav{
   display:none;
   order:1;
+  position:absolute;
+  margin-right:0;
+  padding:20px 50px 40px 20px;
+  margin-top:100px;
+  width:50vw;
+  border-bottom:1px solid rgb(43, 43, 43);
+  border-left:1px solid rgb(43, 43, 43);
+  border-right:1px solid rgb(43, 43, 43);
 }
 
 #hamburger-menu {
@@ -235,17 +247,17 @@ nav{
 #hamburger-menu:checked ~ nav {
   display:block;
   background-color:#fff;
-  order:
 }
 .hamburger-label {
   font-size: 2em;
   display:block;
+  position: relative;
   order:1;
 }
 nav li{
   display:block;
   padding:0px;
-  font-size:0.8em;
+  font-size:1em;
 }
 .account-icon{
   width:35px;
@@ -274,7 +286,6 @@ header {
   nav li{
     display:block;
     padding:0px;
-    font-size:0.6em;
   }
   .account-icon {
     width: 40px;
@@ -298,7 +309,8 @@ header {
   nav li{
     display:block;
     padding:0px;
-    font-size:0.6em;
+    font-size:0.9em;
+    margin-top:25px;
   }
   .cta {
     font-size: 0.7em;
@@ -329,4 +341,4 @@ header {
   .account-icon{
     margin-right:10px;
   }
-}
+}  
