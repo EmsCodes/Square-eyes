@@ -1,7 +1,33 @@
 h1 {
-  font-size: 2em;
-  text-transform: uppercase;
-  margin-bottom: 40px;
+  font-size: 1.7em;
+  margin-bottom: 35px;
+}
+.side-nav{
+  font-size: 1em;
+  padding-right:10px;
+  margin-left:25px;
+}
+/* persistant nav sticky-position */
+.sticky-position {
+  position: sticky;
+  margin-top:50px;
+}
+.sticky-position-categories {
+  margin-top:75px;
+  position: fixed;
+  border-right:1px solid var(--gray-text-color);
+}
+/* categories */
+
+.side-nav > li {
+  padding-top: 15px;
+  list-style: none;
+  margin-right:50px;
+}
+.fa-search{
+  padding-left:5px;
+  font-size:1.1em;
+  color:var(--main-yellow);
 }
 .search-input {
   font-size: 1.8em;
@@ -10,9 +36,9 @@ h1 {
   padding: 10px;
   text-align: center;
 }
-main {
+form {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -24,7 +50,6 @@ main {
   border: none;
 }
 fieldset {
-  display: inline-block;
   max-width: 500px;
   padding: 50px;
 }

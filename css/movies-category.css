@@ -1,3 +1,5 @@
+
+
 h1 {
   font-size: var(--size-h1);
   text-transform: capitalize;
@@ -9,97 +11,210 @@ h2 {
   margin-left: 35px;
 }
 h3 {
-  font-size: 1.25rem;
-  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-family: verdana, tahoma, sans-serif;
+  margin-left:25px;
+  margin-bottom:0px;
 }
-h4 {
-  font-size: 1.1em;
-  margin-left: 5px;
-}
-
-.categories {
-  font-size: 1.2em;
-}
-.time-year {
-  font-size: 0.4em;
-}
-.movie-info {
-  font-size: 0.7em;
-}
-.heart-icon {
-  height: 15px;
-  width: 15px;
-  float: right;
-  margin-right: 20px;
-}
-.producer-name {
-  font-size: 0.7em;
-}
-.text {
-  margin-top: 100px;
-}
-.time-year {
-  font-size: 0.7em;
-}
-.text-2 {
-  margin-left: 35px;
+.side-nav{
+  font-size: 1em;
+  padding-right:10px;
+  margin-left:25px;
 }
 /* persistant nav sticky-position */
-
 .sticky-position {
   position: sticky;
   top: 50px;
 }
 .sticky-position-categories {
   position: fixed;
+  border-right:1px solid var(--gray-text-color);
 }
 /* categories */
 
-.categories > li {
-  padding-top: 25px;
+.side-nav > li {
+  padding-top: 15px;
   list-style: none;
+  margin-right:50px;
 }
+.fa-search{
+  padding-left:5px;
+  font-size:1.1em;
+}
+
+/*///////////////////////////////////////////*/
 /*movies*/
+.movies-section{
+  margin-left:10%;
+}
+#movie-divide-line{
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  max-width:95%;
 
+}
+.movie-content-container{
+  max-width:85%;
+  margin:0px auto;
+}
 .container {
-  width: 250px;
-  height: auto;
-  border-width: 1px;
-  border-color: white;
-  border-style: outset;
-  box-shadow: 0px 3px 6px 0px #999999;
+  width: 225px;
+  height: 140px;
+  border-radius:5px;
   contain: content;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-image:url(../images/explore-museum.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  cursor:pointer;
+  box-shadow:var(--movie-box-shadow);
+  margin-left:15px;
+  margin-top:10px;
+  margin-bottom:10px;
+  flex-shrink:0;
 }
-.container:hover {
+.container:hover{
+  transform:scale(1.07);
 }
-.container-info {
-  padding: 5px;
-  margin-left: 5px;
-}
-
-/* flexbox movies */
-
 #content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 450px;
-  margin-top: 75px;
+  display:flex;
+  max-height:200px;
+  max-width:100%;
+  align-content:flex-start;
+  padding-bottom:5px;
+  overflow:hidden;
 }
-.container {
-  margin-top: 125px;
-  margin-right: 50px;
+.container h4 {
+  font-family: verdana, tahoma, sans-serif;
+  font-size: 1.5em;
+  margin-left: 5px;
+  position:absolute;
+  color:#fff;
+  bottom:-15px;
 }
 
+/*///////////////////////////////////////////*/
+/*Movie highlight - Top of page*/
+.container-highlight{
+  width: 85%;
+  height: 350px;
+  border-radius:5px;
+  contain: content;
+  transition: 0.2s ease-in-out 0.3s;
+  background-image:url(../images/Night-at-museum.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  cursor:pointer;
+  background-position: center;
+  margin:0px auto;
+  position:relative;
+  box-shadow:var(--movie-box-shadow);
+}
+.container-highlight:hover {
+  transform:scale(1.04);
+}
+#movies-highlight-content{
+  height:350px;
+  width:100%;
+  margin-top: 75px;
+  margin-bottom:50px;
+}
+#highlight-text{
+  position:absolute;
+  color:#fff;
+  left:35px;
+  bottom:10px;
+  background-color: rgba(0, 0, 0, 0.501);
+}
+#highlight-text p{
+  font-weight: 700;
+}
+.container-highlight h4{
+  font-family: verdana, tahoma, sans-serif;
+  font-size: 2em;
+  margin-bottom:10px;
+}
+.container-highlight p{
+  font-family: verdana, tahoma, sans-serif;
+  font-size: 1em;
+}
+#highlight-content-container{
+  width:100%;
+}
+
+/*///////////////////////////////////////////*/
+.flex-item {
+  position:relative;
+}
+/*Pay per view*/
+.background-blur {
+ filter:blur(2px);
+}
+#confirm-header{
+  margin-top: 20px;
+  margin-left: 0px;
+}
+#confirm-box {
+  background-color: #fff;
+  width:300px;
+  height:325px;
+  border: 1px solid #858585;
+  text-align: center;
+  padding:25px;
+  position:absolute;
+  display:none;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.sticky-popup{
+  position: sticky;
+  top:35%;
+  z-index:1;
+}
+.shoppingcart {
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+}
+.confirm-cta{
+  display:inline-block;
+  font-size: 1em;
+  background-color: var(--main-yellow);
+  color: #000;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 45px;
+  text-align: center;
+  margin-top:25px;
+  margin-bottom:20px;
+}
+.closing-icon{
+  text-align: end;
+}
+/* X-icon */
+.fa-times{
+  color:#000;
+  font-size:1.1em;
+}
+#close-link{
+  display:block;
+  text-align: end;
+  margin-top:25px;
+}
+
+
+/*///////////////////////////////////////////*/
 @media (max-width: 800px) {
-  main {
+  /* main {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
     grid-area: "categories" "movies" "footer";
-  }
-  .sticky-position-categories {
+  } */
+  /* .sticky-position-categories {
     grid-area: categories;
   }
   #content {
@@ -107,7 +222,7 @@ h4 {
   }
   footer {
     grid-area: footer;
-  }
+  } */
   h1 {
     font-size: var(--size-h1);
     text-transform: capitalize;

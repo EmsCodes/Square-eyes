@@ -4,11 +4,13 @@
 }
 
 body {
+  max-width:100%;
   font-family: verdana, tahoma, sans-serif;
+  margin:0;
+  padding:0;
 }
 main{
-  max-width:1400px;
-  margin:auto;
+  /* margin:auto; */
 }
 /*Custom properties*/
 :root {
@@ -19,29 +21,35 @@ main{
   --main-yellow: #f2b705;
   --font-style: italic;
   --link-color: #004349;
+  --movie-box-shadow:5px 3px 3px #858585;
+  --gray-text-color:#595959;
 }
 /* header */
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #fff;
   position: sticky;
-  z-index: 1;
-  max-width:90%;
-  margin:auto;
+  z-index: 100;
+  width:90%;
+  margin:0px auto;
   margin-top: 50px;
+  background-color:#fff;
 }
 .logo {
   max-height: 125px;
   max-width: 175px;
+  margin-left:100%;
+}
+/*Main navigation*/
+#nav-flex{
+  display:flex;
 }
 nav li {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 1em;
-  padding-right: 50px;
-  padding-left: 50px;
+  font-size: 1.1em;
+  padding-left: 75px;
   font-family: "palatino linotype", verdana;
   margin-top: 50px;
 }
@@ -54,9 +62,11 @@ nav a {
 }
 nav a:hover {
   color: #000;
+  text-decoration:underline
 }
 .active {
   color: #000;
+  text-decoration: solid underline var(--main-yellow) 2px;
 }
 h1 {
   font-size: 1em;
@@ -79,7 +89,6 @@ h4 {
 .hamburger-label {
   display:none;
 }
-
 /*icons*/
 .icons {
   margin-top: 45px;
@@ -91,29 +100,47 @@ h4 {
   padding: 10px;
   margin-right: 10px;
 }
-.account-icon {
+/*Account Icon*/
+.fa-user {
   width: 45px;
   height: 45px;
   margin-left: 50px;
+  font-size:2em;
+  color: #595959;
+  margin-top:40px;
 }
-
+.fa-user:hover{
+  color:#000;
+}
 /* CTA */
 
 .cta {
+  display:inline-block;
   font-size: 1em;
-  background-color: #f2b705;
+  background-color: var(--main-yellow);
   color: #000;
   text-decoration: none;
   padding: 20px;
   border-radius: 45px;
   text-align: center;
-  margin-right: 30px;
-  transition-duration: 0.5s;
+  width:125px;
+  /* transition-duration: 0.5s; */
   /* box-shadow: 2px 5px 5px 2px #999999; */
 }
-.cta:hover {
-  background-color: #ffd454;
-
+.form-cta{
+  display:inline-block;
+  font-size: 1em;
+  background-color: var(--main-yellow);
+  color: #000;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 45px;
+  text-align: center;
+  width:125px;
+}
+.cta:hover, .form-cta:hover{
+  background-color:#ffbf00;
+  transform:scale(1.05);
 }
 .link {
   color: #004349;
@@ -168,22 +195,14 @@ ul a:hover {
   color: #000;
 }
 
-footer::before,
-footer::after {
-  content: "/";
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 footer {
   margin-top: 150px;
 }
 
 /*mainly header media-queries*/
 @media (max-width: 1600px) {
-  .facebook,
-  .message,
-  .instagram {
-    display: none;
+  .logo{
+    margin-left:10%;
   }
   nav li {
     display: inline-block;
@@ -192,10 +211,9 @@ footer {
     margin-top: 50px;
     padding: 30px;
   }
-  .account-icon {
+  .fa-user{
     width: 45px;
     height: 45px;
-   
   }
   header {
     display: flex;
@@ -247,7 +265,7 @@ nav{
 
 #hamburger-menu:checked ~ nav {
   display:block;
-  background-color:#fff;
+  background-color:#fff; 
 }
 .hamburger-label {
   font-size: 2em;
@@ -260,18 +278,9 @@ nav li{
   padding:0px;
   font-size:1em;
 }
-.account-icon{
+.fa-user{
   width:35px;
   height:35px;
-}
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: #fff;
-  position: sticky;
-  z-index: 1;
-  margin-top: 50px;
 }
 .logo {
   max-height: 125px;
