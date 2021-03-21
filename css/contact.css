@@ -1,10 +1,5 @@
 h1 {
-  font-size: 1.8em;
-  text-transform: uppercase;
-  font-style: bold;
-}
-h2 {
-  font-size: var(--size-h2);
+  font-size: 1.5em;
   text-transform: uppercase;
   font-style: bold;
 }
@@ -17,35 +12,59 @@ h2 {
 .label-1,
 .label-2,
 .label-3 {
-  margin-top: 10px;
   margin-bottom: 20px;
   font-size: 1em;
 }
-.label-3 {
-  margin-bottom: 35px;
+input, textarea {
+	font-size: 1em;
+	padding: 5px;
+	width: 200px;
+	margin-top: 5px;
+	cursor: pointer;
+	border: 1px solid lightgray;
 }
-main {
-  display: block;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+input:hover, textarea:hover{
+  border-color: rgb(255, 102, 0);
+}
+.label-3 {
+  margin-bottom: 45px;
+}
+.container .form-cta{
+  box-shadow:1px 5px 5px 1px #00000031;
 }
 .container {
-  height: 425px;
+  max-height: 525px;
   max-width:250px;
-  padding: 35px;
+  padding: 45px;
   padding-bottom: 50px;
-  margin-top: 100px;
   background-color:#fff;
   border:1px solid lightgray;
+  border-radius:5px;
+  margin:0px auto;
+  margin-top:85px;
 }
 fieldset {
   border: none;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  left:50%;
+  margin-left:45%;
+  margin-bottom:50px;
+  margin-top:15%;
+
 }
+/* Form validation*/
+.form-error {
+	font-size: 0.9em;
+	margin-top: 5px;
+	color: rgb(200, 0, 0);
+  display:none;
+}
+/* .message-confirmation{
+  max-height: 525px;
+  max-width:250px;
+  padding: 45px;
+  padding-bottom: 50px;
+  position:absolute;
+  margin-left:45%;
+  margin-top:50px;
+} */

@@ -1,6 +1,3 @@
-main{
-  overflow:hidden;
-}
 h1 {
   font-size: var(--size-h1);
   font-style: bold;
@@ -39,8 +36,8 @@ h3{
 }
 .main-header-info {
   margin:0px auto;
-  margin-top: 150px;
-  margin-left:20%;
+  margin-top: 100px;
+  margin-left:15%;
 }
 .main-section {
   display: flex;
@@ -58,7 +55,10 @@ aside {
 .vertical-line {
   border: var(--vertical-line);
   max-height: 550px;
-  margin-top: 75px;
+  margin-top: 50px;
+  border:0;
+  border-left: 1px solid rgba(0, 0, 0, 0.248);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /*images watchers/producers*/
@@ -85,14 +85,14 @@ section.film-watchers {
   width: 325px;
   height: 325px;
   border-radius: 50%;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .fa-chevron-down{
-  margin-left:55%;
+  margin-left:45%;
   font-size:3.5em;
   color:var(--main-yellow);
   margin-bottom:100px;
-  margin-top:75px;
+  margin-top:35px;
 }
 /*Info bottom index*/
 
@@ -100,7 +100,6 @@ section.film-watchers {
   width:100%;
   display:flex;
   flex-flow:row wrap;
-  /* margin-left:20%; */
 }
 .producer-image{
   background-image: url(../images/producer-image.jpg);
@@ -124,9 +123,8 @@ section.film-watchers {
 }
 .members-info-section{
   text-align: center;
-  /* background-color: var(--main-yellow); */
-  background: rgb(253,187,45);
-background: radial-gradient(circle, rgba(253,187,45,0.8155462868741247) 14%, rgba(253,187,45,1) 94%);
+  background: rgb(246,162,40);
+  background: linear-gradient(50deg, rgba(246,162,40,1) 20%, rgba(253,187,45,1) 57%); 
 }
 .members-info-section .cta{
   background-color: var(--link-color);
@@ -134,7 +132,8 @@ background: radial-gradient(circle, rgba(253,187,45,0.8155462868741247) 14%, rgb
 }
 .producers-info-section{
   text-align: center;
-  background-color:var(--link-color);
+  background: rgb(1,38,38);
+  background: linear-gradient(201deg, rgba(1,38,38,1) 10%, rgba(0,67,73,1) 48%, rgba(2,89,89,1) 85%);
   color:#fff;
 }
 .members-info-section ul{
@@ -142,10 +141,10 @@ background: radial-gradient(circle, rgba(253,187,45,0.8155462868741247) 14%, rgb
   margin-left:35%; 
   margin-bottom:50px;
   margin-top:40px;
-  list-style-type:disc;
+  list-style-type:square;
 }
 .members-info-section li,.producers-info-section li {
-  margin-top:10px;
+  margin-top:30px;
   font-size:1.3em;
 }
 .producers-info-section ul{
@@ -153,7 +152,7 @@ background: radial-gradient(circle, rgba(253,187,45,0.8155462868741247) 14%, rgb
   margin-left:31%; 
   margin-bottom:50px;
   margin-top:40px;
-  list-style-type: disc;
+  list-style-type: square;
 }
 h3, .bullet-list{
   margin-top:10%;
@@ -228,6 +227,17 @@ h3, .bullet-list{
   }
 }
 @media (max-width: 600px) {
+
+  .info-section-1, .info-section-2{
+    width:100%;
+    display:flex;
+    flex-flow:column;
+  }
+  .producers-info-section, .members-info-section, .info-images{
+    width:100%;
+    height:500px;
+  }
+
   h1 {
     font-size: 1.4em;
   }

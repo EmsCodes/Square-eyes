@@ -22,10 +22,6 @@ h3 {
   margin-left:25px;
 }
 /* persistant nav sticky-position */
-.sticky-position {
-  position: sticky;
-  top: 50px;
-}
 .sticky-position-categories {
   position: fixed;
   border-right:1px solid var(--gray-text-color);
@@ -53,7 +49,6 @@ h3 {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   max-width:95%;
-
 }
 .movie-content-container{
   max-width:85%;
@@ -70,7 +65,7 @@ h3 {
   background-size:cover;
   cursor:pointer;
   box-shadow:var(--movie-box-shadow);
-  margin-left:15px;
+  margin-left:10px;
   margin-top:10px;
   margin-bottom:10px;
   flex-shrink:0;
@@ -89,10 +84,18 @@ h3 {
 .container h4 {
   font-family: verdana, tahoma, sans-serif;
   font-size: 1.5em;
-  margin-left: 5px;
+  margin-left: 10px;
   position:absolute;
   color:#fff;
-  bottom:-15px;
+  bottom:1px;
+}
+.container p{
+  font-family: verdana, tahoma, sans-serif;
+  font-size: 1em;
+  margin-left: 15px;
+  position:absolute;
+  color:#fff;
+  bottom:-5px;
 }
 
 /*///////////////////////////////////////////*/
@@ -102,12 +105,12 @@ h3 {
   height: 350px;
   border-radius:5px;
   contain: content;
-  transition: 0.2s ease-in-out 0.3s;
-  background-image:url(../images/Night-at-museum.jpg);
+  transition: 0.2s ease-in-out;
+  background-image:url(../images/nasa.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size:conver;
   cursor:pointer;
-  background-position: center;
+  background-position: top;
   margin:0px auto;
   position:relative;
   box-shadow:var(--movie-box-shadow);
@@ -125,8 +128,10 @@ h3 {
   position:absolute;
   color:#fff;
   left:35px;
-  bottom:10px;
-  background-color: rgba(0, 0, 0, 0.501);
+  bottom:20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding:0px 20px 10px 20px;
+  border-radius:5px;
 }
 #highlight-text p{
   font-weight: 700;
@@ -143,14 +148,20 @@ h3 {
 #highlight-content-container{
   width:100%;
 }
-
+.fa-heart{
+  margin-left:10px;
+}
+.fa-heart:hover{
+  color:rgb(230, 0, 0);
+}
 /*///////////////////////////////////////////*/
 .flex-item {
   position:relative;
 }
 /*Pay per view*/
-.background-blur {
- filter:blur(2px);
+.fa-star{
+  color:var(--main-yellow);
+  font-size:0.8em;
 }
 #confirm-header{
   margin-top: 20px;
@@ -159,53 +170,47 @@ h3 {
 #confirm-box {
   background-color: #fff;
   width:300px;
-  height:325px;
+  height:auto;
   border: 1px solid #858585;
+  border-radius:5px;
   text-align: center;
   padding:25px;
   position:absolute;
-  display:none;
   left: 0;
   right: 0;
   margin: auto;
+}
+#confirm-box button{
+  cursor:pointer;
 }
 .sticky-popup{
   position: sticky;
   top:35%;
   z-index:1;
 }
-.shoppingcart {
-  height: 15px;
-  width: 15px;
-  margin-left: 10px;
-}
-.confirm-cta{
-  display:inline-block;
-  font-size: 1em;
-  background-color: var(--main-yellow);
-  color: #000;
-  text-decoration: none;
-  padding: 20px;
-  border-radius: 45px;
-  text-align: center;
-  margin-top:25px;
-  margin-bottom:20px;
-}
 .closing-icon{
   text-align: end;
-}
-/* X-icon */
-.fa-times{
-  color:#000;
-  font-size:1.1em;
 }
 #close-link{
   display:block;
   text-align: end;
   margin-top:25px;
+  text-decoration: none;
+  color:var(--link-color);
+}
+/* X-icon/icons */
+.fa-times{
+  color:#000;
+  font-size:1.1em;
+}
+.fa-shopping-cart{
+  font-size:0.7em;
+}
+.container:hover .fa-shopping-cart, .container-highlight:hover .fa-shopping-cart{
+  color:rgb(30, 148, 0);
 }
 
-
+.fa-chevron-right
 /*///////////////////////////////////////////*/
 @media (max-width: 800px) {
   /* main {

@@ -28,18 +28,19 @@ main{
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: sticky;
   z-index: 100;
-  width:90%;
-  margin:0px auto;
-  margin-top: 50px;
+  width:100%;
   background-color:#fff;
+  padding-top:30px;
+  padding-bottom:20px;
+  top:0px;
 }
 .logo {
   max-height: 125px;
   max-width: 175px;
-  margin-left:100%;
+  margin-left:150px;
 }
 /*Main navigation*/
 #nav-flex{
@@ -123,9 +124,9 @@ h4 {
   padding: 20px;
   border-radius: 45px;
   text-align: center;
-  width:125px;
-  /* transition-duration: 0.5s; */
-  /* box-shadow: 2px 5px 5px 2px #999999; */
+  width:150px;
+  text-transform: uppercase;
+  box-shadow:1px 5px 5px 1px #00000031;
 }
 .form-cta{
   display:inline-block;
@@ -133,10 +134,12 @@ h4 {
   background-color: var(--main-yellow);
   color: #000;
   text-decoration: none;
-  padding: 15px;
+  padding: 20px;
   border-radius: 45px;
   text-align: center;
-  width:125px;
+  max-width:150px;
+  border:none;
+  box-shadow:1px 5px 5px 1px #00000031;
 }
 .cta:hover, .form-cta:hover{
   background-color:#ffbf00;

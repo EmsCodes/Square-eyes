@@ -9,12 +9,12 @@ section.illustration {
   margin-top: 100px;
 }
 h1 {
-  font-size: var(--size-h1);
+  font-size: 1.9em;
   text-transform: uppercase;
   font-style: bold;
 }
 h2 {
-  font-size: var(--size-h2);
+  font-size: 1.6;
   text-transform: uppercase;
   font-style: bold;
 }
@@ -30,13 +30,10 @@ h2 {
 fieldset {
   max-width: 650px;
   max-height: auto;
-  border: 1px;
-  border-width: 1px;
-  border-color: white;
-  border-style: outset;
-  box-shadow: 0px 3px 6px 0px #999999;
+  border: 1px solid rgba(150, 150, 150, 0.5);
+  /* box-shadow: 0px 3px 6px 0px #999999; */
   border-radius: 25px;
-  padding: 50px 50px 25px 50px;
+  padding: 50px 50px 50px 50px;
 }
 .checkbox {
   margin-top: 25px;
