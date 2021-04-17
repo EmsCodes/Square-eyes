@@ -1,61 +1,3 @@
-//Contact form validation and error-message
-
-// const form = document.querySelector("form");
-// const fullName = document.querySelector("#name");
-// const nameError = document.querySelector("#nameError");
-// const textarea = document.querySelector("#textarea");
-// const textareaError = document.querySelector("#textarea-error");
-// const email = document.querySelector("#email");
-// const emailError = document.querySelector("#emailError");
-
-
-// const message = document.querySelector("#message");
-// const contactSubmitButton = document.querySelector("#contact-submit-button");
-
-
-// function validateForm(event){
-//     event.preventDefault();
-
-//     if(checkLength(fullName.value, 0)){
-//         nameError.style.display = "none";
-//     }
-//     else{
-//         nameError.style.display = "block";
-//     }
-//     if(checkLength(textarea.value, 10)){
-//        textareaError.style.display = "none";
-//     }
-//     else{
-//         textareaError.style.display = "block";
-//     }
-//     if(validateEmail(email.value)){
-//         emailError.style.display = "none";
-//     }
-//     else {
-//         emailError.style.display = "block";
-//     }
-// }
-
-// form.addEventListener("submit", validateForm);
-
-
-// function checkLength(value, lenght) {
-//     if (value.trim().length > lenght ) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-
-// function validateEmail(email) {
-//     const regEx = /\S+@\S+\.\S+/;
-//     const patternMatches = regEx.test(email);
-//     return patternMatches;
-// }
-
-
-//Fetch REST API
-
 const url = "http://makra-stenkloev.no/Square-eyes/wp-json/wc/store/products";
 
 const popularContainer = document.querySelector("#popular-movies");
@@ -79,7 +21,8 @@ async function fetchProducts(){
         console.log(result);
 
         createHtml(result);
-
+        purchaseBox(result);
+        
     }
 
     catch(error){
@@ -107,12 +50,10 @@ function createHtml(products){
     products.forEach(function(product){ 
 
        const movieHtml =`<div class="movie-content-container">
-                            <a href="selectedmovie.html?id="${product.id}>
                                 <div class="container" style="background-image: url(${product.images[0].src};" alt="${product.name}">
-                                    <h4>${product.name} <i class="fas fa-heart"></i></h4>'
+                                    <h4>${product.name} <i class="fas fa-heart"> <i class="fas fa-shopping-cart"></i></i></h4>'
                                     <p>Rating: ${product.average_rating} <i class="fas fa-star"></i></p>
                                 </div>
-                            </a>
                         </div>`; 
 
         popularContainer.innerHTML += movieHtml;
@@ -128,10 +69,40 @@ function createHtml(products){
             highlightedMovie.innerHTML += 
             `<div class="container-highlight" style="background-image: url(${product.images[0].src};" alt="${product.name}">
                 <div id="highlight-text">
-                    <h4>${product.name}</h4>
+                    <h4>${product.name} <i class="fas fa-shopping-cart"></i></h4>
                     <p class="short-movie-description">${product.short_description}</p>
                 </div>
             </div>`
         }
     })
 }
+
+//confirm purchase/payment
+
+const confirmPurchase = document.querySelector("#confirm-purchase");
+const confirmBox = document.querySelector(".confirm");
+const closingX = document.querySelector(".close-link");
+
+
+
+confirmBox.addEventListener("click", function purchaseBox(products){
+
+    
+confirmPurchase.innerHTML += 
+            `<div id="confirm-box" class="sticky-popup">
+                <div class="closing-icon">
+                    <i class="fas fa-times"></i>
+                </div>
+                <h1 id="confirm-header">Confirm purchase</h1>
+                <p>Movie: LOL</p>
+                <p>Price: LOL</p>
+                <a href="selectedmovie.html"><button class="form-cta">Confirm payment</button></a>
+                <a href="payperview.html" id="close-link">Close</a>
+            </div>`;
+});   
+
+closingX.addEventListener("click", function(){
+
+    confirmPurchase.innerHTML = "";
+
+});    
