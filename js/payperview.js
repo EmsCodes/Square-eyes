@@ -24,8 +24,6 @@ async function fetchProducts(){
 
         createHtml(result);
         purchaseBox(result);
-
-        return result
         
     }
 

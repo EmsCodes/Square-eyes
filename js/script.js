@@ -76,12 +76,50 @@ async function fetchProducts(){
 
         const result = json; 
 
-        console.log(result);
+         popularContainer.innerHTML = "";
 
-        createHtml(result);
+         recentlyAdded.innerHTML = "";
 
+         recommended.innerHTML = "";
+
+         continueWatching.innerHTML = "";
+
+        highlightedMovie.innerHTML = "";
+
+        for(let i=0; i<result.length; i++){
+
+            console.log(result[i].id);
+            
+            const movieHtml =
+            `<div class="movie-content-container">
+                <a href="selectedmovie.html?id=${result[i].id}">
+                    <div class="container" style="background-image: url(${result[i].images[0].src};" alt="${result[i].name}">
+                        <h4>${result[i].name} <i class="fas fa-heart"></i></h4>'
+                        <p>Rating: ${result[i].average_rating} <i class="fas fa-star"></i></p>
+                    </div>
+                </a>
+            </div>`; 
+
+            popularContainer.innerHTML += movieHtml;
+
+            recentlyAdded.innerHTML += movieHtml;
+
+            recommended.innerHTML += movieHtml;
+
+            continueWatching.innerHTML += movieHtml;
+
+            if(result[i].categories[0].name === "Highlight"){
+
+            highlightedMovie.innerHTML += 
+            `<div class="container-highlight" style="background-image: url(${result[i].images[0].src};" alt="${result[i].name}">
+            <div id="highlight-text">
+                <h4>${result[i].name}</h4>
+                <p class="short-movie-description">${result[i].short_description}</p>
+            </div>
+            </div>`
+            }
+        }
     }
-
     catch(error){
         console.log(error);
     }
@@ -92,46 +130,46 @@ fetchProducts();
 
 //Create html from API
 
-function createHtml(products){
+// function createHtml(products){
     
-    popularContainer.innerHTML = "";
+//     popularContainer.innerHTML = "";
 
-    recentlyAdded.innerHTML = "";
+//     recentlyAdded.innerHTML = "";
 
-    recommended.innerHTML = "";
+//     recommended.innerHTML = "";
 
-    continueWatching.innerHTML = "";
+//     continueWatching.innerHTML = "";
 
-    highlightedMovie.innerHTML = "";
+//     highlightedMovie.innerHTML = "";
 
-    products.forEach(function(product){ 
+//     products.forEach(function(product){ 
 
-       const movieHtml =`<div class="movie-content-container">
-                            <a href="selectedmovie.html?id="${product.id}>
-                                <div class="container" style="background-image: url(${product.images[0].src};" alt="${product.name}">
-                                    <h4>${product.name} <i class="fas fa-heart"></i></h4>'
-                                    <p>Rating: ${product.average_rating} <i class="fas fa-star"></i></p>
-                                </div>
-                            </a>
-                        </div>`; 
+//        const movieHtml =`<div class="movie-content-container">
+//                             <a href="selectedmovie.html?id=${product.id}">
+//                                 <div class="container" style="background-image: url(${product.images[0].src};" alt="${product.name}">
+//                                     <h4>${product.name} <i class="fas fa-heart"></i></h4>'
+//                                     <p>Rating: ${product.average_rating} <i class="fas fa-star"></i></p>
+//                                 </div>
+//                             </a>
+//                         </div>`; 
 
-        popularContainer.innerHTML += movieHtml;
+//         popularContainer.innerHTML += movieHtml;
 
-        recentlyAdded.innerHTML += movieHtml;
+//         recentlyAdded.innerHTML += movieHtml;
 
-        recommended.innerHTML += movieHtml;
+//         recommended.innerHTML += movieHtml;
 
-        continueWatching.innerHTML += movieHtml;
+//         continueWatching.innerHTML += movieHtml;
 
-        if(product.categories[0].name === "Highlight"){
+//         if(product.categories[0].name === "Highlight"){
 
-            highlightedMovie.innerHTML += 
-            `<div class="container-highlight" style="background-image: url(${product.images[0].src};" alt="${product.name}">
-                <div id="highlight-text">
-                    <h4>${product.name}</h4>
-                    <p class="short-movie-description">${product.short_description}</p>
-                </div>
-            </div>`
-        }
-    })
-}
+//             highlightedMovie.innerHTML += 
+//             `<div class="container-highlight" style="background-image: url(${product.images[0].src};" alt="${product.name}">
+//                 <div id="highlight-text">
+//                     <h4>${product.name}</h4>
+//                     <p class="short-movie-description">${product.short_description}</p>
+//                 </div>
+//             </div>`
+//         }
+//     })
+// }
