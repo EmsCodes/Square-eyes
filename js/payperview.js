@@ -22,6 +22,8 @@ async function fetchProducts(){
 
         createHtml(result);
         purchaseBox(result);
+
+        return result
         
     }
 
@@ -69,7 +71,7 @@ function createHtml(products){
             highlightedMovie.innerHTML += 
             `<div class="container-highlight" style="background-image: url(${product.images[0].src};" alt="${product.name}">
                 <div id="highlight-text">
-                    <h4>${product.name} <i class="fas fa-shopping-cart"></i></h4>
+                    <h4>${product.name}<i class="fas fa-shopping-cart"></i></h4>
                     <p class="short-movie-description">${product.short_description}</p>
                 </div>
             </div>`
@@ -80,29 +82,31 @@ function createHtml(products){
 //confirm purchase/payment
 
 const confirmPurchase = document.querySelector("#confirm-purchase");
-const confirmBox = document.querySelector(".confirm");
 const closingX = document.querySelector(".close-link");
+const confirmBox = document.querySelectorAll(".box");
 
 
 
-confirmBox.addEventListener("click", function purchaseBox(products){
+function purchaseBox(chosenMovie){
 
+    chosenMovie.forEach(function(product){ 
+
+        confirmBox.forEach(movieBox => {movieBox.addEventListener("click", function(){
     
-confirmPurchase.innerHTML += 
-            `<div id="confirm-box" class="sticky-popup">
-                <div class="closing-icon">
-                    <i class="fas fa-times"></i>
-                </div>
-                <h1 id="confirm-header">Confirm purchase</h1>
-                <p>Movie: LOL</p>
-                <p>Price: LOL</p>
-                <a href="selectedmovie.html"><button class="form-cta">Confirm payment</button></a>
-                <a href="payperview.html" id="close-link">Close</a>
-            </div>`;
-});   
-
-closingX.addEventListener("click", function(){
-
-    confirmPurchase.innerHTML = "";
-
-});    
+            confirmPurchase.innerHTML += 
+                        `<div id="confirm-box">
+                            <div class="confirm-box-image" style="background-image: url(${product.images[0].src};" alt="${product.name}"></div>
+                            <div class="closing-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <h5 id="confirm-header">Confirm purchase</h5>
+                            <p>Movie: ${product.name} </p>
+                            <p>Price:${product.price_html}</p>
+                            <a href="selectedmovie.html?id=${product.id}""><button class="form-cta">Confirm payment</button></a>
+                            <a href="payperview.html" id="close-link">Close</a>
+                        </div>`;
+                        
+            }); 
+        }) 
+    }) 
+}

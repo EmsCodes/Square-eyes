@@ -219,6 +219,11 @@ h3 {
   top:35%;
   z-index:1;
 }
+.confirm-box-image{
+  width:300px;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
 .closing-icon{
   text-align: end;
   cursor:pointer;
@@ -242,16 +247,16 @@ h3 {
   color:rgb(30, 148, 0);
 }
 
-.fa-chevron-right
 /*///////////////////////////////////////////*/
 @media (max-width: 800px) {
-  /* main {
+
+  main {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
     grid-area: "categories" "movies" "footer";
-  } */
-  /* .sticky-position-categories {
+  } 
+  .sticky-position-categories {
     grid-area: categories;
   }
   #content {
@@ -259,7 +264,7 @@ h3 {
   }
   footer {
     grid-area: footer;
-  } */
+  }
   h1 {
     font-size: var(--size-h1);
     text-transform: capitalize;

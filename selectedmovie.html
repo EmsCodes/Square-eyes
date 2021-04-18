@@ -22,38 +22,30 @@
     </script>
   </head>
   <body class="moviebackground">
-    <header class="sticky-position">
-      <a href="index.html"
-        ><img
+    <header>
+      <a href="index.html">
+        <img
           src="images/SquareEyes_Logo.png"
           class="logo"
           alt="Square Eyes logo."
-      /></a>
+        />
+      </a>
+      <div id="nav-flex">
       <label class="hamburger-label" for="hamburger-menu">
-        <i class="fas fa-bars"></i
-      ></label>
+        <i class="fas fa-bars"></i>
+      </label>
       <input type="checkbox" id="hamburger-menu" />
-      <nav>
-        <ul id="nav">
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="search.html">Search For Movies</a></li>
-          <li><a href="payperview.html">Pay Per View</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="icons">
-        <img class="facebook" src="images/facebook.png" />
-        <img class="instagram" src="images/instagram.png" />
-        <img class="message" src="images/message.png" />
-        <a href="login.html">
-          <img
-            class="account-icon"
-            src="images/account.png"
-            alt="account icon"
-          />
-        </a>
-      </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="payperview.html">Pay Per View</a></li>
+            <li><a href="contact.html">Producers</a></li>
+          </ul>
+        </nav>
+            <a href="login.html" label="login/account "alt="account/login icon">
+              <i class="far fa-user"></i>
+            </a>  
     </header>
     <main>
       <div class="flex-container">
@@ -121,9 +113,22 @@
               </div>
           </div>
         </section>
-      
+      <script src="js/components.js"></script>  
+      <script src="js/selected-movie.js"></script>
     </main>
-
-    <footer>Copyright &copy;</footer>
+    <footer>
+      <div class="social-icons-footer">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div role="navigation" aria-label="footer navigation">
+      <ul>
+        <a href="contact.html"><li>Contact</li></a>
+        <a href="accountdetails.html"><li>Manage Account</li></a>
+        <a href="index.html"><li>About us</li></a>
+      </ul>
+      </div>
+      &copy;Endre Makra-Stenkløv
+      </footer>
   </body>
 </html>

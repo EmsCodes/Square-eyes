@@ -24,18 +24,9 @@ h3 {
 .rating {
   size: 30px;
 }
-header {
-  background-color: linear-gradient(#707070, #505050, #383838);
+body, header{
+  background-color:rgb(41, 41, 41);
 }
-#nav {
-  color: #fff;
-}
-body{
-  background: linear-gradient(#707070, #505050, #383838);
-}
-/* .moviebackground {
-  background: linear-gradient(#707070, #505050, #383838);
-} */
 .movie-text-area {
   color: #fff;
 }
@@ -43,8 +34,7 @@ body{
   color: #fff;
   margin: 75px 150px 75px 150px;
 }
-.movie-player {
-}
+
 /* layout */
 .flex-container {
   display: flex;
