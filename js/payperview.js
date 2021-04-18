@@ -1,4 +1,6 @@
-const url = "http://makra-stenkloev.no/Square-eyes/wp-json/wc/store/products";
+
+
+const url = "https://makra-stenkloev.no/Square-eyes/wp-json/wc/store/products";
 
 const popularContainer = document.querySelector("#popular-movies");
 const recentlyAdded = document.querySelector("#recently-added");
