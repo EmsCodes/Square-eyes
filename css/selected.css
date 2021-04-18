@@ -29,10 +29,20 @@ body, header{
 }
 .movie-text-area {
   color: #fff;
+  max-width:30%;
 }
 .moviepageline {
   color: #fff;
   margin: 75px 150px 75px 150px;
+}
+
+.movie-container{
+  width:750px;
+  height:450px;
+  contain: content;
+  background-size:cover;
+  cursor:pointer;
+  background-repeat: no-repeat;
 }
 
 /* layout */

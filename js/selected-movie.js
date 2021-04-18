@@ -1,4 +1,4 @@
-const h1Title = document.querySelector("#title");
+const container = document.querySelector(".container");
 
 const queryString = document.location.search;
 
@@ -14,6 +14,7 @@ console.log(id);
 const url = "https://makra-stenkloev.no/Square-eyes/wp-json/wc/store/products/" + id;
 
 async function getDetails() {
+
 	try {
 		const response = await fetch(url);
 		const details = await response.json();
@@ -22,9 +23,17 @@ async function getDetails() {
 
 		console.log(result);
 
-        h1Title.innerHTML = 
+        container.innerHTML = 
         `<div>
-          <h1>${result.id}</h1>
+            <div class="flex-container">
+            <div class="movie-container" style="background-image: url(${result.images[0].src};" alt="${result.name}"</div>
+            </div>
+            <div class="movie-text-area">
+            <h1>${result.name}</h1>
+            <p class="movie-info movie-text">
+            ${result.description}
+            </p>
+            </div>
         </div>`
 
 
