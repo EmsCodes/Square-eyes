@@ -85,7 +85,7 @@ async function fetchProducts(){
 
         for(let i=0; i<result.length; i++){
 
-            console.log(result[i].id);
+            console.log(result);
             
             const movieHtml =
             `<div class="movie-content-container">

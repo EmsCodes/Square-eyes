@@ -16,19 +16,19 @@ h3{
 }
 .social-icons-index{
   display:block;
-  margin-left:30%;
 }
 .fa-facebook, .fa-instagram {
   font-size:1.6em;
   color:var(--link-color);
   margin-left:10px;
+  cursor: pointer;
 }
 .link-2 {
   display: block;
-  margin-left:10%;
+  margin-left:10px;
 }
-.link-2:hover {
-  transform:scale(1.1);
+.link-2:hover, .fa-facebook:hover, .fa-instagram:hover {
+  transform:scale(1.05);
 }
 .button {
   margin-top: 60px;
@@ -42,12 +42,13 @@ h3{
 .main-section {
   display: flex;
   flex-flow: row wrap;
+  margin-top:50px;
 }
 aside {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right:10%;
+  margin-right:7.5%;
 }
 .cta {
   margin-right: 35px;
@@ -68,7 +69,6 @@ aside {
   background-repeat: no-repeat;
   background-position: top;
   margin-left: 35px;
-  /* box-shadow: 2px 10px 10px 5px #999999; */
 }
 
 .film-watchers {
@@ -77,7 +77,6 @@ aside {
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 35px;
-  /* box-shadow: 5px 10px 10px 5px #999999; */
 }
 
 section.film-makers,
@@ -91,7 +90,7 @@ section.film-watchers {
   margin-left:45%;
   font-size:3.5em;
   color:var(--main-yellow);
-  margin-bottom:100px;
+  margin-bottom:85px;
   margin-top:35px;
 }
 /*Info bottom index*/
@@ -162,68 +161,52 @@ h3, .bullet-list{
 @media (max-width: 1575px) {
   section.film-makers,
   section.film-watchers {
-    max-width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin-top: 150px;
-  }
-  aside {
-    display: flex;
-    flex-direction: row;
+    max-width: 275px;
+    height: 275px;
+    margin-top: 160px;
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1400px) {
   section.film-makers,
   section.film-watchers {
     max-width: 225px;
     height: 225px;
-    border-radius: 50%;
-    margin-top: 100px;
-    margin-right: 0px;
+    margin-top: 125px;
   }
-  .film-makers {
-    background-image: url(../images/Producer.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    box-shadow: 2px 10px 10px 5px #999999;
-    margin-left: 0px;
-  }
-
   aside {
-    display: flex;
-    flex-direction: column;
+    margin-top:35px;
   }
+  .vertical-line {
+    max-height: 400px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3{
+    font-size:1.5em;
+  }
+  .fa-chevron-down{
+    font-size:3em;
+    margin-bottom:65px;
+    margin-top:50px;
+  }
+}
+
+@media (max-width: 1270px) {
   h1 {
     font-size: 1.7em;
   }
   h2 {
-    font-size: 1.3em;
-  }
-  .film-watchers {
-    margin-right: 20px;
-  }
-  .vertical-line {
-    display: none;
-  }
-}
-
-@media (max-width: 800px) {
-  h1 {
     font-size: 1.5em;
   }
-  h2 {
-    font-size: 1.1em;
-  }
   h3 {
-    font-size: 0.9em;
+    font-size: 1.4em;
   }
   .text {
     font-size: 0.9em;
-  }
-  section.film-makers,
-  section.film-watchers {
-    display: none;
   }
 }
 @media (max-width: 600px) {

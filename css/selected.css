@@ -35,7 +35,16 @@ body, header{
   color: #fff;
   margin: 75px 150px 75px 150px;
 }
-
+.loader {
+  border:5px solid rgba(0, 0, 0, 0.104);
+  border-top: 5px solid var(--main-yellow);
+  border-radius:50%;
+  width:35px;
+  height:35px;
+  animation: loader 1.5s linear infinite;
+  margin:0px auto;
+  margin-top:50px;
+}
 .movie-container{
   width:750px;
   height:450px;
@@ -43,8 +52,8 @@ body, header{
   background-size:cover;
   cursor:pointer;
   background-repeat: no-repeat;
+  background-position: center;
 }
-
 /* layout */
 .flex-container {
   display: flex;

@@ -15,6 +15,8 @@ const url = "https://makra-stenkloev.no/Square-eyes/wp-json/wc/store/products/" 
 
 async function getDetails() {
 
+    container.innerHTML ="";
+
 	try {
 		const response = await fetch(url);
 		const details = await response.json();
@@ -23,7 +25,7 @@ async function getDetails() {
 
 		console.log(result);
 
-        container.innerHTML = 
+        container.innerHTML += 
         `<div>
             <div class="flex-container">
             <div class="movie-container" style="background-image: url(${result.images[0].src};" alt="${result.name}"</div>
