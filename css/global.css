@@ -2,7 +2,9 @@
   font-family: "Palatino Linotype";
   src: url(https://fonts.adobe.com/fonts/latino-urw) format(URW);
 }
-
+*{
+  scroll-behavior: smooth;
+}
 body {
   max-width:100%;
   font-family: verdana, tahoma, sans-serif;
@@ -39,7 +41,7 @@ header {
 .logo {
   max-height: 110px;
   width: 135px;
-  margin-left:225px;
+  margin-left:175px;
 }
 /*Main navigation*/
 #nav-flex{
@@ -50,7 +52,6 @@ header {
 nav li {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 1.1em;
   margin-left: 30px;
   font-family: "palatino linotype", Georgia, 'Times New Roman', Times, serif;
   margin-top: 25px;
@@ -105,7 +106,7 @@ h4 {
 /*Account Icon*/
 .fa-user {
   margin-left: 50px;
-  font-size:2em;
+  font-size:1.8em;
   color: #004349c6;
   margin-top:15px;
 }
@@ -116,7 +117,7 @@ h4 {
 
 .cta {
   display:inline-block;
-  font-size: 1em;
+  font-size: 1.2em;
   background-color: var(--main-yellow);
   color: #000;
   text-decoration: none;
@@ -203,18 +204,6 @@ footer {
 
 /*mainly header media-queries, some global CTAs*/
 @media (max-width: 1200px) {
-  .cta {
-    font-size: 0.9em;
-    background-color: #f2b705;
-    color: #000;
-    text-decoration: none;
-    padding: 25px;
-    border-radius: 45px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 1200px) {
   header {
     justify-content: space-between;
   }
@@ -235,58 +224,57 @@ footer {
     margin-left: 25px;
   }
   .cta {
-    font-size: 0.9em;
-    background-color: #f2b705;
-    color: #000;
-    text-decoration: none;
-    padding: 25px;
-    border-radius: 45px;
-    text-align: center;
+    padding: 15px 10px;
   }
 }
 
 @media (max-width: 1000px) {
-nav{
-  display:none;
-  order:1;
-  position:absolute;
-  padding:50px 50px 100px 20px;
-  left:15vw;
-  right:15vw;
-  margin-top:100px;
-  border-bottom:1px solid rgba(0, 0, 0, 0.1);
-  border-top: 2px solid var(--main-yellow);
-}
-nav li{
-  font-size:1.2em;
-  padding-bottom:10px;
-  display:block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-} 
-#hamburger-menu {
-  display:none;
-}
+  nav{
+    display:none;
+    order:1;
+    position:absolute;
+    padding:50px 50px 100px 20px;
+    left:0;
+    right:0;
+    margin-top:85px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+    border-top: 2px solid var(--main-yellow);
+    z-index: 100;
+  }
+  nav li{
+    font-size:1.2em;
+    padding-bottom:10px;
+    display:block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  } 
+  #hamburger-menu {
+    display:none;
+  }
 
-#hamburger-menu:checked ~ nav {
-  display:block;
-  background-color:#fff; 
-}
-.hamburger-label {
-  position: relative;
-  font-size: 2.4em;
-  display:block;
-  order:1;
-  margin-top:25px;
-  margin-left:25px;
-  color:var(--link-color);
-}
-.fa-user{
-  font-size:2em;
-  margin-top:32px;
-}
-.logo {
-  max-height: 125px;
-  max-width: 175px;
+  #hamburger-menu:checked ~ nav {
+    display:block;
+    background-color:#fff; 
+  }
+  .hamburger-label {
+    position: relative;
+    font-size: 2.4em;
+    display:block;
+    order:1;
+    margin-top:25px;
+    margin-left:25px;
+    color:var(--link-color);
+  }
+  .fa-user{
+    font-size:2em;
+    margin-top:32px;
+  }
+  .logo {
+    max-height: 125px;
+    max-width: 175px;
+  }
+  .cta {
+    padding: 15px;
+  }
 }
 
 /*other media queries*/
@@ -302,44 +290,23 @@ nav li{
     max-width: 175px;
     margin-left:50px;
   }
-  .cta {
-    font-size: 0.8em;
-    background-color: #f2b705;
-    color: #000;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 35px;
-    text-align: center;
-  }
 }
 @media (max-width: 600px){
   nav{
-    padding:30px 50px 75px 10px;
-    left:10vw;
-    right:10vw;
-    margin-top:90px;
+    margin-top:75px;
   }
   .logo {
     max-height: 100px;
     max-width: 125px;
   }
   .hamburger-label {
-    font-size: 2em;
-    margin-top:25px;
+    font-size: 2.2em;
+    margin-top:15px;
     margin-left:20px;
   }
   .fa-user{
-    font-size:1.7em;
-    margin-top:30px;
-  }
-  .cta {
-    font-size: 0.7em;
-    background-color: #f2b705;
-    color: #000;
-    text-decoration: none;
-    padding: 15px;
-    border-radius: 30px;
-    text-align: center;
+    font-size:1.8em;
+    margin-top:22px;
   }
   .link {
     color: #004349;
@@ -354,14 +321,8 @@ nav li{
 }
 
 @media (max-width:450px){
-  nav{
-    display:none;
-    order:1;
-    position:absolute;
-    padding:35px 50px 100px 20px;
-    left:0;
-    right:0;
-    margin-top:100px;
+  header{
+    margin-top:10px;
   }
   .logo {
     max-height: 85px;
@@ -369,16 +330,15 @@ nav li{
     margin-left:25%;
   }
   .hamburger-label {
-    font-size: 1.8em;
-    margin-top:20px;
+    font-size: 2em;
     margin-left:15px;
+    margin-top:10px;
   }
   .fa-user{
     font-size:1.6em;
-    margin-top:25px;
+    margin-top:18px;
   }
   #nav-flex{
     margin-right:35px;
   }
 }
-}  

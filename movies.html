@@ -21,7 +21,7 @@
         <nav>
           <ul>
             <a href="index.html"><li>Home</li></a>
-            <a href="movies.html" class="active"><li>Movies</li></a>
+            <a href="movies.html"><li class="active">Movies</li></a>
             <a href="payperview.html"><li>Pay Per View</li></a>
             <a href="contact.html"><li>Producers</li></a>
           </ul>
@@ -33,8 +33,9 @@
     </header>
     <main>
       <aside>
-      <div class="sticky-position-categories">
+      <div class="sticky-position-categories dropdown">
           <div role="navigation" aria-label="side navigation">
+            <button id="dropdown-button">Options<i class="fas fa-chevron-down"></i></button>
             <ul class="side-nav">
               <li><a href="search.html">Search<i class="fas fa-search"></i></li></a>
               <li><a href="movies.html" class="active">Browse Movies</li></a>
@@ -59,7 +60,7 @@
           <div class="movie-content-container">
           <div>
             <div>
-              <h3>Popular on SquareEyes</h3>
+              <h3>Popular on Square-Eyes</h3>
             </div>
             <hr id="movie-divide-line">
           </div>

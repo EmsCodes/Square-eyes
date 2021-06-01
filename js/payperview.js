@@ -1,185 +1,102 @@
 
-// const popularContainer = document.querySelector("#popular-movies");
-// const recentlyAdded = document.querySelector("#recently-added");
-// const recommended = document.querySelector("#recommended-movies");
-// const continueWatching= document.querySelector("#continue-watching");
-// const highlightedMovie = document.querySelector("#movies-highlight-content");
+const popularContainer = document.querySelector("#popular-movies");
+const recentlyAdded = document.querySelector("#recently-added");
+const recommended = document.querySelector("#recommended-movies");
+const continueWatching= document.querySelector("#continue-watching");
+const highlightedMovie = document.querySelector("#movies-highlight-content");
 
 
-// const url = "https://makra-stenkloev.no/Square-eyes/wp-json/wc/store/products";
+const url = "https://makra-stenkloev.no/Square-eyes/wp-json/wc/store/products";
 
 
 
-// async function fetchProducts(){
+async function fetchProducts(){
     
-//     try{
+    try{
 
-//         const response = await fetch(url);
+        const response = await fetch(url);
 
-//         const json = await response.json();
+        const json = await response.json();
 
-//         const result = json; 
+        const result = json; 
 
-//          popularContainer.innerHTML = "";
+        purchaseBox(result);
 
-//          recentlyAdded.innerHTML = "";
+         popularContainer.innerHTML = "";
 
-//          recommended.innerHTML = "";
+         recentlyAdded.innerHTML = "";
 
-//          continueWatching.innerHTML = "";
+         recommended.innerHTML = "";
 
-//         highlightedMovie.innerHTML = "";
+         continueWatching.innerHTML = "";
 
-//         for(let i=0; i<result.length; i++){
+        highlightedMovie.innerHTML = "";
 
-//             console.log(result[i].id);
+        for(let i=0; i<result.length; i++){
             
-//             const movieHtml =
-//             `<div class="movie-content-container">
-//                 <a href="selectedmovie.html?id=${result[i].id}">
-//                     <div class="container" style="background-image: url(${result[i].images[0].src};" alt="${result[i].name}">
-//                         <h4>${result[i].name} <i class="fas fa-heart"></i></h4>
-//                         <p>Rating: ${result[i].average_rating} <i class="fas fa-star"></i></p>
-//                     </div>
-//                 </a>
-//             </div>`; 
+            const movieHtml =
+            `<div class="movie-content-container">
+                <div class="container" style="background-image: url(${result[i].images[0].src}" alt="${result.name}">
+                    <h4>${result[i].name} <i class="fas fa-heart"></i><i class="fas fa-shopping-cart"></i></h4>
+                    <p>Rating: ${result[i].average_rating} <i class="fas fa-star"></i></p>
+                </div>
+            </div>`; 
 
-//             popularContainer.innerHTML += movieHtml;
+            popularContainer.innerHTML += movieHtml;
 
-//             recentlyAdded.innerHTML += movieHtml;
+            recentlyAdded.innerHTML += movieHtml;
 
-//             recommended.innerHTML += movieHtml;
+            recommended.innerHTML += movieHtml;
 
-//             continueWatching.innerHTML += movieHtml;
+            continueWatching.innerHTML += movieHtml;
 
-//             if(result[i].categories[0].name === "Highlight"){
+            if(result[i].categories[0].name === "Highlight"){
 
-//             highlightedMovie.innerHTML += 
-//             `<div class="container-highlight" style="background-image: url(${result[i].images[0].src};" alt="${result[i].name}">
-//                 <div id="highlight-text">
-//                     <h4>${result[i].name}</h4>
-//                     <p class="short-movie-description">${result[i].short_description}</p>
-//                 </div>
-//             </div>`
-//             }
-//         }
-//     }
-//     catch(error){
-//         console.log(error);
-//     }
-// }
+            highlightedMovie.innerHTML += 
+            `<div class="container-highlight" style="background-image: url(${result[i].images[0].src}" alt="${result[i].name}">
+                <div id="highlight-text">
+                    <h4>${result[i].name}</h4>
+                    <p class="short-movie-description">${result[i].short_description}</p>
+                </div>
+            </div>`
+            }
+        }
+    }
+    catch(error){
+        console.log(error);
+    }
+}
 
-//confirm purchase/payment
-
-// const confirmPurchase = document.querySelector("#confirm-purchase");
-// const closingX = document.querySelector(".close-link");
-// const confirmBox = document.querySelectorAll(".box");
+fetchProducts();
 
 
+// confirm purchase/payment
 
-// function purchaseBox(chosenMovie){
+const confirmPurchase = document.querySelector("#confirm-purchase");
+const closingX = document.querySelector(".close-link");
+const confirmBox = document.querySelectorAll(".box");
 
-//     chosenMovie.forEach(function(product){ 
 
-//         confirmBox.forEach(movieBox => {movieBox.addEventListener("click", function(){
+
+function purchaseBox(chosenMovie){
+
+    chosenMovie.forEach(function(product){ 
+
+        confirmBox.forEach(movieBox => {movieBox.addEventListener("click", function(){
     
-//             confirmPurchase.innerHTML += 
-//                         `<div id="confirm-box">
-//                             <div class="closing-icon">
-//                                 <i class="fas fa-times"></i>
-//                             </div>
-//                             <h5 id="confirm-header">Confirm purchase</h5>
-//                             <p>Movie: ${product.name} </p>
-//                             <p>Price: ${product.price_html}</p>
-//                             <a href="selectedmovie.html?id=${product.id}""><button class="form-cta">Confirm payment</button></a>
-//                             <a href="payperview.html" id="close-link">Close</a>
-//                         </div>`;
+            confirmPurchase.innerHTML += 
+                        `<div id="confirm-box">
+                            <div class="closing-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <h5 id="confirm-header">Confirm purchase</h5>
+                            <p>Movie: ${product.name} </p>
+                            <p>Price: ${product.price_html}</p>
+                            <a href="selectedmovie.html?id=${product.id}""><button class="form-cta">Confirm payment</button></a>
+                            <a href="payperview.html" id="close-link">Close</a>
+                        </div>`;
                         
-//             }); 
-//         }) 
-//     }) 
-// }
-
-
-
-
-
-
-// const url = "https://makra-stenkloev.no/Square-eyes/wp-json/wc/store/products";
-
-// const popularContainer = document.querySelector("#popular-movies");
-// const recentlyAdded = document.querySelector("#recently-added");
-// const recommended = document.querySelector("#recommended-movies");
-// const continueWatching= document.querySelector("#continue-watching");
-// const highlightedMovie = document.querySelector("#movies-highlight-content");
-
-
-
-// async function fetchProducts(){
-    
-//     try{
-
-//         const response = await fetch(url);
-
-//         const json = await response.json();
-
-//         const result = json; 
-
-//         console.log(result);
-
-//         createHtml(result);
-//         purchaseBox(result);
-        
-//     }
-
-//     catch(error){
-//         console.log(error);
-//     }
-// }
-
-// fetchProducts();
-
-
-// //Create html from API
-
-// function createHtml(products){
-    
-//     popularContainer.innerHTML = "";
-
-//     recentlyAdded.innerHTML = "";
-
-//     recommended.innerHTML = "";
-
-//     continueWatching.innerHTML = "";
-
-//     highlightedMovie.innerHTML = "";
-
-//     products.forEach(function(product){ 
-
-//        const movieHtml =`<div class="movie-content-container">
-//                                 <div class="container" style="background-image: url(${product.images[0].src};" alt="${product.name}">
-//                                     <h4>${product.name} <i class="fas fa-heart"> <i class="fas fa-shopping-cart"></i></i></h4>'
-//                                     <p>Rating: ${product.average_rating} <i class="fas fa-star"></i></p>
-//                                 </div>
-//                         </div>`; 
-
-//         popularContainer.innerHTML += movieHtml;
-
-//         recentlyAdded.innerHTML += movieHtml;
-
-//         recommended.innerHTML += movieHtml;
-
-//         continueWatching.innerHTML += movieHtml;
-
-//         if(product.categories[0].name === "Highlight"){
-
-//             highlightedMovie.innerHTML += 
-//             `<div class="container-highlight" style="background-image: url(${product.images[0].src};" alt="${product.name}">
-//                 <div id="highlight-text">
-//                     <h4>${product.name}<i class="fas fa-shopping-cart"></i></h4>
-//                     <p class="short-movie-description">${product.short_description}</p>
-//                 </div>
-//             </div>`
-//         }
-//     })
-// }
+            }); 
+        }) 
+    }) 
+}
