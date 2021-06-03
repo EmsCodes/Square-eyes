@@ -5,18 +5,8 @@
     <meta name="description" content="Create account page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/global.css" rel="stylesheet" />
-    <link href="css/createaccount.css" rel="stylesheet"/>
+    <link href="css/create-login.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:2260413,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
   </head>
   <body>
     <header>
@@ -34,21 +24,22 @@
       <input type="checkbox" id="hamburger-menu" />
         <nav>
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="movies.html">Movies</a></li>
-            <li><a href="payperview.html">Pay Per View</a></li>
-            <li><a href="contact.html">Producers</a></li>
+            <a href="index.html"><li class="active">Home</li></a>
+            <a href="movies.html"><li>Movies</li></a>
+            <a href="payperview.html"><li>Pay Per View</li></a>
+            <a href="contact.html"><li>Producers</li></a>
           </ul>
         </nav>
-        <a href="login.html" label="login/account "alt="account/login icon">
-          <i class="far fa-user"></i>
-        </a>  
+            <a href="login.html" label="login/account "alt="account/login icon">
+              <i class="far fa-user"></i>
+            </a>  
+      </div>    
     </header>
     <main class="clearfix">
         <fieldset>
           <div class="create-account"></div>
             <form action="form-success.php" method="post">
-              <legend><h1>Create Account</h1></legend>
+              <legend><h1>Create account</h1></legend>
                 <label>Name:
                 <input type="text" name="name" class="form-input"/></label>
                 <label >Email</label>
@@ -64,15 +55,14 @@
               <p class="font-weight-light">(Check this box if you are a producer!)</p>
               </div>
             </a>
-            <a href="members.html" type="submit" value="submit" class="cta" class="form-input">Create Account</a>
-            <div class="link">
+            <a href="members.html" type="submit" value="submit" class="form-cta" class="form-input">Create Account</a>
+            <div class="link-div">
               <p>
-                  <a href="login.html" class="link"
-                  >Already have an account? Sign in here<i class="fas fa-arrow-right"></i></a>
+                <a href="login.html" class="link">Already have an account? Sign in here<i class="fas fa-arrow-right"></i></a>
               </p>
-            <p>
+              <p>
                 <a href="login.html" class="link">Terms and Conditions<i class="fas fa-arrow-right"></i></a>
-            </p>
+              </p>
             </div>
         </fieldset>
       </div>
@@ -87,12 +77,7 @@
             <section class="illustration"></section>
         </aside>
       </div>
-        
-    
-        
-        
     </main>
-
     <footer>Copyright &copy;</footer>
   </body>
 </html>

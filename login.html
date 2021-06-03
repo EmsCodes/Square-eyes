@@ -5,87 +5,60 @@
     <meta name="description" content="log in page for SquareEyes" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/global.css" rel="stylesheet" />
-    <link href="css/login.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/39e20b04f8.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:2260413,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    <link href="css/create-login.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="sticky-position">
+    <header>
       <a href="index.html">
         <img
           src="images/SquareEyes_Logo.png"
           class="logo"
-          alt="Square Eyes logo."/>
+          alt="Square Eyes logo."
+        />
       </a>
+      <div id="nav-flex">
       <label class="hamburger-label" for="hamburger-menu">
         <i class="fas fa-bars"></i>
       </label>
       <input type="checkbox" id="hamburger-menu" />
-      <nav>
-        <ul>
-          <a href="index.html" class="active"><li>Home</li></a>
-          <a href="movies.html"><li>Movies</li></a>
-          <a href="payperview.html"><li>Pay Per View</li></a>
-          <a href="contact.html"><li>Producers</li></a>
-        </ul>
-      </nav>
-      <div class="icons">
-        <a href="login.html" class="account-login">
-          <img
-            class="account-icon"
-            src="images/account.png"
-            alt="account icon"
-          />
-        </a>
-      </div>
+        <nav>
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="movies.html"><li>Movies</li></a>
+            <a href="payperview.html"><li>Pay Per View</li></a>
+            <a href="contact.html"><li>Producers</li></a>
+          </ul>
+        </nav>
+            <a href="login.html" label="login/account "alt="account/login icon">
+              <i class="far fa-user"></i>
+            </a>  
+      </div>    
     </header>
-    <main>
-      <section class="container">
-        <fieldset>
-          <legend><h1>Log in</h1></legend>
-          <form action="createaccount.html" method="post">
-            <label
-              >Email<br />
-              <input type="text" name="email" class="email" /> </label
-            ><br />
-            <label
-              >Password<br />
-              <input type="password" name="password" class="password" /> </label
-            ><br />
-          </form>
-          <a class="producers" href="producers.html">
-            <input
-              type="checkbox"
-              name="producer"
-              value="Producer"
-              checked="checked"
-              class="form-input"
-            />Producer
-          </a>
-          <p><a href="members.html" type="button" class="cta">Log in</a></p>
+    <main id="login-container">
+      <fieldset>
+         <div>
+            <form action="form-success.php" method="post">
+              <legend><h1>Log in</h1></legend>
+                <label >Email</label>
+                <input type="email" name="email" class="form-input"/> 
+                <label>Password</label>
+                <input type="password" name="password" class="form-input"/> </label>
+            </form>
+            <a class ="producers"href="producers.html">
+              <div class="checkbox">
+              <input type="checkbox" name="producer" value=Producer checked="checked"> Producer
+              </div>
+            </a>
+            <p><a href="members.html" type="button" class="form-cta">Log in</a></p>
+          </div>
         </fieldset>
-      </section>
-      <section>
+      <section id="login-aside">
         <h2>Log in</h2>
         <p class="text">And start streaming!</p>
-        <aside>
-          <section class="login"></section>
-        </aside>
+        <aside class="login"></aside>
       </section>
     </main>
-
     <footer>Copyright &copy;</footer>
   </body>
 </html>

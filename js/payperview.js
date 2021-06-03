@@ -83,6 +83,7 @@ function purchaseBox(chosenMovie){
     chosenMovie.forEach(function(product){ 
 
         confirmBox.forEach(movieBox => {movieBox.addEventListener("click", function(){
+            
     
             confirmPurchase.innerHTML += 
                         `<div id="confirm-box">
@@ -92,7 +93,7 @@ function purchaseBox(chosenMovie){
                             <h5 id="confirm-header">Confirm purchase</h5>
                             <p>Movie: ${product.name} </p>
                             <p>Price: ${product.price_html}</p>
-                            <a href="selectedmovie.html?id=${product.id}""><button class="form-cta">Confirm payment</button></a>
+                            <a href="selectedmovie.html?id=${product.id}"><button class="form-cta">Confirm payment</button></a>
                             <a href="payperview.html" id="close-link">Close</a>
                         </div>`;
                         
@@ -100,3 +101,6 @@ function purchaseBox(chosenMovie){
         }) 
     }) 
 }
+
+optionsButton.addEventListener("click", dropDownMenu);
+optionsButton.addEventListener("keyup", dropDownMenu);

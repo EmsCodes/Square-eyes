@@ -28,13 +28,12 @@ async function getDetails() {
         container.innerHTML += 
         `<div>
             <div class="flex-container">
-            <div class="movie-container" style="background-image: url(${result.images[0].src};" alt="${result.name}"</div>
-            </div>
-            <div class="movie-text-area">
-            <h1>${result.name}</h1>
-            <p class="movie-info movie-text">
-            ${result.description}
-            </p>
+                <div class="movie-container" style="background-image:url(${result.images[0].src}" alt="${result.name}"></div>
+                <div class="movie-text-area">
+                <h1>${result.name}</h1>
+                <p class="movie-info movie-text">
+                ${result.description}
+                </p>
             </div>
         </div>`
 

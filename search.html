@@ -6,20 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/global.css" rel="stylesheet" />
     <link href="css/search.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/39e20b04f8.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:2260413,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    <script src="https://kit.fontawesome.com/39e20b04f8.js"crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="sticky-position">
@@ -50,22 +37,23 @@
     </header>
     <main>
       <aside>
-      <div class="sticky-position-categories">
-          <div role="navigation" aria-label="side navigation">
-            <ul class="side-nav">
-              <li><a href="search.html" class="active">Search<i class="fas fa-search"></i></a></li>
-              <li><a href="movies.html">Browse Movies</li></a>
-              <li><a href="category.html">Action</li></a>
-              <li><a href="category.html">Comedy</li></a>
-              <li><a href="category.html">Thriller</li></a>
-              <li><a href="category.html">Horror</li></a>
-              <li><a href="category.html">Drama</li></a>
-              <li><a href="category.html">Romantic</li></a>
-              <li><a href="category.html">Popular</li></a>
-              <li><a href="category.html">Account</li></a>
-            </ul>
-        </div>
-      </aside>
+        <div class="sticky-position-categories dropdown">
+            <div role="navigation" aria-label="side navigation">
+              <button class="dropdown-button">Options<i class="fas fa-chevron-down"></i></button>
+              <ul class="side-nav">
+                <li><a href="search.html" class="active">Search<i class="fas fa-search"></i></li></a>
+                <li><a href="movies.html">Browse Movies</li></a>
+                <li><a href="category.html">Action</li></a>
+                <li><a href="category.html">Comedy</li></a>
+                <li><a href="category.html">Thriller</li></a>
+                <li><a href="category.html">Horror</li></a>
+                <li><a href="category.html">Drama</li></a>
+                <li><a href="category.html">Romantic</li></a>
+                <li><a href="category.html">Popular</li></a>
+                <li><a href="category.html">Account</li></a>
+              </ul>
+          </div>
+        </aside>
       <form action="search.html">
         <h1>Search for movie or producer:</h1>
         <input
@@ -77,5 +65,7 @@
       </form>
     </main>
     <footer>Copyright &copy;</footer>
+    <script src="js/components.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

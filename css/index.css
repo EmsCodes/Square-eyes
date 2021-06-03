@@ -1,16 +1,16 @@
 h1 {
-  font-size: var(--size-h1);
-  font-style: bold;
+  font-size: 2.2em;
+  font-weight: 600;
   text-transform: uppercase;
 }
 h2 {
-  font-size: var(--size-h2);
+  font-size: 1.8em;
   opacity: 50%;
   margin-top: 30px;
   text-transform:capitalize;
 }
 h3{
-  font-size: var(--size-h3);
+  font-size: 2em;
   font-style: bold;
   text-transform: uppercase;
   margin-top:7.5%;
@@ -44,8 +44,11 @@ h3{
 .main-section {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin:0 auto;
   margin-top:50px;
-  margin-bottom:130px;
+  margin-bottom:25px;
+  max-width:85%;
 }
 aside {
   display: flex;
@@ -83,8 +86,8 @@ aside {
 
 section.film-makers,
 section.film-watchers {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   margin-top: 150px;
 }
@@ -153,20 +156,22 @@ section.film-watchers {
 /*Media queries*/
 
 @media only screen and (max-width: 1700px) {
-  section.film-makers,
-  section.film-watchers {
-    max-width:300px;
-    max-height: 300px;
-    margin-top: 160px;
-  }
   aside {
-    margin-top:35px;
-    margin-right:50px;
+    margin-right:5%;
+  }
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:25px;
+    max-width:95%;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
   .cta {
-    margin-right: 25px;
+    margin-right: 15px;
   }
   section.film-makers,
   section.film-watchers {
@@ -181,32 +186,23 @@ section.film-watchers {
   .vertical-line {
     max-height: 400px;
   }
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    font-size: 2.3em;
-  }
-  h3{
-    font-size:2.2em;
-  }
   .fa-chevron-down{
     font-size:3em;
     margin-bottom:65px;
     margin-top:50px;
   }
-}
-
-@media only screen and (max-width: 1270px) {
   h1 {
-    font-size: 2.8em;
+    font-size: 2em;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
   h3 {
-    font-size: 1.4em;
+    font-size: 1.8em;
   }
+}
+
+@media only screen and (max-width: 1300px) {
   .text {
     font-size: 0.9em;
   }
@@ -231,8 +227,20 @@ section.film-watchers {
   .film-makers {
     margin-left:0;
   }
+  .cta{
+    font-size:1em;
+  }
 }
 @media only screen and (max-width: 950px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
   .main-header-info {
     margin-top: 50px;
     margin-left:10%;
@@ -247,11 +255,8 @@ section.film-watchers {
     margin-left:4%;
     margin-top:25px;
   }
-  .cta {
-    margin-right: 15px;
-  }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 820px) {
   aside {
     display: none;
   }
@@ -260,7 +265,8 @@ section.film-watchers {
     margin-left:20%;
   }
   .main-section{
-    margin-top:0;
+    margin-top:50px;
+    margin-bottom:0;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -280,15 +286,6 @@ section.film-watchers {
     width:100%;
     height:450px;
   }
-  h1 {
-    font-size: 1.4em;
-  }
-  h2 {
-    font-size: 1.2em;
-  }
-  h3 {
-    font-size: 1.1em;
-  }
   .cta{
     max-width:120px;
   }
@@ -304,34 +301,28 @@ section.film-watchers {
     order:1;
   }
   .main-section{
-    max-width:90vw;
+    max-width:85vw;
   }
   .main-header-info {
-    margin-left:15%;
+    margin-left:5%;
   }
   .producers-info-section, .members-info-section, .info-images{
     width:100%;
     height:450px;
   }
   h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   h2 {
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
   h3 {
-    font-size: 1.1em;
-  }
-  div.button{
-    margin-top:30px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .cta:first-child {
-    margin-bottom:15px;
+    font-size: 1.3em;
   }
   .cta{
-    max-width:50vw;
+    max-width:120px;
+    font-size: 0.9em;
+    padding-left:10px;
+    padding-right:10px;
   }
 }

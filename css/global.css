@@ -13,9 +13,6 @@ body {
 }
 /*Custom properties*/
 :root {
-  --size-h1: 2.2em;
-  --size-h2: 1.5em;
-  --size-h3: 1.2;
   --vertical-line: thin inset #999999;
   --main-yellow: #f2b705;
   --font-style: italic;
@@ -117,7 +114,7 @@ h4 {
 
 .cta {
   display:inline-block;
-  font-size: 1.2em;
+  font-size: 1.1em;
   background-color: var(--main-yellow);
   color: #000;
   text-decoration: none;
@@ -134,10 +131,10 @@ h4 {
   background-color: var(--main-yellow);
   color: #000;
   text-decoration: none;
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 45px;
   text-align: center;
-  max-width:150px;
+  width:125px;
   border:none;
   box-shadow:var(--cta-box-shadow);
 }
@@ -152,54 +149,10 @@ h4 {
   font-size:0.9em;
 }
 
-/*account, members and producers*/
-.account {
-  max-width: 500px;
-  height: auto;
-  background: linear-gradient(#f2b705, #a87e01);
-  padding: 50px;
-  border-radius: 30px;
-  border-width: 1px;
-  border-color: var(--main-yellow);
-  box-shadow: 0px 5px 5px 3px #999999;
-}
-
-.account-list {
-  font-size: 1.5em;
-  list-style-type: none;
-  padding: 0px;
-}
-.account-login {
-  color: #000;
-  text-decoration: none;
-}
-.number-one {
-  margin-top: 45px;
-}
-.number-two {
-  margin-top: 45px;
-}
-.number-three {
-  margin-top: 45px;
-  margin-bottom: 75px;
-}
-.log-out {
-  font-size: 1em;
-  text-decoration: none;
-  color: #000;
-}
-/*movie categories*/
-
-ul a {
-  text-decoration: none;
-  color: #595959;
-}
-ul a:hover {
-  color: #000;
-}
-
 footer {
-  margin-top: 150px;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom:50px;
 }
 
 /*mainly header media-queries, some global CTAs*/
@@ -265,8 +218,8 @@ footer {
     color:var(--link-color);
   }
   .fa-user{
-    font-size:2em;
-    margin-top:32px;
+    font-size:1.8em;
+    margin-top:36px;
   }
   .logo {
     max-height: 125px;
@@ -281,6 +234,7 @@ footer {
 @media (max-width: 800px){
   header {
     justify-content: space-between;
+    padding-bottom:15px;
   }
   #nav-flex{
     margin-right:50px;
@@ -305,8 +259,8 @@ footer {
     margin-left:20px;
   }
   .fa-user{
-    font-size:1.8em;
-    margin-top:22px;
+    font-size:1.6em;
+    margin-top:25px;
   }
   .link {
     color: #004349;
@@ -335,7 +289,6 @@ footer {
     margin-top:10px;
   }
   .fa-user{
-    font-size:1.6em;
     margin-top:18px;
   }
   #nav-flex{

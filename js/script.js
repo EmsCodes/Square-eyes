@@ -9,7 +9,7 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 
 
-const message = document.querySelector("#message");
+// const message = document.querySelector("#message");
 const contactSubmitButton = document.querySelector("#contact-submit-button");
 
 
@@ -61,8 +61,6 @@ const recommended = document.querySelector("#recommended-movies");
 const continueWatching= document.querySelector("#continue-watching");
 const highlightedMovie = document.querySelector("#movies-highlight-content");
 
-
-
 async function fetchProducts(){
     
     try{
@@ -81,11 +79,9 @@ async function fetchProducts(){
 
          continueWatching.innerHTML = "";
 
-        highlightedMovie.innerHTML = "";
+         highlightedMovie.innerHTML = "";
 
         for(let i=0; i<result.length; i++){
-
-            console.log(result);
             
             const movieHtml =
             `<div class="movie-content-container">
@@ -124,22 +120,5 @@ async function fetchProducts(){
 
 fetchProducts();
 
-// movie options dropdown-menu
-
-const optionsButton = document.querySelector("#dropdown-button");
-const optionsList = document.querySelector(".side-nav");
-
-function dropDownMenu(){
-
-    if(optionsList.style.display === "none"){
-        optionsList.style.display = "block";
-    }else{
-        optionsList.style.display = "none"
-    }
-
-}
-
-
 optionsButton.addEventListener("click", dropDownMenu);
 optionsButton.addEventListener("keyup", dropDownMenu);
-

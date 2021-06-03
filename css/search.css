@@ -1,21 +1,40 @@
+main{
+  max-width:1980px;
+  display:flex;
+  flex-direction: row;
+}
 h1 {
   font-size: 1.7em;
-  margin-bottom: 35px;
+  margin-left: 35px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 1.6em;
+  margin-top: 35px;
+  margin-left: 35px;
+}
+h3 {
+  font-size: 1.1rem;
+  font-family: verdana, tahoma, sans-serif;
+  margin-left:25px;
+  margin-bottom:0px;
 }
 .side-nav{
   font-size: 1em;
   padding-right:10px;
-  margin-left:25px;
+  margin-left:50px;
+}
+.dropdown-button{
+  display: none;
 }
 /* persistant nav sticky-position */
-.sticky-position {
-  position: sticky;
-  margin-top:50px;
+.sticky-position-categories ul{
+  padding-left:0;
 }
 .sticky-position-categories {
-  margin-top:75px;
-  position: fixed;
+  position: sticky;
   border-right:1px solid var(--gray-text-color);
+  top:200px;
 }
 /* categories */
 
@@ -23,7 +42,23 @@ h1 {
   padding-top: 15px;
   list-style: none;
   margin-right:50px;
+  width:100%;
 }
+.fa-search{
+  padding-left:5px;
+  font-size:1.1em;
+}
+
+/*movie categories*/
+
+ul a {
+  text-decoration: none;
+  color: #595959;
+}
+ul a:hover {
+  color: #000;
+}
+
 .fa-search{
   padding-left:5px;
   font-size:1.1em;
@@ -37,10 +72,8 @@ h1 {
   text-align: center;
 }
 form {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin:0 auto;
+  margin-top:200px;
 }
 .cta {
   padding-left: 30px;
@@ -53,40 +86,123 @@ fieldset {
   max-width: 500px;
   padding: 50px;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-}
-@media (max-width: 1100px) {
-  .cta {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 0px;
-    font-size: 1.5em;
-    border: none;
-    margin-top: 25px;
+@media only screen and (max-width: 1050px) {
+  #movies-highlight-content{
+    height:250px;
+  }
+  .side-nav{
+    margin-left:40px;
+  }
+  .movies-section{
+    max-width:75%;
+    margin-right:7.5%;
+    margin-top:10px;
   }
 }
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    text-align: center;
+@media (max-width: 850px) {
+  main {
+    display: flex;
+    flex-direction: column;
   }
-  .search-input {
+  aside{
+    position: sticky;
+    top:100px;
+    z-index:99;
+    background-color: #fff;
+  }
+  .container {
+    width: 200px;
+    height: 125px;
+    border-radius:5px;
+    contain: content;
+    transition: 0.2s ease-in-out;
+    background-repeat: no-repeat;
+    background-size:cover;
+    cursor:pointer;
+    box-shadow:var(--movie-box-shadow);
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    flex-shrink:0;
+    position: relative;
+  }
+  .side-nav{
+    display: none;
+    border-top: 2px solid var(--main-yellow);
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom:50px;
+    padding-top:25px;
+    margin-left:0;
+  }
+  .side-nav li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    padding-bottom:15px;
+    width:100%;
+    margin-left:10%;
+  }
+  .sticky-position-categories {
+    border-right:none;
+    top:0;
+    right:0;
+    z-index: 99;
+  }
+  .movies-section{
+    margin:0 auto;
+    max-width:90%;
+  
+  }
+  .fa-chevron-down{
+    margin-left:10px;
+  }
+  #movies-highlight-content{
+    width:100%;
+    margin-top:0px;
+  }
+  .dropdown-button{
+    display: block;
+    margin:25px auto 25px 75%;
+    border:none;
+    background-color: var(--main-yellow);
+    padding:10px;
+    border-radius: 45px;
+    width:125px;
+    box-shadow: var(--cta-box-shadow);
+  }
+  .dropdown-button:active{
+    transform:scale(1.05);
+  }
+  .categories {
     font-size: 1.2em;
-    border-radius: 30px;
-    border-style: solid;
-    padding: 10px;
-    text-align: center;
   }
-  .cta {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 25px;
-    font-size: 1.2em;
-    border: none;
-    margin-left: 50px;
+  .time-year {
+    font-size: 0.4em;
   }
+  .movie-info {
+    font-size: 0.7em;
+  }
+  .heart-icon {
+    height: 15px;
+    width: 15px;
+    float: right;
+    margin-right: 20px;
+  }
+  .producer-name {
+    font-size: 0.7em;
+  }
+  .text {
+    margin-top: 100px;
+  }
+  .time-year {
+    font-size: 0.7em;
+  }
+  .text-2 {
+    margin-left: 35px;
+  }
+}
+@media only screen and (max-width: 600px) {
+
+  .dropdown-button{
+    margin-left:65%;
+  }
+
 }

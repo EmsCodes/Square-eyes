@@ -5,136 +5,83 @@
     <meta name="description" content="favourite movies page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/global.css" rel="stylesheet" />
-    <link href="css/favourites.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/39e20b04f8.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:2260413,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    <link href="css/movies-category.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/39e20b04f8.js"crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="sticky-position">
-      <a href="index.html"
-        ><img
+    <header>
+      <a href="index.html">
+        <img
           src="images/SquareEyes_Logo.png"
           class="logo"
           alt="Square Eyes logo."
-      /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i
-      ></label>
+        />
+      </a>
+      <div id="nav-flex">
+      <label class="hamburger-label" for="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </label>
       <input type="checkbox" id="hamburger-menu" />
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="search.html">Search For Movies</a></li>
-          <li><a href="payperview.html">Pay Per View</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="icons">
-        <img class="facebook" src="images/facebook.png" />
-        <img class="instagram" src="images/instagram.png" />
-        <img class="message" src="images/message.png" />
-        <a href="login.html" class="account-login">
-          <img
-            class="account-icon"
-            src="images/account.png"
-            alt="account icon"
-          />
-        </a>
-      </div>
+        <nav>
+          <ul>
+            <a href="index.html"><li class="active">Home</li></a>
+            <a href="movies.html"><li>Movies</li></a>
+            <a href="payperview.html"><li>Pay Per View</li></a>
+            <a href="contact.html"><li>Producers</li></a>
+          </ul>
+        </nav>
+            <a href="login.html" label="login/account "alt="account/login icon">
+              <i class="far fa-user"></i>
+            </a>  
+      </div>    
     </header>
-      <main>
-      <main class="flex-container">
-        <div class="content">
-          <section class="account">
-            <h3>Member</h3>
-            <h1>Account</h1>
-            <ul class="account-list">
-              <li class="number-one" ><a href="favourites.html" class="active">Favourites</a></li>
-              <li class="number-two"><a href="purchases.html">Purchases</a></li>
-              <li class="number-three"><a href="accountdetails.html">Account Details</a></li>
+    <main>
+      <aside>
+      <div class="sticky-position-categories dropdown">
+          <div role="navigation" aria-label="side navigation">
+            <button class="dropdown-button">Options<i class="fas fa-chevron-down"></i></button>
+            <ul class="side-nav">
+              <li><a href="search.html">Search<i class="fas fa-search"></i></li></a>
+              <li><a href="movies.html">Browse Movies</li></a>
+              <li><a href="category.html">Action</li></a>
+              <li><a href="category.html">Comedy</li></a>
+              <li><a href="category.html">Thriller</li></a>
+              <li><a href="category.html">Horror</li></a>
+              <li><a href="category.html">Drama</li></a>
+              <li><a href="category.html">Romantic</li></a>
+              <li><a href="category.html">Popular</li></a>
+              <li><a href="category.html">Account</li></a>
             </ul>
-            <a class="log-out" href="login.html">Log Out</a>
+        </div>
+      </aside>
+      <!--Movie section-->
+      <section class="movies-section" id="account-movies">
+          <!--Browse movies: Purchases and favourites -->
+          <div class="movie-content-container">
+          <div>
+            <div>
+              <h3>Favourites</h3>
+            </div>
+            <hr id="movie-divide-line">
           </div>
-          <div class="vertical-line"></div>
-      <section class="info">
-        <h2>Your Favourites</h2>
-        <p class="text">
-          Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-          Nonumy Eirmod Tempor.
-        </p>
-      <section class="movies">
-        <div class="item">
-          <a href="selectedmovie.html">
-            <img src="images/movie.png" max-width="225" height="130" />
-          </a>
-          <h4>Movie Title</h4>
-          <img src="Images/rating.png" />
-        </div>
-        <div class="item">
-          <a href="selectedmovie.html">
-            <img src="images/movie.png" max-width="225" height="130" />
-          </a>
-          <h4>Movie Title</h4>
-          <img src="Images/rating.png" />
-        </div>
-        <div class="item">
-          <a href="selectedmovie.html">
-            <img src="images/movie.png" max-width="225" height="130" />
-          </a>
-          <h4>Movie Title</h4>
-          <img src="Images/rating.png" />
-        </div>
-        <div class="item">
-          <a href="selectedmovie.html">
-            <img src="images/movie.png" max-width="225" height="130" />
-          </a>
-          <h4>Movie Title</h4>
-          <img src="Images/rating.png" />
-        </div>
-        <div class="item">
-          <a href="selectedmovie.html">
-            <img src="images/movie.png" max-width="225" height="130" />
-          </a>
-          <h4>Movie Title</h4>
-          <img src="Images/rating.png" />
-        </div>
-        <div class="item">
-          <a href="selectedmovie.html">
-            <img src="images/movie.png" max-width="225" height="130" />
-          </a>
-          <h4>Movie Title</h4>
-          <img src="Images/rating.png" />
-        </div>
-        <div class="item">
-          <a href="selectedmovie.html">
-            <img src="images/movie.png" max-width="225" height="130" />
-          </a>
-          <h4>Movie Title</h4>
-          <img src="Images/rating.png" />
-        </div>
-        <div class="item">
-          <a href="selectedmovie.html">
-            <img src="images/movie.png" max-width="225" height="130" />
-          </a>
-          <h4>Movie Title</h4>
-          <img src="Images/rating.png" />
-        </div>
+          <section id="purchases" class="content-flex">
+            <div class="loader"></div>
+          </section>
+          <div>
+            <div>
+              <h3>Purchases</h3>
+            </div>
+            <hr id="movie-divide-line">
+          </div>
+          <section id="favourites" class="content-flex">
+            <div class="loader"></div>
+          </section>
+          </div>
       </section>
-    </section>
     </main>
+    <hr id="movie-divide-line">
+    <script src="js/components.js"></script>
+    <script src="js/account.js"></script>
     <footer>Copyright &copy;</footer>
   </body>
 </html>

@@ -6,74 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/global.css" rel="stylesheet" />
     <link href="css/members.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/39e20b04f8.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:2260413,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="sticky-position">
-      <a href="index.html"
-        ><img
+    <header>
+      <a href="index.html">
+        <img
           src="images/SquareEyes_Logo.png"
           class="logo"
           alt="Square Eyes logo."
-      /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i
-      ></label>
+        />
+      </a>
+      <div id="nav-flex">
+      <label class="hamburger-label" for="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </label>
       <input type="checkbox" id="hamburger-menu" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="search.html">Search For Movies</a></li>
-          <li><a href="payperview.html">Pay Per View</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="icons">
-        <img class="facebook" src="images/facebook.png" />
-        <img class="instagram" src="images/instagram.png" />
-        <img class="message" src="images/message.png" />
-        <a href="login.html" class="account-login">
-          <img
-            class="account-icon"
-            src="images/account.png"
-            alt="account icon"
-          />
-        </a>
-      </div>
+        <nav>
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="movies.html"><li>Movies</li></a>
+            <a href="payperview.html"><li>Pay Per View</li></a>
+            <a href="contact.html"><li>Producers</li></a>
+          </ul>
+        </nav>
+            <a href="login.html" label="login/account "alt="account/login icon">
+              <i class="far fa-user"></i>
+            </a>  
+      </div>    
     </header>
     <main>
       <div class="content">
         <section class="account">
-          <h3>Member</h3>
+          <h3>Welcome, Name</h3>
           <h1>Account</h1>
           <ul class="account-list">
+            <li class="number-three active-list-item"><a href="accountdetails.html">Account Details</a></li>
             <li class="number-one" ><a href="favourites.html">Favourites</a></li>
             <li class="number-two"><a href="purchases.html">Purchases</a></li>
-            <li class="number-three"><a href="accountdetails.html">Account Details</a></li>
           </ul>
           <a class="log-out" href="login.html">Log Out</a>
         </div>
-        <div class="vertical-line"></div>
         </section>
-        <div class="content-2">
-          <h2>Welcome, Name!</h2>
-          <p class="text">Plug in and start watching</p>
-          <img class="illustration" src="../images/Monitor.jpg" alt="illustration of two tiny people plugin in a pc, and the pc showing a family watching a movie.">
-        </div>
+        <section class="content-2">
+          <h2>Manage your account</h2>
+          <p>
+            Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+            Nonumy Eirmod Tempor.
+          </p>
+          <p><span class="bold-text">Name:</span>Name Name</p>
+          <p><span class="bold-text">Email:</span>name@name.com</p>
+          <p><span class="bold-text">Membership:</span>Monthly subscription</p>
+          <p><span class="bold-text">Password:</span>000000</p>
+          <a href="login.html" class="link">
+            <p>Terms and Conditions</p>
+          </a>
+          <a href="login.html" class="link">
+            <p>Edit subscription</p>
+          </a>
+          <aside class="illustration"></aside>
+        </section>
     </main>
     <footer>Copyright &copy;</footer>
   </body>
