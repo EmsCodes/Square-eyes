@@ -1,15 +1,20 @@
 h1 {
-  font-size: 2em;
-  text-transform: uppercase;
+  font-size: 1.4em;
+  margin-bottom:10px;
+  margin-top:0;
+  font-style: italic;
+  font-weight: 100;
 }
 h2 {
-  font-size: 1.8em;
-  text-transform: capitalize;
-  text-align: center;
+  font-size: 2em;
+  margin-top:0;
+  font-weight: 100;
+  margin-bottom:45px;
 }
 h3 {
-  font-size: 1.2em;
-  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 400;
+  opacity: 0.75;
 }
 .text {
   font-size: 1.4em;
@@ -17,17 +22,19 @@ h3 {
   opacity: 50%;
   text-align: center;
 }
-/*account, members and producers*/
+.bold-text {
+  font-weight: bold;
+}
+/*account, members*/
 .account {
   max-width: 500px;
   height: auto;
   background:var(--main-yellow);
-  padding: 50px;
+  padding: 50px 65px;
   border-radius: 5px;
-  border-width: 1px;
 }
 .account-list {
-  font-size: 1.5em;
+  font-size: 1.2em;
   list-style-type: none;
   padding: 0px;
 }
@@ -50,8 +57,9 @@ h3 {
   text-decoration: none;
   color: #000;
 }
-.active-list-item{
+#active-item{
   color:#000;
+  text-decoration:underline;
 }
 /*grid*/
 main {
@@ -78,15 +86,6 @@ main {
 /*Media */
 
 @media (max-width: 800px) {
-  h1 {
-    font-size: 1.5em;
-  }
-  h2 {
-    font-size: 1.3em;
-  }
-  h3 {
-    font-size: 1em;
-  }
   .text {
     font-size: 1em;
   }
@@ -116,14 +115,18 @@ main {
   }
 }
 @media (max-width: 600px) {
-  h1 {
-    font-size: 1.4em;
+  .content-2 {
+    grid-area: content-2;
+    border-left:none;
+    padding-left:0px;
+    max-width:85vw;
   }
-  h2 {
-    font-size: 1.2em;
-  }
-  h3 {
-    font-size: 1em;
+  .account {
+    max-width: 500px;
+    height: auto;
+    background:var(--main-yellow);
+    padding: 50px 65px;
+    border-radius: 5px;
   }
   .text {
     font-size: 1em;
@@ -154,8 +157,9 @@ main {
   }
   /*grid*/
   main {
+    margin-top:50px;
     display: flex;
-    flex-flow: column-reverse wrap;
+    flex-flow: row wrap;
     align-content: center;
   }
 }

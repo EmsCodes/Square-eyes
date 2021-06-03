@@ -271,6 +271,11 @@ ul a:hover {
   margin-top:65px;
   margin-bottom:150px;
 }
+#back-link{
+  text-align: right;
+  margin-right:5%;
+  margin-top:25px;
+}
 /*///////////////////////////////////////////*/
 /* Media Queries */
 @media only screen and (max-width: 1700px) {
