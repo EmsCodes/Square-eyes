@@ -32,13 +32,13 @@ h3 {
   padding-left:0;
 }
 .sticky-position-categories {
-  position: sticky;
+  position:fixed;
   border-right:1px solid var(--gray-text-color);
   top:200px;
 }
 /* categories */
 
-.side-nav > li {
+.side-nav > a {
   padding-top: 15px;
   list-style: none;
   margin-right:50px;
@@ -203,6 +203,42 @@ fieldset {
 
   .dropdown-button{
     margin-left:65%;
+  }
+  .side-nav{
+    display: none;
+    border-top: 2px solid var(--main-yellow);
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom:50px;
+    padding-top:25px;
+    margin-left:0;
+  }
+  .side-nav a{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    padding-bottom:15px;
+    width:100%;
+    margin-left:10%;
+  }
+  .sticky-position-categories {
+    border-right:none;
+    top:0;
+    right:0;
+    z-index: 99;
+  }
+  .fa-chevron-down{
+    margin-left:10px;
+  }
+  .dropdown-button{
+    display: block;
+    margin:25px auto 25px 75%;
+    border:none;
+    background-color: var(--main-yellow);
+    padding:10px;
+    border-radius: 45px;
+    width:125px;
+    box-shadow: var(--cta-box-shadow);
+  }
+  .dropdown-button:active{
+    transform:scale(1.05);
   }
 
 }

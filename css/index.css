@@ -13,7 +13,7 @@ h3{
   font-size: 2em;
   font-style: bold;
   text-transform: uppercase;
-  margin-top:7.5%;
+  margin-top:10%;
 }
 .social-icons-index{
   display:block;
@@ -27,7 +27,7 @@ h3{
 .link-2 {
   display: block;
   margin-left:10px;
-  font-size:1.2em;
+  font-size:1em;
 }
 .link-2:hover, .fa-facebook:hover, .fa-instagram:hover {
   transform:scale(1.05);
@@ -206,6 +206,12 @@ section.film-watchers {
   .text {
     font-size: 0.9em;
   }
+  h3{
+    margin-top:20%;
+  }
+  .members-info-section li,.producers-info-section li {
+    font-size:1.2em;
+  }
   aside {
     display: flex;
     flex-direction: column;
@@ -240,6 +246,10 @@ section.film-watchers {
   }
   h3 {
     font-size: 1.5em;
+    margin-top:25%;
+  }
+  .members-info-section li,.producers-info-section li {
+    font-size:1.1em;
   }
   .main-header-info {
     margin-top: 50px;
@@ -260,6 +270,10 @@ section.film-watchers {
   aside {
     display: none;
   }
+  h3 {
+    font-size: 1.4em;
+    margin-top:25%;
+  }
   .main-header-info {
     margin-top:35px;
     margin-left:20%;
@@ -269,7 +283,7 @@ section.film-watchers {
     margin-bottom:0;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
 
   .info-section-1, .info-section-2{
     width:100%;
@@ -279,8 +293,13 @@ section.film-watchers {
   .members-info-section{
     order:1;
   }
+  h3 {
+    font-size: 1.6em;
+    margin-top:7.5%;
+  }
   .main-header-info {
-    margin-left:15%;
+    margin-top:0px;
+    margin-left:12%;
   }
   .producers-info-section, .members-info-section, .info-images{
     width:100%;
@@ -317,12 +336,44 @@ section.film-watchers {
     font-size: 1.3em;
   }
   h3 {
-    font-size: 1.3em;
+    font-size: 1.5em;
+    margin-top:10%;
   }
   .cta{
     max-width:120px;
     font-size: 0.9em;
     padding-left:10px;
     padding-right:10px;
+  }
+}
+@media only screen and (max-width:400px) {
+  h1 {
+    font-size: 1.4em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 1.4em;
+    margin-top:15%;
+  }
+  .cta{
+    max-width:120px;
+    font-size: 0.9em;
+    padding-left:10px;
+    padding-right:10px;
+    display: block;
+    margin:0 auto;
+  }
+  .cta:first-child{
+    margin-bottom:15px;
+  }
+  .button{
+    margin-top:50px;
+    margin-right:10%;
+  }
+  .link-2{
+    max-width:75%;
+    font-size:1em;
   }
 }

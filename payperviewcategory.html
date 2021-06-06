@@ -5,165 +5,116 @@
     <meta name="description" content="Movie category page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/global.css" rel="stylesheet" />
-    <link href="css/categories-ppw.css" rel="stylesheet" />
+    <link href="css/movies-category.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/39e20b04f8.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="sticky-position">
-      <a href="index.html"
-        ><img
-          src="images/SquareEyes_Logo.png"
-          class="logo"
-          alt="Square Eyes logo."
-      /></a>
+      <a href="index.html">
+        <img src="images/SquareEyes_Logo.png" class="logo" alt="Square Eyes logo."/>
+      </a>
+      <div id="nav-flex">
       <label class="hamburger-label" for="hamburger-menu"
-      ><i class="fas fa-bars"></i
-    ></label>
-    <input type="checkbox" id="hamburger-menu" />
-      <nav>
-        <ul>
-          <a href="index.html" class="active"><li>Home</li></a>
-          <a href="movies.html"><li>Movies</li></a>
-          <a href="payperview.html"><li>Pay Per View</li></a>
-          <a href="contact.html"><li>Producers</li></a>
-        </ul>
-      </nav>
-      <div class="icons">
-        <img src="images/facebook.png" />
-        <img src="images/instagram.png" />
-        <img src="images/message.png" />
-        <a href="login.html">
-        </div>
-        <div class="login-icon">
-          <img
-            class="account-icon"
-            src="images/account-icon.png"
-            alt="account icon"
-          />
-        </a>
-        <p>
-          <a href="login.html" class="account-login"> Log in </a>
-        </p>
-      </div>
+        ><i class="fas fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
+        <nav>
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="movies.html"><li>Movies</li></a>
+            <a href="payperview.html"><li class="active">Pay Per View</li></a>
+            <a href="contact.html"><li>Producers</li></a>
+          </ul>
+        </nav>
+            <a href="login.html">
+              <i class="far fa-user"></i>
+            </a>
+        </div>    
     </header>
     <main>
+      <aside>
       <div class="sticky-position-categories">
-          <div class="text">
-            <h1>Pay Per View</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <h2>Categories</h2>
-            <div role="navigation" aria-label="Category navigation"></div>
-              <ul class="categories">
-                <li class="action"><a href="payperviewcategory.html">Action</li></a>
-                <li class="comedy"><a href="payperviewcategory.html">Comedy</li></a>
-                <li class="thriller"><a href="payperviewcategory.html">Thriller</li></a>
-                <li class="horror"><a href="payperviewcategory.html">Horror</li></a>
-                <li class="drama"><a href="payperviewcategory.html">Drama</li></a>
-                <li class="romantic"><a href="payperviewcategory.html">Romantic</li></a>
-                <li class="popular"><a href="payperviewcategory.html">Popular</li></a>
-             </ul>
+          <div role="navigation" aria-label="side navigation">
+            <button class="dropdown-button">Options<i class="fas fa-chevron-down"></i></button>
+            <ul class="side-nav">
+              <a href="search.html"><li>Search<i class="fas fa-search"></i></li></a>
+              <a href="movies.html"><li>Browse Movies</li></a>
+              <a href="payperviewcategory.html" class="active"><li>Action</li></a>
+              <a href="payperviewcategory.html"><li>Comedy</li></a>
+              <a href="payperviewcategory.html"><li>Thriller</li></a>
+              <a href="payperviewcategory.html"><li>Horror</li></a>
+              <a href="payperviewcategory.html"><li>Drama</li></a>
+              <a href="payperviewcategory.html"><li>Romantic</li></a>
+              <a href="payperviewcategory.html"><li>Popular</li></a>
+              <a href="payperviewcategory.html"><li>Account</li></a>
+            </ul>
+        </div>
+      </aside>
+      <!--Pay per view movies-->
+      <section class="movies-section">
+        <!--purchase confirmation window-->
+        <div id="confirm-purchase" class="sticky-popup"></div>
+        <!-- Highlighted movie-->
+        <div id="movies-highlight-content" class="box">
+          <div class="highlight-loader"></div>
+        </div>
+        <!--Browse movies: Popular, recent, recommended etc. -->
+        <div class="movie-content-container">
+        <div>
+          <div>
+            <h3>Popular on SquareEyes</h3>
           </div>
+          <hr id="movie-divide-line">
         </div>
-      <section>
-        <h3>Category</h3>
-        <div id="container">
-          <a href="selectedmovie.html">
-              <img src="images/movie.jpg" width="235" height="130"/>
-            </a>
-            <div class="title-time-year">
-              <h4>Movie Title</h4>
-              <a href="completepurchase.html">
-                <img src="images/cart.png" class="shoppingcart"/>
-              </a>
-              <img src="images/hearticon.png" class="heart-icon" />
-              <p class="time-year">(1h 45min)</p>
-            </div>
-            <p class="movie-info">
-              Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-              Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-            </p>
-            <p class="producer-name">Producer name <img class="rating" src="Images/rating.png" /></p>
-          </section>
+        <section id="popular-movies" class="content-flex box">
+          <div class="loader"></div>
+        </section>
+        <div>
+          <div>
+            <h3>Recently added</h3>
+          </div>
+          <hr id="movie-divide-line">
         </div>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <a href="completepurchase.html">
-            <img src="images/cart.png" />
-          </a>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="completepurchase.html">
-            <img src="images/movie.png" width="265" height="150"/>
-          </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <a href="completepurchase.html">
-            <img src="images/cart.png" />
-          </a>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="completepurchase.html">
-            <img src="images/movie.png" width="265" height="150"/>
-          </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <a href="completepurchase.html">
-            <img src="images/cart.png" />
-          </a>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="completepurchase.html">
-            <img src="images/movie.png" width="265" height="150"/>
-          </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <a href="completepurchase.html">
-            <img src="images/cart.png" />
-          </a>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="completepurchase.html">
-            <img src="images/movie.png" width="265" height="150"/>
-          </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <a href="completepurchase.html">
-            <img src="images/cart.png" />
-          </a>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-        <a href="completepurchase.html">
-            <img src="images/movie.png" width="265" height="150"/>
-          </a>
-        <h4>Movie Title<img src="images/hearticon.png" /></h4>
-        <p>(1h 45min) (2012)</p>
-        <a href="completepurchase.html">
-            <img src="images/cart.png" />
-          </a>
-        <p>
-          Lorem Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.Lorem
-          Ipsum Dolor sit amet, consetetut sadipscing elitr, Sed.
-        </p>
-        <p>Producer name <img src="Images/rating.png" /></p>
-      </section>
-    </main>
-
-    <footer>Copyright &copy;</footer>
+        <section id="recently-added" class="content-flex box">
+          <div class="loader"></div>
+        </section>
+        <div>
+          <div>
+            <h3>We think you would like</h3>
+          </div>
+          <hr id="movie-divide-line">
+        </div>
+        <section id="recommended-movies" class="content-flex box">
+          <div class="loader"></div>
+        </section>
+        <div>
+          <div>
+            <h3>Continue Watching</h3>
+          </div>
+          <hr id="movie-divide-line">
+        </div>
+        <section id="continue-watching" class="content-flex box">
+          <div class="loader"></div>
+        </section>
+        </div>
+    </section>
+   </main>
+   <hr id="movie-divide-line"> 
+  <footer>
+    <div class="social-icons-footer">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <div role="navigation" aria-label="footer navigation">
+    <ul>
+      <a href="contact.html"><li>Contact</li></a>
+      <a href="accountdetails.html"><li>Manage Account</li></a>
+      <a href="index.html"><li>About us</li></a>
+    </ul>
+    </div>
+    &copy;Endre Makra-Stenkløv
+    </footer>
+    <script src="js/components.js"></script> 
+    <script src="js/payperview.js"></script>
   </body>
 </html>

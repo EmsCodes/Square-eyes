@@ -40,10 +40,10 @@ h3 {
 }
 /* categories */
 
-.side-nav > li {
+.side-nav > a {
   padding-top: 15px;
   list-style: none;
-  margin-right:50px;
+  margin-right:65px;
   width:100%;
 }
 .fa-search{

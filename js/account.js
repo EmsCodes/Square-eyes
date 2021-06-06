@@ -40,3 +40,6 @@ async function fetchMovies(){
 }
 
 fetchMovies();
+
+optionsButton.addEventListener("click", dropDownMenu);
+optionsButton.addEventListener("keyup", dropDownMenu);
